@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Auto Buzz Trader: The Build</title>
+<meta name="description" content="A step-by-step walkthrough of how a Stocktwits-trending signal became a live Alpaca paper-trading dashboard." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%93%88%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink-950: #f6f7fb;
+    --ink-900: #ffffff;
+    --ink-850: #ffffff;
+    --ink-800: #eef1f8;
+    --hairline: rgba(30, 50, 110, 0.13);
+    --hairline-strong: rgba(30, 50, 110, 0.22);
+    --text-hi: #0f1830;
+    --text-lo: #57628a;
+    --text-faint: #8993b8;
+    --blue: #2f5fe0;
+    --blue-soft: rgba(47, 95, 224, 0.1);
+    --orange: #d9640c;
+    --orange-soft: rgba(217, 100, 12, 0.12);
+    --green: #1a9b6c;
+    --green-soft: rgba(26, 155, 108, 0.12);
+    --shadow: 0 1px 2px rgba(20, 30, 70, 0.04), 0 8px 24px rgba(20, 30, 70, 0.06);
+
+    color-scheme: light;
+    font-family: 'Public Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink-950: #0a0f1c;
+      --ink-900: #0f1730;
+      --ink-850: #131d3a;
+      --ink-800: #182444;
+      --hairline: rgba(140, 168, 255, 0.14);
+      --hairline-strong: rgba(140, 168, 255, 0.24);
+      --text-hi: #f2f5ff;
+      --text-lo: #9aa6cc;
+      --text-faint: #6c7aa3;
+      --blue: #5c8dff;
+      --blue-soft: rgba(92, 141, 255, 0.14);
+      --orange: #ff9c52;
+      --orange-soft: rgba(255, 156, 82, 0.14);
+      --green: #3ddba0;
+      --green-soft: rgba(61, 219, 160, 0.13);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35);
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ink-950: #0a0f1c;
+    --ink-900: #0f1730;
+    --ink-850: #131d3a;
+    --ink-800: #182444;
+    --hairline: rgba(140, 168, 255, 0.14);
+    --hairline-strong: rgba(140, 168, 255, 0.24);
+    --text-hi: #f2f5ff;
+    --text-lo: #9aa6cc;
+    --text-faint: #6c7aa3;
+    --blue: #5c8dff;
+    --blue-soft: rgba(92, 141, 255, 0.14);
+    --orange: #ff9c52;
+    --orange-soft: rgba(255, 156, 82, 0.14);
+    --green: #3ddba0;
+    --green-soft: rgba(61, 219, 160, 0.13);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ink-950);
+    color: var(--text-hi);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--blue-soft); }
+
+  .col {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .band {
+    width: 100%;
+  }
+
+  a { color: var(--blue); }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    text-wrap: balance;
+    margin: 0;
+    color: var(--text-hi);
+  }
+
+  p { line-height: 1.65; color: var(--text-lo); margin: 0; }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+
+  code, .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+
+  /* ---------------- Hero ---------------- */
+  .hero {
+    background: var(--ink-950);
+    padding: 76px 0 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 56px;
+    text-align: center;
+  }
+
+  .hero .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--green-soft);
+    color: var(--green);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 26px;
+  }
+
+  .hero .eyebrow::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 6vw, 58px);
+    font-weight: 600;
+    line-height: 1.06;
+    letter-spacing: -0.01em;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 500;
+    background: linear-gradient(100deg, var(--blue), var(--orange));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .hero-sub {
+    max-width: 480px;
+    margin: 22px auto 0;
+    font-size: 17px;
+  }
+
+  .cta-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 34px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14.5px;
+    padding: 12px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    border: 1px solid transparent;
+  }
+
+  .btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+  .btn-primary {
+    background: var(--text-hi);
+    color: var(--ink-950);
+  }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+
+  .btn-ghost {
+    border-color: var(--hairline-strong);
+    color: var(--text-hi);
+  }
+  .btn-ghost:hover { border-color: var(--text-faint); }
+
+  /* ---------------- Ticker ---------------- */
+  .ticker-band {
+    background: var(--ink-900);
+    border-bottom: 1px solid var(--hairline);
+    overflow: hidden;
+    padding: 14px 0;
+  }
+
+  .ticker-track {
+    display: flex;
+    gap: 36px;
+    width: max-content;
+    animation: scroll 32s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track { animation: none; }
+  }
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .tick {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    white-space: nowrap;
+    color: var(--text-lo);
+  }
+
+  .tick b { color: var(--text-hi); font-weight: 600; }
+  .tick .up { color: var(--green); }
+  .tick .skip { color: var(--text-faint); }
+
+  /* ---------------- Section rhythm ---------------- */
+  .section {
+    padding: 64px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .section:last-of-type { border-bottom: none; }
+
+  .rule-box {
+    background: var(--ink-900);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 28px 30px;
+    margin-top: 28px;
+  }
+
+  .rule-box p.lede {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 1.5;
+    color: var(--text-hi);
+  }
+
+  .rule-box .caps {
+    margin-top: 18px;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .cap {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--text-lo);
+  }
+
+  .cap b { color: var(--orange); }
+
+  /* ---------------- Steps ---------------- */
+  .steps {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 20px;
+    padding: 30px 0;
+    border-top: 1px solid var(--hairline);
+  }
+
+  .step:first-child { border-top: none; padding-top: 8px; }
+
+  .step-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--text-faint);
+    padding-top: 4px;
+  }
+
+  .step h3 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .step p + p { margin-top: 10px; }
+
+  .step ul {
+    margin: 12px 0 0;
+    padding-left: 18px;
+    color: var(--text-lo);
+  }
+  .step li { margin-bottom: 6px; line-height: 1.55; }
+  .step li::marker { color: var(--text-faint); }
+
+  .snag {
+    margin-top: 16px;
+    background: var(--orange-soft);
+    border: 1px solid rgba(217, 100, 12, 0.28);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .snag .snag-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--orange);
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .snag p { color: var(--text-hi); font-size: 14px; }
+
+  /* ---------------- Verification band ---------------- */
+  .verify-band {
+    background: var(--ink-900);
+    padding: 60px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .verify-head { max-width: 700px; margin: 0 auto 28px; padding: 0 24px; }
+
+  .term {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .term-inner {
+    background: var(--ink-950);
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    padding: 6px 0;
+    box-shadow: var(--shadow);
+  }
+
+  .term-row {
+    display: grid;
+    grid-template-columns: 22px 1fr auto;
+    align-items: start;
+    gap: 12px;
+    padding: 13px 20px;
+    border-bottom: 1px solid var(--hairline);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+  }
+  .term-row:last-child { border-bottom: none; }
+
+  .check {
+    color: var(--green);
+    font-weight: 600;
+  }
+
+  .term-row .desc { color: var(--text-hi); line-height: 1.5; }
+  .term-row .desc span { color: var(--text-faint); }
+  .term-row .tag {
+    color: var(--text-faint);
+    font-size: 11px;
+    white-space: nowrap;
+    padding-top: 2px;
+  }
+
+  /* ---------------- Tradeoff callout ---------------- */
+  .tradeoff {
+    background: var(--blue-soft);
+    border: 1px solid rgba(47, 95, 224, 0.25);
+    border-radius: 16px;
+    padding: 30px 30px 28px;
+    margin-top: 28px;
+  }
+  .tradeoff .eyebrow { color: var(--blue); }
+  .tradeoff h3 { margin-top: 12px; font-size: 22px; }
+  .tradeoff p { margin-top: 12px; color: var(--text-hi); font-size: 15px; }
+  .tradeoff p.reason { color: var(--text-lo); font-size: 14px; margin-top: 14px; }
+
+  /* ---------------- Closing ---------------- */
+  .closing {
+    padding: 70px 0 90px;
+    text-align: center;
+  }
+  .closing h2 { font-size: clamp(28px, 4vw, 36px); font-weight: 600; }
+  .closing p { max-width: 440px; margin: 14px auto 0; }
+  .closing .cta-row { margin-top: 30px; }
+
+  .foot {
+    text-align: center;
+    padding: 28px 24px 48px;
+    font-size: 12px;
+    color: var(--text-faint);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .foot a { color: var(--text-faint); }
+
+  @media (max-width: 560px) {
+    .hero { padding-top: 56px; }
+    .hero-inner { padding-bottom: 40px; }
+    .section { padding: 48px 0; }
+    .step { grid-template-columns: 28px 1fr; gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Shipped &amp; live</span>
+    <h1>Auto Buzz Trader:<br><em>from idea to a live trade</em></h1>
+    <p class="hero-sub">A walkthrough of how a Stocktwits-trending signal became an autonomous
+      Alpaca paper-trading dashboard — built, deployed, and verified end to end in one sitting.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://auto-buzz-trader.vercel.app" target="_blank" rel="noopener">Open the live dashboard →</a>
+      <a class="btn btn-ghost" href="https://github.com/Ayomide1400/auto-buzz-trader" target="_blank" rel="noopener">View the source</a>
+    </div>
+  </div>
+</div>
+
+<div class="ticker-band band">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<div class="col">
+
+  <section class="section" id="rule">
+    <span class="eyebrow">The premise</span>
+    <div class="rule-box">
+      <p class="lede">"Buy a little when a symbol starts trending. Sell it when the buzz fades."</p>
+      <div class="caps">
+        <span class="cap"><b>$35</b> per trade</span>
+        <span class="cap"><b>5</b> open positions, max</span>
+        <span class="cap"><b>Paper only</b> — never live money</span>
+        <span class="cap"><b>1 tap</b> to pause it</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="steps">
+    <span class="eyebrow">How it got built — seven steps</span>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div>
+          <h3>Plan the guardrails before the code</h3>
+          <p>Before writing anything, the plan fixed the boundaries: paper trading only, hard-pinned to
+            Alpaca's paper API host; a $25–50 cap per trade; a 5-position ceiling; and a pause switch,
+            since nothing would be standing by to click "stop."</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">02</div>
+        <div>
+          <h3>Design the read/act loop</h3>
+          <p>React + Vite dashboard on Vercel, talking to a handful of serverless functions that keep
+            every credential server-side:</p>
+          <ul>
+            <li><code>/api/trending</code> — proxies Stocktwits' public trending endpoint</li>
+            <li><code>/api/account</code>, <code>/api/positions</code>, <code>/api/orders</code> — live Alpaca state</li>
+            <li><code>/api/cron/trade-cycle</code> — the actual buy/sell logic, triggered only by Vercel Cron</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">03</div>
+        <div>
+          <h3>Make the bot only touch what it owns</h3>
+          <p>Every order the bot places carries a <code>buzz-</code> tagged <code>client_order_id</code>.
+            The sell rule and the activity log both key off that tag — so a pre-existing position
+            already sitting in the account is never auto-sold, even if it stops trending.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">04</div>
+        <div>
+          <h3>Ship it — zero browser steps</h3>
+          <p>With <code>gh</code> and <code>vercel</code> already authenticated, the whole path from empty
+            folder to live URL ran through the CLI: repo created, project linked, secrets pushed as
+            server-only environment variables, deployed to production.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">05</div>
+        <div>
+          <h3>Hit a real platform wall — and route around it</h3>
+          <p>The pause flag was meant to live in Vercel Edge Config. Mid-build, that path hit a hard
+            stop: this account's CLI session is SSO-authenticated, and Vercel blocks minting new
+            personal API tokens from that kind of session.</p>
+          <div class="snag">
+            <span class="snag-label">Redirected, not blocked</span>
+            <p>The flag now lives in a small JSON file inside the repo, read and written live through the
+              GitHub API — same instant, no-redeploy toggle, and every pause/resume is now also a
+              timestamped commit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">06</div>
+        <div>
+          <h3>Set the cadence — on purpose, not by default</h3>
+          <p>Vercel's free Hobby plan caps cron jobs at once a day. Rather than quietly accept that or
+            silently upgrade to a paid plan, the build shipped on the daily cadence — weekdays at
+            15:00&nbsp;UTC, when the market is open — and flagged the tradeoff explicitly for a
+            deliberate call on whether Pro-tier, more-frequent checks are worth it.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">07</div>
+        <div>
+          <h3>Prove it against the real paper account</h3>
+          <p>Not "it built" — a real trade cycle, a real cap test, a real pause test. See below.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="verify-band">
+  <div class="verify-head">
+    <span class="eyebrow">What was actually verified</span>
+    <h2 style="margin-top:10px; font-size: 26px;">Run against the live paper account, not a mock</h2>
+  </div>
+  <div class="term">
+    <div class="term-inner">
+      <div class="term-row">
+        <span class="check">✓</span>
+        <span class="desc">Trending pull returned <b>30 symbols</b>; bot bought <span>PLTR, CRDO, NVDA, FCEL, MGNI</span> at $35 each — all filled</span>
+        <span class="tag">cycle #1</span>
+      </div>
+      <div class="term-row">
+        <span class="check">✓</span>
+        <span class="desc">A pre-existing <span>DELL</span> position (not opened by the bot) was left untouched, exactly as designed</span>
+        <span class="tag">tagging check</span>
+      </div>
+      <div class="term-row">
+        <span class="check">✓</span>
+        <span class="desc"><span>NLST</span> was untradable — order rejected, cycle continued cleanly instead of crashing</span>
+        <span class="tag">error isolation</span>
+      </div>
+      <div class="term-row">
+        <span class="check">✓</span>
+        <span class="desc">Cycle #2 bought <b>nothing new</b> — 5-position cap held even with the trending list unchanged</span>
+        <span class="tag">cap check</span>
+      </div>
+      <div class="term-row">
+        <span class="check">✓</span>
+        <span class="desc">Paused from the dashboard → cron cycle returned <code>skipped: true</code> → resumed and confirmed live</span>
+        <span class="tag">pause check</span>
+      </div>
+      <div class="term-row">
+        <span class="check">✓</span>
+        <span class="desc">Unsigned request to the trade endpoint → rejected with <b>401</b></span>
+        <span class="tag">auth check</span>
+      </div>
+      <div class="term-row">
+        <span class="check">✓</span>
+        <span class="desc">Full git history swept for both Alpaca and GitHub credentials — <b>none found</b></span>
+        <span class="tag">secret hygiene</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <section class="section" id="tradeoff" style="border-bottom:none;">
+    <span class="eyebrow">The one judgment call worth flagging</span>
+    <div class="tradeoff">
+      <span class="eyebrow">Cadence vs. cost</span>
+      <h3>Checks the trending list once a day, not once an hour</h3>
+      <p>A "trending" strategy is naturally intraday — but Vercel's free Hobby plan only allows one cron
+        run per day. Shipping on Hobby, at 15:00&nbsp;UTC on weekdays, was the deliberate default.</p>
+      <p class="reason">Upgrading to Vercel Pro ($20/mo) would unlock 15–60 minute checks. That's a cost
+        decision, not an engineering one — so it stayed a flag, not a default.</p>
+    </div>
+  </section>
+
+  <section class="closing">
+    <h2>It's live right now</h2>
+    <p>The dashboard, the trade log, and the pause switch are all one click away.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://auto-buzz-trader.vercel.app" target="_blank" rel="noopener">Open the live dashboard →</a>
+      <a class="btn btn-ghost" href="https://github.com/Ayomide1400/auto-buzz-trader" target="_blank" rel="noopener">View the source</a>
+    </div>
+  </section>
+</div>
+
+<div class="foot">Paper trading via Alpaca · Trending data via Stocktwits · Not investment advice</div>
+
+<script>
+  (function () {
+    var items = [
+      { sym: 'PLTR', note: 'bought · $35', cls: 'up' },
+      { sym: 'CRDO', note: 'bought · $35', cls: 'up' },
+      { sym: 'NVDA', note: 'bought · $35', cls: 'up' },
+      { sym: 'FCEL', note: 'bought · $35', cls: 'up' },
+      { sym: 'MGNI', note: 'bought · $35', cls: 'up' },
+      { sym: 'DELL', note: 'held · pre-existing', cls: '' },
+      { sym: 'NLST', note: 'skipped · untradable', cls: 'skip' },
+    ];
+    var track = document.getElementById('tickerTrack');
+    var html = items.map(function (i) {
+      return '<span class="tick"><b>' + i.sym + '</b> <span class="' + i.cls + '">' + i.note + '</span></span>';
+    }).join('');
+    track.innerHTML = html + html;
+  })();
+</script>
+</body>
+</html>
