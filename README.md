@@ -22,7 +22,9 @@ multi-tenant support, and it is **not** intended to run against a live/real-mone
   log and the sell logic both key off that tag, so only positions this bot opened are ever
   auto-sold — a pre-existing or manually-placed position in the same account is left alone.
 - Auto-trading can be paused instantly from the dashboard (top-right toggle) without a
-  redeploy — the flag lives in a Vercel Edge Config store, not in code.
+  redeploy — the flag lives in [`state/trading-status.json`](state/trading-status.json) in
+  this repo and is read/written live via the GitHub Contents API, so every pause/resume
+  is also a small, timestamped commit.
 - There's no separate trade database: the activity log and position ownership are both read
   live from Alpaca's own `/v2/orders` and `/v2/positions` endpoints.
 
@@ -49,8 +51,8 @@ npm run dev
 | `ALPACA_API_KEY_ID` / `ALPACA_API_SECRET_KEY` | Paper trading credentials |
 | `ALPACA_BASE_URL` | Always `https://paper-api.alpaca.markets` |
 | `CRON_SECRET` | Shared secret Vercel Cron sends as `Authorization: Bearer …`; the trade-cycle endpoint rejects any request without it |
-| `EDGE_CONFIG` / `VERCEL_EDGE_CONFIG_ID` | Vercel Edge Config store backing the pause/resume flag |
-| `VERCEL_API_TOKEN` | Personal Vercel API token used to write the pause flag |
+| `GITHUB_TOKEN` | Token with `repo` scope, used to read/write `state/trading-status.json` (the pause flag) |
+| `GITHUB_REPO` | `Ayomide1400/auto-buzz-trader` |
 
 ## Deployment
 
