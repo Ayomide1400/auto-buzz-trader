@@ -1,0 +1,47 @@
+:root {
+  --navy-950: #0a1128;
+  --navy-900: #0f1b3d;
+  --navy-800: #16244d;
+  --blue-700: #1d4ed8;
+  --blue-500: #3b82f6;
+  --blue-300: #93c5fd;
+  --orange-600: #ea580c;
+  --orange-500: #f97316;
+  --orange-400: #fb923c;
+  --green-500: #22c55e;
+  --red-500: #ef4444;
+  --text-primary: #eef2ff;
+  --text-muted: #93a0c4;
+  --border: rgba(147, 197, 253, 0.14);
+  --card-bg: rgba(22, 36, 77, 0.55);
+
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+  background: var(--navy-950);
+  color: var(--text-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(29, 78, 216, 0.25), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(249, 115, 22, 0.16), transparent 40%),
+    var(--navy-950);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--orange-400);
+}
+
+button {
+  font-family: inherit;
+}
