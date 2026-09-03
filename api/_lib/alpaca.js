@@ -120,7 +120,11 @@ export function placeProtectiveOco(symbol, qty, entryPrice) {
       qty,
       side: 'sell',
       type: 'limit',
-      time_in_force: 'gtc',
+      // Fractional-share orders (which is what these positions are, since
+      // the original buys were notional/dollar-amount) must be DAY orders
+      // on Alpaca — this expires unfilled at end of day, but the cron's
+      // self-heal check re-adds it every run, so coverage stays continuous.
+      time_in_force: 'day',
       order_class: 'oco',
       take_profit: { limit_price: takeProfit },
       stop_loss: { stop_price: stopLoss },
