@@ -4,5 +4,8 @@
       "path": "/api/cron/trade-cycle",
       "schedule": "0 15 * * 1-5"
     }
+  ],
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }

@@ -8,11 +8,9 @@ import {
   closePosition,
   hasOpenSellOrder,
   placeProtectiveOco,
-  MAX_OPEN_POSITIONS,
-  MIN_PRICE,
-  MIN_VOLUME,
 } from '../_lib/alpaca.js'
 import { isAutoTradingEnabled } from '../_lib/tradingStatus.js'
+import { getStrategyConfig } from '../_lib/strategyConfig.js'
 import { getTradeLog, appendTradeEvents, getOpenBuys } from '../_lib/tradeLog.js'
 import { notify } from '../_lib/notify.js'
 
@@ -94,6 +92,8 @@ export default async function handler(req, res) {
       return
     }
 
+    const config = await getStrategyConfig()
+
     const trendingRes = await fetch('https://api.stocktwits.com/api/2/trending/symbols.json')
     if (!trendingRes.ok) throw new Error(`Stocktwits fetch failed: ${trendingRes.status}`)
     const trendingData = await trendingRes.json()
@@ -113,7 +113,13 @@ export default async function handler(req, res) {
       try {
         const protectedAlready = await hasOpenSellOrder(position.symbol)
         if (!protectedAlready) {
-          await placeProtectiveOco(position.symbol, position.qty, Number(position.avg_entry_price))
+          await placeProtectiveOco(
+            position.symbol,
+            position.qty,
+            Number(position.avg_entry_price),
+            config.takeProfitPct,
+            config.stopLossPct,
+          )
           await notify(`🛡️ Protected ${position.symbol}`, 'Added a missing stop-loss/take-profit.')
         }
       } catch (err) {
@@ -158,24 +164,24 @@ export default async function handler(req, res) {
     const snapshots = candidateSymbols.length ? await getSnapshots(candidateSymbols) : {}
 
     for (const symbol of candidateSymbols) {
-      if (openBotPositions >= MAX_OPEN_POSITIONS) break
+      if (openBotPositions >= config.maxOpenPositions) break
 
       const stats = snapshotStats(snapshots[symbol])
       if (!stats?.price) {
         errors.push(`buy ${symbol}: no price data available, skipped`)
         continue
       }
-      if (stats.price < MIN_PRICE) continue
-      if (stats.volume !== null && stats.volume < MIN_VOLUME) continue
+      if (stats.price < config.minPrice) continue
+      if (stats.volume !== null && stats.volume < config.minVolume) continue
       // Buzz alone isn't a reason to buy — require the stock to actually be
       // up on the day too, so we're not chasing attention on bad news.
-      if (stats.changePct === null || stats.changePct <= 0) continue
+      if (config.requirePositiveDay && (stats.changePct === null || stats.changePct <= 0)) continue
 
-      const qty = Math.floor(35 / stats.price)
+      const qty = Math.floor(config.notionalPerTrade / stats.price)
       if (qty < 1) continue
 
       try {
-        const order = await placeBracketBuy(symbol, qty, stats.price)
+        const order = await placeBracketBuy(symbol, qty, stats.price, config.takeProfitPct, config.stopLossPct)
         bought.push(symbol)
         openBotPositions += 1
         const buyEvent = {

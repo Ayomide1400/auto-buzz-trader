@@ -71,13 +71,44 @@ export function snapshotStats(snapshot) {
   return { price, volume, changePct }
 }
 
+export async function getBars(symbol, { timeframe = '1Day', start, end, limit = 200 } = {}) {
+  const params = new URLSearchParams({ symbols: symbol, timeframe, limit: String(limit) })
+  if (start) params.set('start', start)
+  if (end) params.set('end', end)
+  const res = await alpacaFetch(DATA_BASE_URL, `/v2/stocks/bars?${params.toString()}`)
+  return res.bars?.[symbol] || []
+}
+
+export async function getNews(symbol, limit = 8) {
+  const params = new URLSearchParams({ limit: String(limit) })
+  if (symbol) params.set('symbols', symbol)
+  const res = await alpacaFetch(DATA_BASE_URL, `/v1beta1/news?${params.toString()}`)
+  return res.news || []
+}
+
+// A plain market order — for a human-initiated manual trade, distinct from
+// the automated strategy's bracket-protected buys.
+export function placeSimpleOrder(symbol, side, notional) {
+  return alpacaFetch(BASE_URL, '/v2/orders', {
+    method: 'POST',
+    body: JSON.stringify({
+      symbol,
+      side,
+      notional: String(notional),
+      type: 'market',
+      time_in_force: 'day',
+      client_order_id: `${ORDER_TAG_PREFIX}manual-${Date.now()}-${symbol}`,
+    }),
+  })
+}
+
 function orderTag(symbol) {
   return `${ORDER_TAG_PREFIX}${Date.now()}-${symbol}`
 }
 
-export function placeBracketBuy(symbol, qty, price) {
-  const takeProfit = Number((price * (1 + TAKE_PROFIT_PCT)).toFixed(2))
-  const stopLoss = Number((price * (1 - STOP_LOSS_PCT)).toFixed(2))
+export function placeBracketBuy(symbol, qty, price, takeProfitPct = TAKE_PROFIT_PCT, stopLossPct = STOP_LOSS_PCT) {
+  const takeProfit = Number((price * (1 + takeProfitPct)).toFixed(2))
+  const stopLoss = Number((price * (1 - stopLossPct)).toFixed(2))
   return alpacaFetch(BASE_URL, '/v2/orders', {
     method: 'POST',
     body: JSON.stringify({
@@ -110,9 +141,15 @@ export async function hasOpenSellOrder(symbol) {
 // resting exit orders — used both to self-heal positions bought before
 // this protection existed, and as a safety net if a bracket leg ever
 // fails to attach on entry.
-export function placeProtectiveOco(symbol, qty, entryPrice) {
-  const takeProfit = Number((entryPrice * (1 + TAKE_PROFIT_PCT)).toFixed(2))
-  const stopLoss = Number((entryPrice * (1 - STOP_LOSS_PCT)).toFixed(2))
+export function placeProtectiveOco(
+  symbol,
+  qty,
+  entryPrice,
+  takeProfitPct = TAKE_PROFIT_PCT,
+  stopLossPct = STOP_LOSS_PCT,
+) {
+  const takeProfit = Number((entryPrice * (1 + takeProfitPct)).toFixed(2))
+  const stopLoss = Number((entryPrice * (1 - stopLossPct)).toFixed(2))
   const isFractional = !Number.isInteger(Number(qty))
 
   // Alpaca only allows simple (single-leg) orders on fractional quantities
