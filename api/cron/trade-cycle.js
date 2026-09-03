@@ -172,6 +172,15 @@ export default async function handler(req, res) {
     const candidateSymbols = [...trendingSymbols].filter((s) => !heldSymbols.has(s))
     const snapshots = candidateSymbols.length ? await getSnapshots(candidateSymbols) : {}
 
+    // Stocktwits ranks candidates by chatter volume, not by how strong the
+    // move actually is — with a limited number of slots, fill them with the
+    // strongest qualifying movers first, not just whoever's most talked about.
+    candidateSymbols.sort((a, b) => {
+      const changeA = snapshotStats(snapshots[a])?.changePct ?? -Infinity
+      const changeB = snapshotStats(snapshots[b])?.changePct ?? -Infinity
+      return changeB - changeA
+    })
+
     for (const symbol of candidateSymbols) {
       if (openBotPositions >= config.maxOpenPositions) break
 

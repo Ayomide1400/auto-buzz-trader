@@ -73,15 +73,22 @@ export default function Dashboard() {
         <div className="strategy-card-title">Strategy: Buzz Momentum</div>
         <dl className="strategy-rules">
           <div>
-            <dt>Entry</dt>
+            <dt>Candidates</dt>
             <dd>
-              Symbol newly enters Stocktwits' trending list, isn't already held, and is up at least 2% on the
-              day.
+              Symbols newly appearing on Stocktwits' trending list (ranked by how much people are talking
+              about them, not by performance) that aren't already held.
             </dd>
           </div>
           <div>
+            <dt>Entry filter</dt>
+            <dd>Must be up at least 2% on the day, priced $5+, with 500k+ daily volume — buzz alone doesn't qualify.</dd>
+          </div>
+          <div>
             <dt>Position sizing</dt>
-            <dd>~$35 per position, up to 5 concurrent positions.</dd>
+            <dd>
+              ~$35 per position, up to 5 concurrent positions — filled by the strongest qualifying movers
+              first, not just whichever's most talked about.
+            </dd>
           </div>
           <div>
             <dt>Exit</dt>
