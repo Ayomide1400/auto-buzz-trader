@@ -373,6 +373,105 @@ table.activity tr:last-child td {
   margin-bottom: 18px;
 }
 
+.buzz-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buzz-right .pl-positive,
+.buzz-right .pl-negative {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.stat-footnote {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.external-tag {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 9.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 7px;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
+.reason-cell {
+  color: var(--text-muted);
+  font-size: 12.5px;
+  max-width: 260px;
+}
+
+/* ---- Performance panel ---- */
+.performance-body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.performance-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.performance-stats .stat-value {
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-wrap {
+  min-height: 140px;
+}
+
+.pl-chart {
+  width: 100%;
+  height: 140px;
+  display: block;
+}
+
+.pl-chart .chart-zero-line {
+  stroke: var(--border);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.pl-chart.positive .chart-line {
+  stroke: var(--green-500);
+}
+
+.pl-chart.positive .chart-area {
+  fill: rgba(34, 197, 94, 0.14);
+}
+
+.pl-chart.negative .chart-line {
+  stroke: var(--red-500);
+}
+
+.pl-chart.negative .chart-area {
+  fill: rgba(239, 68, 68, 0.14);
+}
+
+.pl-chart .chart-line {
+  fill: none;
+  stroke-width: 2;
+}
+
+@media (max-width: 760px) {
+  .performance-body {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 760px) {
   .stats-row {
     grid-template-columns: repeat(2, 1fr);

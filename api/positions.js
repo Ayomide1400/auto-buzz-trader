@@ -1,8 +1,8 @@
-import { getPositions } from './_lib/alpaca.js'
+import { getPositions, getBotOwnedSymbols } from './_lib/alpaca.js'
 
 export default async function handler(req, res) {
   try {
-    const positions = await getPositions()
+    const [positions, botOwnedSymbols] = await Promise.all([getPositions(), getBotOwnedSymbols()])
     res.status(200).json({
       positions: positions.map((p) => ({
         symbol: p.symbol,
@@ -12,6 +12,7 @@ export default async function handler(req, res) {
         marketValue: p.market_value,
         unrealizedPl: p.unrealized_pl,
         unrealizedPlPct: p.unrealized_plpc,
+        isBotOwned: botOwnedSymbols.has(p.symbol),
       })),
     })
   } catch (err) {
