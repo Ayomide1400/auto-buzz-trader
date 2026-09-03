@@ -100,3 +100,31 @@ export function placeBracketBuy(symbol, qty, price) {
 export function closePosition(symbol) {
   return alpacaFetch(BASE_URL, `/v2/positions/${symbol}`, { method: 'DELETE' })
 }
+
+export async function hasOpenSellOrder(symbol) {
+  const orders = await alpacaFetch(BASE_URL, `/v2/orders?status=open&symbols=${encodeURIComponent(symbol)}`)
+  return orders.some((o) => o.side === 'sell')
+}
+
+// Attaches take-profit/stop-loss to a position that doesn't already have
+// resting exit orders — used both to self-heal positions bought before
+// this protection existed, and as a safety net if a bracket leg ever
+// fails to attach on entry.
+export function placeProtectiveOco(symbol, qty, entryPrice) {
+  const takeProfit = Number((entryPrice * (1 + TAKE_PROFIT_PCT)).toFixed(2))
+  const stopLoss = Number((entryPrice * (1 - STOP_LOSS_PCT)).toFixed(2))
+  return alpacaFetch(BASE_URL, '/v2/orders', {
+    method: 'POST',
+    body: JSON.stringify({
+      symbol,
+      qty,
+      side: 'sell',
+      type: 'limit',
+      time_in_force: 'gtc',
+      order_class: 'oco',
+      take_profit: { limit_price: takeProfit },
+      stop_loss: { stop_price: stopLoss },
+      client_order_id: orderTag(symbol),
+    }),
+  })
+}

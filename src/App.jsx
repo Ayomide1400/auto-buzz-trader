@@ -189,11 +189,38 @@ export default function App() {
       </div>
 
       <div className="rule-banner">
-        <strong>The rule:</strong> when a symbol newly appears on Stocktwits' trending list and isn't already
-        held, buy roughly $35 of it with an automatic +10% take-profit and -5% stop-loss. When a held position
-        (opened by this bot) drops off the trending list, close it. Skips anything under $5/share or 500k daily
-        volume. Max 5 bot-managed positions at a time. Checked once each weekday morning.
+        <strong>The rule:</strong> when a symbol newly appears on Stocktwits' trending list, isn't already held,
+        and is up on the day (buzz alone isn't enough — it also has to be moving the right direction), buy
+        roughly $35 of it with an automatic +10% take-profit and -5% stop-loss. When a held position (opened by
+        this bot) drops off the trending list, close it. Skips anything under $5/share or 500k daily volume.
+        Max 5 bot-managed positions at a time. Checked once each weekday morning.
       </div>
+
+      <details className="risk-panel">
+        <summary>Before you'd trust this with real money — read this</summary>
+        <ul>
+          <li>
+            <strong>This trades without anyone watching.</strong> That's the entire feature, but it also means a
+            bad signal or a bug has no human in the moment to catch it before it acts — the stop-loss and
+            take-profit exist specifically to be that missing safety net.
+          </li>
+          <li>
+            <strong>"Trending" is attention, not quality.</strong> A stock can trend because something good is
+            happening, or because a crowd already piled in and the move is mostly over. The day-direction filter
+            reduces obviously bad entries, but it doesn't turn buzz into a proven edge.
+          </li>
+          <li>
+            <strong>Stop-losses limit damage, they don't prevent it.</strong> A stop set at -5% can still fill
+            below that price on a fast-moving or illiquid stock (slippage) — the actual loss on a bad trade can
+            be worse than the number on the label.
+          </li>
+          <li>
+            <strong>This is paper money and has no track record yet.</strong> Every number on this page is
+            simulated. The Performance panel exists so you can watch whether this rule actually works over real
+            time, before ever considering it with real capital — not as proof that it already does.
+          </li>
+        </ul>
+      </details>
 
       <div className="grid">
         <div className="panel">

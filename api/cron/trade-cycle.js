@@ -6,6 +6,8 @@ import {
   snapshotStats,
   placeBracketBuy,
   closePosition,
+  hasOpenSellOrder,
+  placeProtectiveOco,
   MAX_OPEN_POSITIONS,
   MIN_PRICE,
   MIN_VOLUME,
@@ -103,6 +105,22 @@ export default async function handler(req, res) {
     const reconciledEvents = await syncClosedPositions(heldSymbols)
     if (reconciledEvents.length) await appendTradeEvents(reconciledEvents)
 
+    // Self-heal: any bot-owned position with no resting exit order (e.g.
+    // bought before this protection existed, or a bracket leg that never
+    // attached) gets one now, rather than sitting exposed indefinitely.
+    for (const position of positions) {
+      if (!botOwnedSymbols.has(position.symbol)) continue
+      try {
+        const protectedAlready = await hasOpenSellOrder(position.symbol)
+        if (!protectedAlready) {
+          await placeProtectiveOco(position.symbol, position.qty, Number(position.avg_entry_price))
+          await notify(`🛡️ Protected ${position.symbol}`, 'Added a missing stop-loss/take-profit.')
+        }
+      } catch (err) {
+        errors.push(`protect ${position.symbol}: ${err.message}`)
+      }
+    }
+
     let openBotPositions = positions.filter((p) => botOwnedSymbols.has(p.symbol)).length
     const newEvents = []
 
@@ -149,6 +167,9 @@ export default async function handler(req, res) {
       }
       if (stats.price < MIN_PRICE) continue
       if (stats.volume !== null && stats.volume < MIN_VOLUME) continue
+      // Buzz alone isn't a reason to buy — require the stock to actually be
+      // up on the day too, so we're not chasing attention on bad news.
+      if (stats.changePct === null || stats.changePct <= 0) continue
 
       const qty = Math.floor(35 / stats.price)
       if (qty < 1) continue

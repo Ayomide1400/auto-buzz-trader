@@ -181,6 +181,45 @@
   color: var(--text-primary);
 }
 
+/* ---- Risk panel ---- */
+.risk-panel {
+  background: rgba(249, 115, 22, 0.06);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.risk-panel summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--orange-400);
+  list-style: none;
+}
+
+.risk-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.risk-panel summary::before {
+  content: '⚠ ';
+}
+
+.risk-panel ul {
+  margin: 14px 0 4px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.risk-panel strong {
+  color: var(--text-primary);
+}
+
 /* ---- Grid / panels ---- */
 .grid {
   display: grid;
