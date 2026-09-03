@@ -17,7 +17,7 @@ export default function StockDetail() {
   const refresh = useCallback(async () => {
     const [barsData, quoteData, newsData, positionsData, tradeLogData] = await Promise.all([
       fetchJson(`/api/bars?symbol=${symbol}`).catch(() => ({ bars: [] })),
-      fetchJson(`/api/search?symbol=${symbol}`).catch(() => null),
+      fetchJson(`/api/trending?symbol=${symbol}`).catch(() => null),
       fetchJson(`/api/news?symbol=${symbol}`).catch(() => ({ articles: [] })),
       fetchJson('/api/positions').catch(() => ({ positions: [] })),
       fetchJson('/api/trade-log').catch(() => ({ events: [] })),

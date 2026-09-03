@@ -10,7 +10,36 @@ function confidenceScore({ changePct, volume, watchlistCount }) {
   return Math.round(momentum + liquidity + buzz)
 }
 
+// Also serves single-symbol lookups (?symbol=X) for the search bar — same
+// snapshot data, different shape, and folding it in here keeps the total
+// number of serverless functions under Vercel's Hobby-plan limit of 12.
+async function handleSearch(req, res) {
+  const symbol = String(req.query.symbol || '')
+    .toUpperCase()
+    .trim()
+  if (!/^[A-Z.]{1,10}$/.test(symbol)) {
+    res.status(400).json({ error: 'Invalid symbol' })
+    return
+  }
+  try {
+    const snapshots = await getSnapshots([symbol])
+    const stats = snapshotStats(snapshots[symbol])
+    if (!stats?.price) {
+      res.status(404).json({ error: `No data found for ${symbol}` })
+      return
+    }
+    res.status(200).json({ symbol, ...stats })
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+}
+
 export default async function handler(req, res) {
+  if (req.query.symbol) {
+    await handleSearch(req, res)
+    return
+  }
+
   try {
     const upstream = await fetch('https://api.stocktwits.com/api/2/trending/symbols.json')
     if (!upstream.ok) {
