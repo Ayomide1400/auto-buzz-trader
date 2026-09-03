@@ -1,4 +1,4 @@
-import { getSnapshots, snapshotStats } from './_lib/alpaca.js'
+import { getSnapshots, snapshotStats, getMarketMovers } from './_lib/alpaca.js'
 
 // A rough 0-100 read on "how strong does this look right now" — momentum,
 // liquidity, and buzz volume combined into one number so the list is
@@ -34,9 +34,25 @@ async function handleSearch(req, res) {
   }
 }
 
+// Market-wide gainers/losers — a different lens from Stocktwits' buzz
+// ranking: this is ranked purely by price move, no chatter involved.
+async function handleMovers(req, res) {
+  try {
+    const movers = await getMarketMovers(10)
+    res.setHeader('Cache-Control', 's-maxage=55, stale-while-revalidate=30')
+    res.status(200).json(movers)
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+}
+
 export default async function handler(req, res) {
   if (req.query.symbol) {
     await handleSearch(req, res)
+    return
+  }
+  if (req.query.movers) {
+    await handleMovers(req, res)
     return
   }
 

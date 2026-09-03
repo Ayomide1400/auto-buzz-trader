@@ -81,6 +81,11 @@ export async function getBars(symbol, { timeframe = '1Day', start, end, limit = 
   return res.bars?.[symbol] || []
 }
 
+export async function getMarketMovers(limit = 10) {
+  const res = await alpacaFetch(DATA_BASE_URL, `/v1beta1/screener/stocks/movers?top=${limit}`)
+  return { gainers: res.gainers || [], losers: res.losers || [] }
+}
+
 export async function getNews(symbol, limit = 8) {
   const params = new URLSearchParams({ limit: String(limit) })
   if (symbol) params.set('symbols', symbol)

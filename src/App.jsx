@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
 import StockDetail from './pages/StockDetail'
 import Watchlist from './pages/Watchlist'
+import Market from './pages/Market'
 import History from './pages/History'
 import Settings from './pages/Settings'
 import './App.css'
@@ -14,6 +15,7 @@ export default function App() {
         <Route index element={<Dashboard />} />
         <Route path="stock/:symbol" element={<StockDetail />} />
         <Route path="watchlist" element={<Watchlist />} />
+        <Route path="market" element={<Market />} />
         <Route path="history" element={<History />} />
         <Route path="settings" element={<Settings />} />
       </Route>

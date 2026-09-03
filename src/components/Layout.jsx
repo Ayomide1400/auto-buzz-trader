@@ -76,6 +76,7 @@ export default function Layout() {
           Dashboard
         </NavLink>
         <NavLink to="/watchlist">Watchlist</NavLink>
+        <NavLink to="/market">Market</NavLink>
         <NavLink to="/history">History</NavLink>
         <NavLink to="/settings">Settings</NavLink>
       </nav>
