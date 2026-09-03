@@ -33,6 +33,44 @@ export function getOpenBuys(events) {
   return openBuysBySymbol
 }
 
+export function computeWinLossSizes(events) {
+  const sells = events.filter((e) => e.kind === 'sell')
+  const wins = sells.filter((e) => Number(e.realizedPl) > 0).map((e) => Number(e.realizedPl))
+  const losses = sells.filter((e) => Number(e.realizedPl) < 0).map((e) => Number(e.realizedPl))
+  return {
+    avgWin: wins.length ? wins.reduce((a, b) => a + b, 0) / wins.length : null,
+    avgLoss: losses.length ? losses.reduce((a, b) => a + b, 0) / losses.length : null,
+  }
+}
+
+// Standard risk-adjusted metrics from a daily equity curve — the same
+// numbers any real evaluation of a strategy would ask for, not just raw
+// P/L. Needs at least a few days of snapshots to mean anything.
+export function computeRiskMetrics(equityHistory) {
+  if (equityHistory.length < 3) return { maxDrawdownPct: null, sharpeRatio: null }
+
+  const values = equityHistory.map((s) => s.equity)
+  let peak = values[0]
+  let maxDrawdown = 0
+  for (const v of values) {
+    if (v > peak) peak = v
+    maxDrawdown = Math.max(maxDrawdown, (peak - v) / peak)
+  }
+
+  const dailyReturns = []
+  for (let i = 1; i < values.length; i++) {
+    dailyReturns.push((values[i] - values[i - 1]) / values[i - 1])
+  }
+  const mean = dailyReturns.reduce((a, b) => a + b, 0) / dailyReturns.length
+  const variance = dailyReturns.reduce((a, b) => a + (b - mean) ** 2, 0) / dailyReturns.length
+  const stdev = Math.sqrt(variance)
+
+  return {
+    maxDrawdownPct: maxDrawdown,
+    sharpeRatio: stdev > 0 ? (mean / stdev) * Math.sqrt(252) : null,
+  }
+}
+
 export function summarize(events) {
   const closed = events.filter((e) => e.kind === 'sell')
   const wins = closed.filter((e) => Number(e.realizedPl) > 0).length

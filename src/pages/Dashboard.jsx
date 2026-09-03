@@ -198,6 +198,31 @@ export default function Dashboard() {
                 </div>
               </div>
             )}
+            <div className="stat-card">
+              <div className="stat-label">Sharpe ratio</div>
+              <div className="stat-value">
+                {summary?.sharpeRatio === null || summary?.sharpeRatio === undefined
+                  ? '—'
+                  : summary.sharpeRatio.toFixed(2)}
+              </div>
+              <div className="stat-footnote">Needs a few days of history</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-label">Max drawdown</div>
+              <div className="stat-value pl-negative">
+                {summary?.maxDrawdownPct === null || summary?.maxDrawdownPct === undefined
+                  ? '—'
+                  : fmtPct(summary.maxDrawdownPct)}
+              </div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-label">Avg win / avg loss</div>
+              <div className="stat-value">
+                <span className="pl-positive">{summary?.avgWin ? fmtSignedMoney(summary.avgWin) : '—'}</span>
+                {' / '}
+                <span className="pl-negative">{summary?.avgLoss ? fmtSignedMoney(summary.avgLoss) : '—'}</span>
+              </div>
+            </div>
             <div className="chart-legend">
               <span className="legend-swatch strategy" /> This strategy
               {chartLines && (

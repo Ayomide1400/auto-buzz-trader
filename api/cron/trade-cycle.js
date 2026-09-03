@@ -1,4 +1,5 @@
 import {
+  getAccount,
   getPositions,
   getOrders,
   getBotOwnedSymbols,
@@ -12,6 +13,7 @@ import {
 import { isAutoTradingEnabled } from '../_lib/tradingStatus.js'
 import { getStrategyConfig } from '../_lib/strategyConfig.js'
 import { getTradeLog, appendTradeEvents, getOpenBuys } from '../_lib/tradeLog.js'
+import { appendEquitySnapshot } from '../_lib/equityHistory.js'
 import { notify } from '../_lib/notify.js'
 
 function isAuthorized(req) {
@@ -86,6 +88,13 @@ export default async function handler(req, res) {
   const errors = []
 
   try {
+    try {
+      const account = await getAccount()
+      await appendEquitySnapshot(account.equity)
+    } catch (err) {
+      errors.push(`equity snapshot: ${err.message}`)
+    }
+
     const enabled = await isAutoTradingEnabled()
     if (!enabled) {
       res.status(200).json({ skipped: true, reason: 'paused', bought, sold, errors })
