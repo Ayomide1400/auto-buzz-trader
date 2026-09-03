@@ -1,0 +1,59 @@
+{
+  "events": [
+    {
+      "id": "buy-backfill-64898af7-f75d-434a-ba3e-fc9e5685601b",
+      "kind": "buy",
+      "symbol": "AVGO",
+      "qty": 0.100858987,
+      "price": 346.92,
+      "notional": 34.98999977004,
+      "reason": "Newly appeared on the trending list (backfilled from real order history)",
+      "timestamp": "2026-09-03T15:06:58.256009958Z",
+      "orderId": "64898af7-f75d-434a-ba3e-fc9e5685601b"
+    },
+    {
+      "id": "buy-backfill-cef52a11-f3d2-4005-be0a-2812b5bf454b",
+      "kind": "buy",
+      "symbol": "CRCL",
+      "qty": 0.348936934,
+      "price": 100.276,
+      "notional": 34.989999993784,
+      "reason": "Newly appeared on the trending list (backfilled from real order history)",
+      "timestamp": "2026-09-03T15:06:58.320274828Z",
+      "orderId": "cef52a11-f3d2-4005-be0a-2812b5bf454b"
+    },
+    {
+      "id": "buy-backfill-94b4b3ff-3d95-4720-866a-568bf37eae4b",
+      "kind": "buy",
+      "symbol": "HOOD",
+      "qty": 0.283926774,
+      "price": 123.236,
+      "notional": 34.989999920664,
+      "reason": "Newly appeared on the trending list (backfilled from real order history)",
+      "timestamp": "2026-09-03T15:06:58.265151988Z",
+      "orderId": "94b4b3ff-3d95-4720-866a-568bf37eae4b"
+    },
+    {
+      "id": "buy-backfill-a1c475cd-adab-478e-b904-05c97e514690",
+      "kind": "buy",
+      "symbol": "HPE",
+      "qty": 0.724640682,
+      "price": 48.286,
+      "notional": 34.989999971052,
+      "reason": "Newly appeared on the trending list (backfilled from real order history)",
+      "timestamp": "2026-09-03T15:06:58.298898608Z",
+      "orderId": "a1c475cd-adab-478e-b904-05c97e514690"
+    },
+    {
+      "id": "buy-backfill-741be526-6c5c-47f8-8f07-4996e802978c",
+      "kind": "buy",
+      "symbol": "PLTR",
+      "qty": 0.210461101,
+      "price": 166.254,
+      "notional": 34.989999885654,
+      "reason": "Newly appeared on the trending list (backfilled from real order history)",
+      "timestamp": "2026-09-02T16:19:21.002601Z",
+      "orderId": "741be526-6c5c-47f8-8f07-4996e802978c"
+    }
+  ]
+}
