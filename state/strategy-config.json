@@ -1,0 +1,9 @@
+{
+  "notionalPerTrade": 40,
+  "maxOpenPositions": 5,
+  "takeProfitPct": 0.1,
+  "stopLossPct": 0.05,
+  "minPrice": 5,
+  "minVolume": 500000,
+  "requirePositiveDay": true
+}
