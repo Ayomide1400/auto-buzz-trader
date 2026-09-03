@@ -69,11 +69,35 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="rule-banner">
-        <strong>The rule:</strong> when a symbol newly appears on Stocktwits' trending list, isn't already held,
-        and is up on the day, buy roughly $35 of it with an automatic take-profit and stop-loss. When a held
-        position (opened by this bot) drops off the trending list, close it. Tune every number on the{' '}
-        <Link to="/settings">Settings page</Link> — nothing here is hardcoded anymore.
+      <div className="strategy-card">
+        <div className="strategy-card-title">Strategy: Buzz Momentum</div>
+        <dl className="strategy-rules">
+          <div>
+            <dt>Entry</dt>
+            <dd>
+              Symbol newly enters Stocktwits' trending list, isn't already held, and is up at least 2% on the
+              day.
+            </dd>
+          </div>
+          <div>
+            <dt>Position sizing</dt>
+            <dd>~$35 per position, up to 5 concurrent positions.</dd>
+          </div>
+          <div>
+            <dt>Exit</dt>
+            <dd>
+              Automatic take-profit or stop-loss on every entry. Any position still open when its symbol drops
+              off the trending list is closed regardless.
+            </dd>
+          </div>
+          <div>
+            <dt>Filters</dt>
+            <dd>Skips anything under $5/share or 500k daily volume.</dd>
+          </div>
+        </dl>
+        <p className="strategy-tune">
+          <Link to="/settings">Every number here is adjustable in Settings</Link> — nothing is hardcoded.
+        </p>
       </div>
 
       <details className="risk-panel">
@@ -84,8 +108,9 @@ export default function Dashboard() {
             specifically to be the missing safety net for that.
           </li>
           <li>
-            <strong>"Trending" is attention, not quality.</strong> The day-direction filter reduces obviously
-            bad entries, but it doesn't turn buzz into a proven edge.
+            <strong>"Trending" is attention, not quality.</strong> The 2% momentum filter rules out obviously
+            weak entries, but it doesn't turn buzz into a proven edge — professional use of sentiment data
+            treats it as a confirming signal alongside other conditions, not a standalone reason to buy.
           </li>
           <li>
             <strong>Stop-losses limit damage, they don't prevent it.</strong> A fast-moving or illiquid stock

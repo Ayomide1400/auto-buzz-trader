@@ -181,6 +181,67 @@
   color: var(--text-primary);
 }
 
+/* ---- Strategy card ---- */
+.strategy-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+}
+
+.strategy-card-title {
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--orange-400);
+  margin-bottom: 14px;
+}
+
+.strategy-rules {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px 16px;
+  margin: 0;
+}
+
+.strategy-rules > div {
+  display: contents;
+}
+
+.strategy-rules dt {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  padding-top: 1px;
+}
+
+.strategy-rules dd {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.strategy-tune {
+  margin: 14px 0 0;
+  font-size: 12px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+@media (max-width: 620px) {
+  .strategy-rules {
+    grid-template-columns: 1fr;
+  }
+  .strategy-rules dt {
+    margin-top: 6px;
+  }
+}
+
 /* ---- Risk panel ---- */
 .risk-panel {
   background: rgba(249, 115, 22, 0.06);

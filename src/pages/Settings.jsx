@@ -8,6 +8,14 @@ const FIELDS = [
   { key: 'stopLossPct', label: 'Stop-loss limit', min: 0.01, max: 0.3, step: 0.01, format: (v) => fmtPct(v) },
   { key: 'minPrice', label: 'Minimum share price', min: 1, max: 100, step: 1, format: (v) => `$${v}` },
   { key: 'minVolume', label: 'Minimum daily volume', min: 0, max: 5_000_000, step: 50_000, format: (v) => v.toLocaleString() },
+  {
+    key: 'minDayChangePct',
+    label: 'Minimum momentum to enter (day change)',
+    min: 0,
+    max: 0.15,
+    step: 0.005,
+    format: (v) => fmtPct(v),
+  },
 ]
 
 export default function Settings() {
@@ -68,18 +76,6 @@ export default function Settings() {
             />
           </div>
         ))}
-
-        <label className="settings-toggle-row">
-          <input
-            type="checkbox"
-            checked={config.requirePositiveDay}
-            onChange={(e) => {
-              setConfig((c) => ({ ...c, requirePositiveDay: e.target.checked }))
-              setSaved(false)
-            }}
-          />
-          Only buy stocks that are also up on the day (not just trending)
-        </label>
       </div>
 
       <button className="save-btn" onClick={handleSave} disabled={saving}>

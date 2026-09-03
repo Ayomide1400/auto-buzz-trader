@@ -182,9 +182,9 @@ export default async function handler(req, res) {
       }
       if (stats.price < config.minPrice) continue
       if (stats.volume !== null && stats.volume < config.minVolume) continue
-      // Buzz alone isn't a reason to buy — require the stock to actually be
-      // up on the day too, so we're not chasing attention on bad news.
-      if (config.requirePositiveDay && (stats.changePct === null || stats.changePct <= 0)) continue
+      // Buzz alone isn't a reason to buy — require real momentum, not just
+      // a technicality pass (">0%" would let a +0.01% day through).
+      if (stats.changePct === null || stats.changePct < config.minDayChangePct) continue
 
       const qty = Math.floor(config.notionalPerTrade / stats.price)
       if (qty < 1) continue

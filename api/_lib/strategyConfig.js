@@ -10,7 +10,10 @@ export const DEFAULTS = {
   stopLossPct: STOP_LOSS_PCT,
   minPrice: MIN_PRICE,
   minVolume: MIN_VOLUME,
-  requirePositiveDay: true,
+  // A flat ">0%" pass was a rubber stamp, not real momentum confirmation —
+  // 2% is a genuine (if still simple) threshold a trader would recognize
+  // as an actual condition rather than a technicality.
+  minDayChangePct: 0.02,
 }
 
 const BOUNDS = {
@@ -20,6 +23,7 @@ const BOUNDS = {
   stopLossPct: [0.01, 0.3],
   minPrice: [1, 100],
   minVolume: [0, 10_000_000],
+  minDayChangePct: [0, 0.15],
 }
 
 export async function getStrategyConfig() {
@@ -36,9 +40,6 @@ export async function setStrategyConfig(partial) {
     const num = Number(partial[key])
     if (!Number.isFinite(num)) continue
     next[key] = Math.min(max, Math.max(min, num))
-  }
-  if (typeof partial.requirePositiveDay === 'boolean') {
-    next.requirePositiveDay = partial.requirePositiveDay
   }
 
   await writeJson(STATE_PATH, next, 'chore: update strategy settings')
