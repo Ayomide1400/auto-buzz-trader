@@ -72,7 +72,9 @@ export function snapshotStats(snapshot) {
 }
 
 export async function getBars(symbol, { timeframe = '1Day', start, end, limit = 200 } = {}) {
-  const params = new URLSearchParams({ symbols: symbol, timeframe, limit: String(limit) })
+  // Paper/free accounts only have entitlement to the IEX feed — the
+  // default (SIP) feed 403s on recent data without an extra subscription.
+  const params = new URLSearchParams({ symbols: symbol, timeframe, limit: String(limit), feed: 'iex' })
   if (start) params.set('start', start)
   if (end) params.set('end', end)
   const res = await alpacaFetch(DATA_BASE_URL, `/v2/stocks/bars?${params.toString()}`)
