@@ -113,6 +113,28 @@ export async function hasOpenSellOrder(symbol) {
 export function placeProtectiveOco(symbol, qty, entryPrice) {
   const takeProfit = Number((entryPrice * (1 + TAKE_PROFIT_PCT)).toFixed(2))
   const stopLoss = Number((entryPrice * (1 - STOP_LOSS_PCT)).toFixed(2))
+  const isFractional = !Number.isInteger(Number(qty))
+
+  // Alpaca only allows simple (single-leg) orders on fractional quantities
+  // — no OCO/bracket/OTO. Positions bought via a notional/dollar amount
+  // (all pre-bracket legacy buys) are fractional, so they can only get a
+  // stop-loss-only order: downside is still capped, it just can't also
+  // carry a take-profit leg the way a whole-share buy can.
+  if (isFractional) {
+    return alpacaFetch(BASE_URL, '/v2/orders', {
+      method: 'POST',
+      body: JSON.stringify({
+        symbol,
+        qty,
+        side: 'sell',
+        type: 'stop',
+        stop_price: stopLoss,
+        time_in_force: 'day',
+        client_order_id: orderTag(symbol),
+      }),
+    })
+  }
+
   return alpacaFetch(BASE_URL, '/v2/orders', {
     method: 'POST',
     body: JSON.stringify({
@@ -120,10 +142,6 @@ export function placeProtectiveOco(symbol, qty, entryPrice) {
       qty,
       side: 'sell',
       type: 'limit',
-      // Fractional-share orders (which is what these positions are, since
-      // the original buys were notional/dollar-amount) must be DAY orders
-      // on Alpaca — this expires unfilled at end of day, but the cron's
-      // self-heal check re-adds it every run, so coverage stays continuous.
       time_in_force: 'day',
       order_class: 'oco',
       take_profit: { limit_price: takeProfit },
