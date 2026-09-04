@@ -83,7 +83,7 @@ export default function StockDetail() {
           </div>
           <p className="panel-note">
             This bypasses the automated strategy entirely — a plain market order, capped at $200, for when you
-            want to act yourself instead of waiting on the daily cycle.
+            want to act yourself instead of waiting on the next scheduled cycle.
           </p>
           <div className="trade-form">
             <span className="dollar-input">

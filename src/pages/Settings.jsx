@@ -55,8 +55,8 @@ export default function Settings() {
         <h2>Strategy settings</h2>
       </div>
       <p className="panel-note">
-        No code to edit — every threshold the daily cron uses lives here. Changes apply on the next scheduled
-        run.
+        No code to edit — every threshold the trading cycle uses lives here (it runs every 15 minutes during
+        market hours). Changes apply on the next run.
       </p>
 
       <div className="settings-grid">

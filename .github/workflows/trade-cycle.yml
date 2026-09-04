@@ -1,0 +1,20 @@
+name: Trade Cycle
+
+on:
+  schedule:
+    # Every 15 minutes, 13:00-21:00 UTC, Mon-Fri — covers US market hours
+    # (9:30am-4pm ET) across both EST and EDT. The endpoint itself no-ops
+    # when the market is closed or auto-trading is paused, so it's safe
+    # to trigger on a schedule wider than actual market hours.
+    - cron: "*/15 13-21 * * 1-5"
+  workflow_dispatch: {}
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger trade cycle
+        run: |
+          curl -sf -X POST \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            https://auto-buzz-trader.vercel.app/api/cron/trade-cycle
