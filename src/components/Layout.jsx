@@ -1,15 +1,20 @@
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { fetchJson } from '../lib/api'
+import Ticker from './Ticker'
 
 export default function Layout() {
   const [enabled, setEnabled] = useState(null)
   const [toggling, setToggling] = useState(false)
   const [query, setQuery] = useState('')
+  const [marketOpen, setMarketOpen] = useState(null)
   const navigate = useNavigate()
 
   useEffect(() => {
     fetchJson('/api/trading-status').then((d) => setEnabled(d.enabled))
+    fetchJson('/api/account')
+      .then((d) => setMarketOpen(d.marketOpen))
+      .catch(() => setMarketOpen(null))
   }, [])
 
   async function handleToggle() {
@@ -37,6 +42,8 @@ export default function Layout() {
 
   return (
     <div className="app">
+      <Ticker />
+
       <header className="header">
         <div className="brand">
           <div className="brand-mark">AB</div>
@@ -56,6 +63,11 @@ export default function Layout() {
         </form>
 
         <div className="header-right">
+          {marketOpen !== null && (
+            <span className={`market-badge ${marketOpen ? 'open' : 'closed'}`}>
+              Market {marketOpen ? 'Open' : 'Closed'}
+            </span>
+          )}
           <span className="paper-badge">Paper trading only</span>
           <div className="toggle-wrap">
             <span className={`toggle-label ${enabled ? 'active' : 'paused'}`}>

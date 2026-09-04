@@ -31,6 +31,10 @@ export function getAccount() {
   return alpacaFetch(BASE_URL, '/v2/account')
 }
 
+export function getMarketClock() {
+  return alpacaFetch(BASE_URL, '/v2/clock')
+}
+
 export function getPositions() {
   return alpacaFetch(BASE_URL, '/v2/positions')
 }
@@ -67,8 +71,10 @@ export function snapshotStats(snapshot) {
   const price = snapshot.latestTrade?.p ?? snapshot.dailyBar?.c ?? null
   const volume = snapshot.dailyBar?.v ?? null
   const prevClose = snapshot.prevDailyBar?.c ?? null
+  const todayOpen = snapshot.dailyBar?.o ?? null
   const changePct = price && prevClose ? (price - prevClose) / prevClose : null
-  return { price, volume, changePct }
+  const changeSinceOpenPct = price && todayOpen ? (price - todayOpen) / todayOpen : null
+  return { price, volume, changePct, changeSinceOpenPct, todayOpen }
 }
 
 export async function getBars(symbol, { timeframe = '1Day', start, end, limit = 200 } = {}) {

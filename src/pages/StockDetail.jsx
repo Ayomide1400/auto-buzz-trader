@@ -60,6 +60,11 @@ export default function StockDetail() {
         {quote?.price && (
           <div className={Number(quote.changePct) >= 0 ? 'pl-positive' : 'pl-negative'}>
             {fmtMoney(quote.price)} <span>{fmtSignedPct(quote.changePct)}</span>
+            {quote.changeSinceOpenPct !== null && (
+              <span className="since-open">
+                ({fmtSignedPct(quote.changeSinceOpenPct)} since open)
+              </span>
+            )}
           </div>
         )}
       </div>

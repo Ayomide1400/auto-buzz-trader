@@ -1,4 +1,6 @@
-import { getSnapshots, snapshotStats, getMarketMovers } from './_lib/alpaca.js'
+import { getSnapshots, snapshotStats, getMarketMovers, getPositions } from './_lib/alpaca.js'
+
+const INDEX_SYMBOLS = ['SPY', 'QQQ', 'DIA', 'IWM']
 
 // A rough 0-100 read on "how strong does this look right now" — momentum,
 // liquidity, and buzz volume combined into one number so the list is
@@ -46,6 +48,26 @@ async function handleMovers(req, res) {
   }
 }
 
+// A live-ticker strip: major indices plus whatever's currently held, so
+// the header shows real market movement, not just the bot's own signal.
+async function handleTicker(req, res) {
+  try {
+    const positions = await getPositions().catch(() => [])
+    const symbols = [...new Set([...INDEX_SYMBOLS, ...positions.map((p) => p.symbol)])]
+    const snapshots = await getSnapshots(symbols)
+    const items = symbols
+      .map((symbol) => {
+        const stats = snapshotStats(snapshots[symbol])
+        return { symbol, price: stats?.price ?? null, changePct: stats?.changePct ?? null }
+      })
+      .filter((i) => i.price !== null)
+    res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate=15')
+    res.status(200).json({ items })
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+}
+
 export default async function handler(req, res) {
   if (req.query.symbol) {
     await handleSearch(req, res)
@@ -53,6 +75,10 @@ export default async function handler(req, res) {
   }
   if (req.query.movers) {
     await handleMovers(req, res)
+    return
+  }
+  if (req.query.ticker) {
+    await handleTicker(req, res)
     return
   }
 
