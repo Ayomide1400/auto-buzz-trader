@@ -157,6 +157,17 @@ export async function hasOpenSellOrder(symbol) {
   return orders.some((o) => o.side === 'sell')
 }
 
+// A resting protective stop/OCO order holds its shares as "held_for_orders"
+// — closePosition() can't sell them until that hold is released, so this
+// must run first when exiting a position for a reason other than the
+// order itself triggering (e.g. it dropped off the trending list).
+export async function cancelOpenOrders(symbol) {
+  const orders = await alpacaFetch(BASE_URL, `/v2/orders?status=open&symbols=${encodeURIComponent(symbol)}`)
+  await Promise.all(
+    orders.map((o) => alpacaFetch(BASE_URL, `/v2/orders/${o.id}`, { method: 'DELETE' }).catch(() => null)),
+  )
+}
+
 // Attaches take-profit/stop-loss to a position that doesn't already have
 // resting exit orders — used both to self-heal positions bought before
 // this protection existed, and as a safety net if a bracket leg ever

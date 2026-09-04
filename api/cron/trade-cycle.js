@@ -7,6 +7,7 @@ import {
   snapshotStats,
   placeBracketBuy,
   closePosition,
+  cancelOpenOrders,
   hasOpenSellOrder,
   placeProtectiveOco,
 } from '../_lib/alpaca.js'
@@ -145,6 +146,7 @@ export default async function handler(req, res) {
       if (trendingSymbols.has(position.symbol)) continue
       try {
         const realizedPl = Number(position.unrealized_pl)
+        await cancelOpenOrders(position.symbol)
         await closePosition(position.symbol)
         sold.push(position.symbol)
         openBotPositions -= 1
