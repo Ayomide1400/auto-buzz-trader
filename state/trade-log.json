@@ -106,6 +106,42 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-04T00:53:26.402Z",
       "orderId": "40631513-3988-491a-9747-3e4ffe30a5a9"
+    },
+    {
+      "id": "sell-1788540539299-AVGO-873192",
+      "kind": "sell",
+      "symbol": "AVGO",
+      "qty": 0.100858987,
+      "price": 359.76,
+      "realizedPl": 1.3,
+      "reason": "Position closed",
+      "timestamp": "2026-09-04T13:30:00.864267Z",
+      "orderId": "515ca358-ccef-4440-ae60-7235be66912d",
+      "matchedBuyId": "buy-backfill-64898af7-f75d-434a-ba3e-fc9e5685601b"
+    },
+    {
+      "id": "sell-1788540539310-HPE-862476",
+      "kind": "sell",
+      "symbol": "HPE",
+      "qty": 0.724640682,
+      "price": 53.71,
+      "realizedPl": 3.93,
+      "reason": "Position closed",
+      "timestamp": "2026-09-04T13:30:12.025969Z",
+      "orderId": "728d1eaa-fb0d-4824-a160-d8261040bb05",
+      "matchedBuyId": "buy-backfill-a1c475cd-adab-478e-b904-05c97e514690"
+    },
+    {
+      "id": "sell-1788540539323-PLTR-625668",
+      "kind": "sell",
+      "symbol": "PLTR",
+      "qty": 0.210461101,
+      "price": 180,
+      "realizedPl": 2.89,
+      "reason": "Position closed",
+      "timestamp": "2026-09-04T13:30:01.332427Z",
+      "orderId": "4bbcc4ea-459d-405c-b1b7-e4b8513c0236",
+      "matchedBuyId": "buy-backfill-741be526-6c5c-47f8-8f07-4996e802978c"
     }
   ]
 }
