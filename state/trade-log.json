@@ -54,6 +54,58 @@
       "reason": "Newly appeared on the trending list (backfilled from real order history)",
       "timestamp": "2026-09-02T16:19:21.002601Z",
       "orderId": "741be526-6c5c-47f8-8f07-4996e802978c"
+    },
+    {
+      "id": "sell-1788483206290-AVGO-74306",
+      "kind": "sell",
+      "symbol": "AVGO",
+      "qty": 0.100858987,
+      "price": 357.57,
+      "realizedPl": 1.074148,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-04T00:53:26.290Z"
+    },
+    {
+      "id": "sell-1788483206320-HPE-667255",
+      "kind": "sell",
+      "symbol": "HPE",
+      "qty": 0.724640682,
+      "price": 53.82,
+      "realizedPl": 4.010162,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-04T00:53:26.320Z"
+    },
+    {
+      "id": "sell-1788483206348-PLTR-721200",
+      "kind": "sell",
+      "symbol": "PLTR",
+      "qty": 0.210461101,
+      "price": 182.42,
+      "realizedPl": 3.402314,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-04T00:53:26.348Z"
+    },
+    {
+      "id": "buy-1788483206389-SMMT-208298",
+      "kind": "buy",
+      "symbol": "SMMT",
+      "qty": 2,
+      "price": 17.12,
+      "notional": 34.24,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-04T00:53:26.389Z",
+      "orderId": "3da19cec-db68-40f4-b6d1-7addcb50c89a"
+    },
+    {
+      "id": "buy-1788483206402-SOFI-281276",
+      "kind": "buy",
+      "symbol": "SOFI",
+      "qty": 1,
+      "price": 18.495,
+      "notional": 18.5,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-04T00:53:26.402Z",
+      "orderId": "40631513-3988-491a-9747-3e4ffe30a5a9"
     }
   ]
 }
