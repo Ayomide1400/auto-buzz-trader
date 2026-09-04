@@ -104,6 +104,8 @@ export default function Dashboard() {
         </dl>
         <p className="strategy-tune">
           <Link to="/settings">Every number here is adjustable in Settings</Link> — nothing is hardcoded.
+          Want to act yourself instead of waiting on the strategy? Open any stock's page (via search or the
+          lists below) for a manual buy/sell that bypasses this entirely.
         </p>
       </div>
 
