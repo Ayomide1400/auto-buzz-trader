@@ -230,6 +230,17 @@
       "timestamp": "2026-09-04T19:22:54.748233406Z",
       "orderId": "cc8fc6ac-7676-4b57-877c-62eadf5d7ae9",
       "matchedBuyId": "buy-backfill-cef52a11-f3d2-4005-be0a-2812b5bf454b"
+    },
+    {
+      "id": "buy-1788564281648-BTDR-82014",
+      "kind": "buy",
+      "symbol": "BTDR",
+      "qty": 2,
+      "price": 12.38,
+      "notional": 24.76,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-04T23:24:41.648Z",
+      "orderId": "a9bf0541-0e25-42de-836f-f2178bc1fe79"
     }
   ]
 }
