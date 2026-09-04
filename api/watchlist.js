@@ -25,6 +25,14 @@ export default async function handler(req, res) {
     }
 
     if (req.method === 'POST') {
+      // Format-valid isn't the same as real — "NVIDIA" and "MICROSFT" both
+      // pass the regex but aren't tickers. Confirm Alpaca actually has a
+      // price for it before adding.
+      const snapshots = await getSnapshots([symbol])
+      if (!snapshotStats(snapshots[symbol])?.price) {
+        res.status(400).json({ error: `"${symbol}" isn't a recognized ticker` })
+        return
+      }
       const symbols = await addToWatchlist(symbol)
       res.status(200).json({ symbols })
       return
