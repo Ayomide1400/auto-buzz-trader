@@ -1,4 +1,5 @@
-import { getSnapshots, snapshotStats, getMarketMovers, getPositions } from './_lib/alpaca.js'
+import { getSnapshots, snapshotStats, getMarketMovers, getPositions, getAssets } from './_lib/alpaca.js'
+import { getWatchlist } from './_lib/watchlist.js'
 
 const INDEX_SYMBOLS = ['SPY', 'QQQ', 'DIA', 'IWM']
 
@@ -52,8 +53,11 @@ async function handleMovers(req, res) {
 // the header shows real market movement, not just the bot's own signal.
 async function handleTicker(req, res) {
   try {
-    const positions = await getPositions().catch(() => [])
-    const symbols = [...new Set([...INDEX_SYMBOLS, ...positions.map((p) => p.symbol)])]
+    const [positions, watchlist] = await Promise.all([
+      getPositions().catch(() => []),
+      getWatchlist().catch(() => []),
+    ])
+    const symbols = [...new Set([...INDEX_SYMBOLS, ...positions.map((p) => p.symbol), ...watchlist])]
     const snapshots = await getSnapshots(symbols)
     const items = symbols
       .map((symbol) => {
@@ -63,6 +67,34 @@ async function handleTicker(req, res) {
       .filter((i) => i.price !== null)
     res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate=15')
     res.status(200).json({ items })
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+}
+
+// Resolves free-text ("nvidia", "microsoft") to a real ticker by matching
+// against the full list of tradable US equities — symbol first, then
+// company name — so search works the way people actually type, not just
+// when they already know the ticker.
+async function handleResolve(req, res) {
+  const raw = String(req.query.resolve || '').trim()
+  if (!raw) {
+    res.status(400).json({ error: 'Missing search text' })
+    return
+  }
+  try {
+    const assets = await getAssets()
+    const upper = raw.toUpperCase()
+    let match = assets.find((a) => a.symbol === upper)
+    if (!match) {
+      const needle = raw.toLowerCase()
+      match = assets.find((a) => a.name?.toLowerCase().includes(needle))
+    }
+    if (!match) {
+      res.status(404).json({ error: `No ticker found matching "${raw}"` })
+      return
+    }
+    res.status(200).json({ symbol: match.symbol, name: match.name })
   } catch (err) {
     res.status(500).json({ error: err.message })
   }
@@ -79,6 +111,10 @@ export default async function handler(req, res) {
   }
   if (req.query.ticker) {
     await handleTicker(req, res)
+    return
+  }
+  if (req.query.resolve) {
+    await handleResolve(req, res)
     return
   }
 

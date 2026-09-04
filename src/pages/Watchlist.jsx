@@ -18,10 +18,20 @@ export default function Watchlist() {
 
   async function handleAdd(e) {
     e.preventDefault()
-    const symbol = input.trim().toUpperCase()
-    if (!symbol) return
+    const text = input.trim()
+    if (!text) return
     setError('')
     try {
+      // Resolve company names ("Nvidia") to a real ticker first — falls
+      // back to the raw text (uppercased) if resolution fails, so a
+      // literal ticker still works even if this lookup has a problem.
+      let symbol = text.toUpperCase()
+      try {
+        const resolved = await fetchJson(`/api/trending?resolve=${encodeURIComponent(text)}`)
+        symbol = resolved.symbol
+      } catch {
+        // fall through with the raw uppercased text
+      }
       await fetchJson('/api/watchlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

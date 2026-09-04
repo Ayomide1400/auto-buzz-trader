@@ -1007,6 +1007,48 @@ button:disabled {
   color: var(--text-primary);
 }
 
+/* ---- Heatmap ---- */
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+  gap: 8px;
+}
+
+.heat-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 14px 6px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: ui-monospace, monospace;
+}
+
+.heat-symbol {
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+}
+
+.heat-pct {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.heat-neutral { background: #3a4568; }
+.heat-pos-0 { background: #1f5c3c; }
+.heat-pos-1 { background: #1c6e42; }
+.heat-pos-2 { background: #178048; }
+.heat-pos-3 { background: #0f9650; }
+.heat-pos-4 { background: #06b95d; }
+.heat-neg-0 { background: #5c2323; }
+.heat-neg-1 { background: #732121; }
+.heat-neg-2 { background: #8f1e1e; }
+.heat-neg-3 { background: #ab1a1a; }
+.heat-neg-4 { background: #d21414; }
+
 /* ---- Pie chart ---- */
 .pie-wrap {
   display: flex;

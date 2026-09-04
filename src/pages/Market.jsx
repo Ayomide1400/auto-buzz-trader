@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { fetchJson, fmtDate, fmtSignedPct } from '../lib/api'
+import Heatmap from '../components/Heatmap'
 
 function MoverRow({ m }) {
   const changePct = Number(m.percent_change) / 100
@@ -15,14 +16,17 @@ function MoverRow({ m }) {
 export default function Market() {
   const [movers, setMovers] = useState({ gainers: [], losers: [] })
   const [news, setNews] = useState([])
+  const [heatmapItems, setHeatmapItems] = useState([])
 
   const refresh = useCallback(async () => {
-    const [moversData, newsData] = await Promise.all([
+    const [moversData, newsData, tickerData] = await Promise.all([
       fetchJson('/api/trending?movers=1').catch(() => ({ gainers: [], losers: [] })),
       fetchJson('/api/news').catch(() => ({ articles: [] })),
+      fetchJson('/api/trending?ticker=1').catch(() => ({ items: [] })),
     ])
     setMovers(moversData)
     setNews(newsData.articles || [])
+    setHeatmapItems(tickerData.items || [])
   }, [])
 
   useEffect(() => {
@@ -36,6 +40,14 @@ export default function Market() {
         from the Dashboard's Stocktwits buzz list. It's not from The Wall Street Journal or a paid provider,
         and it's not analyst predictions — those need a subscription this project doesn't have. This is real,
         free, live market data, just not that specific source.
+      </div>
+
+      <div className="panel panel-full">
+        <div className="panel-title">
+          <h2>Your heatmap</h2>
+        </div>
+        <p className="panel-note">Indices, your holdings, and your watchlist — colored by today's move.</p>
+        <Heatmap items={heatmapItems} />
       </div>
 
       <div className="grid">

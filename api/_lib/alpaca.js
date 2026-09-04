@@ -35,6 +35,13 @@ export function getMarketClock() {
   return alpacaFetch(BASE_URL, '/v2/clock')
 }
 
+// Full list of tradable US equities — symbol AND company name — so a
+// search for "Nvidia" or "Microsoft" resolves to the right ticker instead
+// of only working when someone already knows to type NVDA or MSFT.
+export function getAssets() {
+  return alpacaFetch(BASE_URL, '/v2/assets?status=active&asset_class=us_equity')
+}
+
 export function getPositions() {
   return alpacaFetch(BASE_URL, '/v2/positions')
 }

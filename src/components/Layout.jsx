@@ -32,12 +32,19 @@ export default function Layout() {
     }
   }
 
-  function handleSearch(e) {
+  async function handleSearch(e) {
     e.preventDefault()
-    const symbol = query.trim().toUpperCase()
-    if (!symbol) return
+    const text = query.trim()
+    if (!text) return
     setQuery('')
-    navigate(`/stock/${symbol}`)
+    try {
+      const resolved = await fetchJson(`/api/trending?resolve=${encodeURIComponent(text)}`)
+      navigate(`/stock/${resolved.symbol}`)
+    } catch {
+      // Resolution failed — still try it as a literal ticker rather than
+      // dead-ending the search.
+      navigate(`/stock/${text.toUpperCase()}`)
+    }
   }
 
   return (
