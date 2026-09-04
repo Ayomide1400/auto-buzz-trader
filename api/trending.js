@@ -85,11 +85,30 @@ async function handleResolve(req, res) {
   try {
     const assets = await getAssets()
     const upper = raw.toUpperCase()
+    const needle = raw.toLowerCase()
+
     let match = assets.find((a) => a.symbol === upper)
+
     if (!match) {
-      const needle = raw.toLowerCase()
-      match = assets.find((a) => a.name?.toLowerCase().includes(needle))
+      // A plain "contains" match picks up funds/ETFs with the company name
+      // buried in a long descriptive title ("...PurePlay Nvidia Ecosystem
+      // Picks & Shovels Index ETF") ahead of the actual company. Prefer
+      // names that START with the query, and among those, prefer plain
+      // common stock over anything fund/ETF-shaped.
+      const startsWith = assets.filter((a) => a.name?.toLowerCase().startsWith(needle))
+      const candidates = startsWith.length
+        ? startsWith
+        : assets.filter((a) => a.name?.toLowerCase().includes(needle))
+
+      const isFundLike = (name) => /\b(ETF|Fund|Trust|Index|Shares)\b/i.test(name || '')
+      candidates.sort((a, b) => {
+        const fundDiff = Number(isFundLike(a.name)) - Number(isFundLike(b.name))
+        if (fundDiff !== 0) return fundDiff
+        return (a.name?.length || 0) - (b.name?.length || 0)
+      })
+      match = candidates[0]
     }
+
     if (!match) {
       res.status(404).json({ error: `No ticker found matching "${raw}"` })
       return
