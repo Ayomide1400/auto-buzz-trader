@@ -919,6 +919,33 @@ button:disabled {
   text-decoration: underline;
 }
 
+/* ---- Earnings calendar ---- */
+.earnings-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.earnings-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 13px;
+}
+
+.earnings-list .symbol {
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  min-width: 60px;
+}
+
 /* ---- Settings ---- */
 .settings-grid {
   display: flex;
