@@ -172,6 +172,42 @@
       "realizedPl": -0.085,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-04T16:49:00.544Z"
+    },
+    {
+      "id": "sell-1788549773877-HOOD-904189",
+      "kind": "sell",
+      "symbol": "HOOD",
+      "qty": 0.283926774,
+      "price": 124.14,
+      "realizedPl": 0.26,
+      "reason": "Position closed",
+      "timestamp": "2026-09-04T16:49:00.486906412Z",
+      "orderId": "fb4d6675-a97f-43ad-84e7-93cb491134ad",
+      "matchedBuyId": "buy-backfill-94b4b3ff-3d95-4720-866a-568bf37eae4b"
+    },
+    {
+      "id": "sell-1788549773889-SMMT-758855",
+      "kind": "sell",
+      "symbol": "SMMT",
+      "qty": 2,
+      "price": 17.39,
+      "realizedPl": 0.54,
+      "reason": "Position closed",
+      "timestamp": "2026-09-04T16:49:01.935446Z",
+      "orderId": "94137093-ac5a-462c-89db-59c0ace83cf9",
+      "matchedBuyId": "buy-1788483206389-SMMT-208298"
+    },
+    {
+      "id": "sell-1788549773898-SOFI-625740",
+      "kind": "sell",
+      "symbol": "SOFI",
+      "qty": 1,
+      "price": 18.19,
+      "realizedPl": -0.3,
+      "reason": "Position closed",
+      "timestamp": "2026-09-04T16:49:01.232892885Z",
+      "orderId": "95bbf623-fa10-42ba-a829-7106e34ad683",
+      "matchedBuyId": "buy-1788483206402-SOFI-281276"
     }
   ]
 }
