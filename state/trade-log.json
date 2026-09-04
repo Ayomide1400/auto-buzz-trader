@@ -208,6 +208,16 @@
       "timestamp": "2026-09-04T16:49:01.232892885Z",
       "orderId": "95bbf623-fa10-42ba-a829-7106e34ad683",
       "matchedBuyId": "buy-1788483206402-SOFI-281276"
+    },
+    {
+      "id": "sell-1788549774745-CRCL-467829",
+      "kind": "sell",
+      "symbol": "CRCL",
+      "qty": 0.348936934,
+      "price": 101.505,
+      "realizedPl": 0.428843,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-04T19:22:54.745Z"
     }
   ]
 }
