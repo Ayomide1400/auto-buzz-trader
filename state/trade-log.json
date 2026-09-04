@@ -218,6 +218,18 @@
       "realizedPl": 0.428843,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-04T19:22:54.745Z"
+    },
+    {
+      "id": "sell-1788558230636-CRCL-145169",
+      "kind": "sell",
+      "symbol": "CRCL",
+      "qty": 0.348936934,
+      "price": 101.488,
+      "realizedPl": 0.42,
+      "reason": "Position closed",
+      "timestamp": "2026-09-04T19:22:54.748233406Z",
+      "orderId": "cc8fc6ac-7676-4b57-877c-62eadf5d7ae9",
+      "matchedBuyId": "buy-backfill-cef52a11-f3d2-4005-be0a-2812b5bf454b"
     }
   ]
 }
