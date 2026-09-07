@@ -1,5 +1,12 @@
 name: Trade Cycle
 
+# Note: GitHub occasionally stops firing a repo's scheduled runs silently
+# (state stays "active" via the API, it just doesn't trigger) — observed
+# here after ~3 days of low repo activity. A commit to this file is a
+# known practical way to make GitHub re-register the schedule. If runs
+# go quiet again, check `gh run list --workflow=trade-cycle.yml` and
+# re-trigger manually with `gh workflow run trade-cycle.yml` rather than
+# assuming the strategy simply found nothing to do.
 on:
   schedule:
     # Every 15 minutes, 13:00-21:00 UTC, Mon-Fri — covers US market hours
