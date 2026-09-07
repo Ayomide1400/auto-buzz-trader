@@ -56,36 +56,6 @@
       "orderId": "741be526-6c5c-47f8-8f07-4996e802978c"
     },
     {
-      "id": "sell-1788483206290-AVGO-74306",
-      "kind": "sell",
-      "symbol": "AVGO",
-      "qty": 0.100858987,
-      "price": 357.57,
-      "realizedPl": 1.074148,
-      "reason": "Dropped off the trending list",
-      "timestamp": "2026-09-04T00:53:26.290Z"
-    },
-    {
-      "id": "sell-1788483206320-HPE-667255",
-      "kind": "sell",
-      "symbol": "HPE",
-      "qty": 0.724640682,
-      "price": 53.82,
-      "realizedPl": 4.010162,
-      "reason": "Dropped off the trending list",
-      "timestamp": "2026-09-04T00:53:26.320Z"
-    },
-    {
-      "id": "sell-1788483206348-PLTR-721200",
-      "kind": "sell",
-      "symbol": "PLTR",
-      "qty": 0.210461101,
-      "price": 182.42,
-      "realizedPl": 3.402314,
-      "reason": "Dropped off the trending list",
-      "timestamp": "2026-09-04T00:53:26.348Z"
-    },
-    {
       "id": "buy-1788483206389-SMMT-208298",
       "kind": "buy",
       "symbol": "SMMT",
@@ -144,36 +114,6 @@
       "matchedBuyId": "buy-backfill-741be526-6c5c-47f8-8f07-4996e802978c"
     },
     {
-      "id": "sell-1788540540481-HOOD-382092",
-      "kind": "sell",
-      "symbol": "HOOD",
-      "qty": 0.283926774,
-      "price": 124.1675,
-      "realizedPl": 0.264478,
-      "reason": "Dropped off the trending list",
-      "timestamp": "2026-09-04T16:49:00.482Z"
-    },
-    {
-      "id": "sell-1788540540515-SMMT-187656",
-      "kind": "sell",
-      "symbol": "SMMT",
-      "qty": 2,
-      "price": 17.39,
-      "realizedPl": 0.5,
-      "reason": "Dropped off the trending list",
-      "timestamp": "2026-09-04T16:49:00.515Z"
-    },
-    {
-      "id": "sell-1788540540544-SOFI-877934",
-      "kind": "sell",
-      "symbol": "SOFI",
-      "qty": 1,
-      "price": 18.195,
-      "realizedPl": -0.085,
-      "reason": "Dropped off the trending list",
-      "timestamp": "2026-09-04T16:49:00.544Z"
-    },
-    {
       "id": "sell-1788549773877-HOOD-904189",
       "kind": "sell",
       "symbol": "HOOD",
@@ -208,16 +148,6 @@
       "timestamp": "2026-09-04T16:49:01.232892885Z",
       "orderId": "95bbf623-fa10-42ba-a829-7106e34ad683",
       "matchedBuyId": "buy-1788483206402-SOFI-281276"
-    },
-    {
-      "id": "sell-1788549774745-CRCL-467829",
-      "kind": "sell",
-      "symbol": "CRCL",
-      "qty": 0.348936934,
-      "price": 101.505,
-      "realizedPl": 0.428843,
-      "reason": "Dropped off the trending list",
-      "timestamp": "2026-09-04T19:22:54.745Z"
     },
     {
       "id": "sell-1788558230636-CRCL-145169",

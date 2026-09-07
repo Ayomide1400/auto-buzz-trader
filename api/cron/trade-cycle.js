@@ -32,9 +32,7 @@ function eventId(kind, symbol) {
 // fill, so we can't detect them by tagging — instead, any symbol the trade
 // log still considers "open" but that's no longer an actual position must
 // have closed on its own since the last run. Reconcile those first.
-async function syncClosedPositions(heldSymbols) {
-  const events = await getTradeLog()
-  const openBuys = getOpenBuys(events)
+async function syncClosedPositions(heldSymbols, openBuys) {
   const closedSymbols = Object.keys(openBuys).filter((symbol) => !heldSymbols.has(symbol))
   if (closedSymbols.length === 0) return []
 
@@ -112,7 +110,14 @@ export default async function handler(req, res) {
     const [positions, botOwnedSymbols] = await Promise.all([getPositions(), getBotOwnedSymbols()])
     const heldSymbols = new Set(positions.map((p) => p.symbol))
 
-    const reconciledEvents = await syncClosedPositions(heldSymbols)
+    // Snapshot the open buys once and reuse it for both reconciliation and
+    // the "dropped off trending" sell below — every sell event must record
+    // which buy it closes, or a later cycle re-logs the same real trade a
+    // second time (it can't tell the buy was already accounted for).
+    const events = await getTradeLog()
+    const openBuys = getOpenBuys(events)
+
+    const reconciledEvents = await syncClosedPositions(heldSymbols, openBuys)
     if (reconciledEvents.length) await appendTradeEvents(reconciledEvents)
 
     // Self-heal: any bot-owned position with no resting exit order (e.g.
@@ -159,6 +164,7 @@ export default async function handler(req, res) {
           realizedPl,
           reason: 'Dropped off the trending list',
           timestamp: new Date().toISOString(),
+          matchedBuyId: openBuys[position.symbol]?.id,
         })
         await notify(
           `${realizedPl >= 0 ? '✅' : '🛑'} Sold ${position.symbol}`,
