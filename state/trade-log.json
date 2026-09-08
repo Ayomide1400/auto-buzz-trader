@@ -227,6 +227,28 @@
       "timestamp": "2026-09-08T19:53:38.259859Z",
       "orderId": "25a78c89-d720-4bc9-9dee-240870ef03c7",
       "matchedBuyId": "buy-1788887567556-POET-229150"
+    },
+    {
+      "id": "buy-1788897390161-NUAI-306459",
+      "kind": "buy",
+      "symbol": "NUAI",
+      "qty": 5,
+      "price": 6.6,
+      "notional": 33,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-08T19:56:30.161Z",
+      "orderId": "e547301e-6e4d-4555-b2b4-3e0a9f0434e3"
+    },
+    {
+      "id": "buy-1788897390190-POET-298991",
+      "kind": "buy",
+      "symbol": "POET",
+      "qty": 4,
+      "price": 8.305,
+      "notional": 33.22,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-08T19:56:30.190Z",
+      "orderId": "5ef7f95c-b90c-420b-bc8d-01ccdbd7e0bc"
     }
   ]
 }
