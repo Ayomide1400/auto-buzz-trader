@@ -182,6 +182,39 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-08T17:12:46.264Z",
       "matchedBuyId": "buy-1788564281648-BTDR-82014"
+    },
+    {
+      "id": "buy-1788887567541-SMR-687384",
+      "kind": "buy",
+      "symbol": "SMR",
+      "qty": 3,
+      "price": 11.225,
+      "notional": 33.67,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-08T17:12:47.541Z",
+      "orderId": "1161fa4c-a3c1-43a8-8462-cc77167ea77f"
+    },
+    {
+      "id": "buy-1788887567556-POET-229150",
+      "kind": "buy",
+      "symbol": "POET",
+      "qty": 4,
+      "price": 8.73,
+      "notional": 34.92,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-08T17:12:47.556Z",
+      "orderId": "e1c3d5e4-e880-45a0-b0f5-844d9ee91609"
+    },
+    {
+      "id": "buy-1788887567573-RGTI-495959",
+      "kind": "buy",
+      "symbol": "RGTI",
+      "qty": 2,
+      "price": 16.04,
+      "notional": 32.08,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-08T17:12:47.573Z",
+      "orderId": "2e81bae6-013a-4c43-a4e2-30eac138f2bf"
     }
   ]
 }
