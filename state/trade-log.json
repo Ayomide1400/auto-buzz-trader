@@ -215,6 +215,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-08T17:12:47.573Z",
       "orderId": "2e81bae6-013a-4c43-a4e2-30eac138f2bf"
+    },
+    {
+      "id": "sell-1788897389121-POET-639695",
+      "kind": "sell",
+      "symbol": "POET",
+      "qty": 4,
+      "price": 8.28,
+      "realizedPl": -1.8,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-08T19:53:38.259859Z",
+      "orderId": "25a78c89-d720-4bc9-9dee-240870ef03c7",
+      "matchedBuyId": "buy-1788887567556-POET-229150"
     }
   ]
 }
