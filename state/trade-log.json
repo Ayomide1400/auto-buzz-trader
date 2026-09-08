@@ -171,6 +171,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-04T23:24:41.648Z",
       "orderId": "a9bf0541-0e25-42de-836f-f2178bc1fe79"
+    },
+    {
+      "id": "sell-1788887566264-BTDR-92870",
+      "kind": "sell",
+      "symbol": "BTDR",
+      "qty": 2,
+      "price": 12.815,
+      "realizedPl": 0.89,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-08T17:12:46.264Z",
+      "matchedBuyId": "buy-1788564281648-BTDR-82014"
     }
   ]
 }
