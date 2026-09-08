@@ -249,6 +249,39 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-08T19:56:30.190Z",
       "orderId": "5ef7f95c-b90c-420b-bc8d-01ccdbd7e0bc"
+    },
+    {
+      "id": "sell-1788906788571-NUAI-805751",
+      "kind": "sell",
+      "symbol": "NUAI",
+      "qty": 5,
+      "price": 6.5338,
+      "realizedPl": -0.331,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-08T22:33:08.571Z",
+      "matchedBuyId": "buy-1788897390161-NUAI-306459"
+    },
+    {
+      "id": "sell-1788906788597-POET-747871",
+      "kind": "sell",
+      "symbol": "POET",
+      "qty": 4,
+      "price": 8.36,
+      "realizedPl": 0.2,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-08T22:33:08.597Z",
+      "matchedBuyId": "buy-1788897390190-POET-298991"
+    },
+    {
+      "id": "sell-1788906788621-SMR-130205",
+      "kind": "sell",
+      "symbol": "SMR",
+      "qty": 3,
+      "price": 11.12,
+      "realizedPl": -0.33,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-08T22:33:08.621Z",
+      "matchedBuyId": "buy-1788887567541-SMR-687384"
     }
   ]
 }
