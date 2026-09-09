@@ -341,6 +341,50 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-09T19:48:05.321Z",
       "matchedBuyId": "buy-1788906789455-QBTS-256779"
+    },
+    {
+      "id": "buy-1788983286317-IRD-518971",
+      "kind": "buy",
+      "symbol": "IRD",
+      "qty": 5,
+      "price": 5.845,
+      "notional": 29.22,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-09T19:48:06.317Z",
+      "orderId": "cbb974a2-df92-4d5e-978b-ab62b758f8e5"
+    },
+    {
+      "id": "buy-1788983286333-ODD-36740",
+      "kind": "buy",
+      "symbol": "ODD",
+      "qty": 2,
+      "price": 17.1,
+      "notional": 34.2,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-09T19:48:06.333Z",
+      "orderId": "ad00aec5-5d97-4764-9cfd-ad0ac3477ff7"
+    },
+    {
+      "id": "buy-1788983286347-GME-380125",
+      "kind": "buy",
+      "symbol": "GME",
+      "qty": 1,
+      "price": 20.155,
+      "notional": 20.16,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-09T19:48:06.347Z",
+      "orderId": "ba693562-d8e3-4bec-abee-2de621ba62cf"
+    },
+    {
+      "id": "buy-1788983286435-HPQ-162483",
+      "kind": "buy",
+      "symbol": "HPQ",
+      "qty": 1,
+      "price": 32.755,
+      "notional": 32.76,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-09T19:48:06.435Z",
+      "orderId": "c0041a1a-334e-48d7-848d-095096e95dd9"
     }
   ]
 }
