@@ -271,6 +271,54 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-08T22:33:09.466Z",
       "orderId": "f770c29d-e29c-44f4-adca-35bdd8d938aa"
+    },
+    {
+      "id": "sell-1788973594148-SMR-418872",
+      "kind": "sell",
+      "symbol": "SMR",
+      "qty": 3,
+      "price": 11.116667,
+      "realizedPl": -0.32,
+      "reason": "Position closed",
+      "timestamp": "2026-09-09T13:31:34.502234Z",
+      "orderId": "8c7ab9ec-5396-4534-8930-37213dc54284",
+      "matchedBuyId": "buy-1788887567541-SMR-687384"
+    },
+    {
+      "id": "sell-1788973594158-RGTI-332332",
+      "kind": "sell",
+      "symbol": "RGTI",
+      "qty": 2,
+      "price": 15.23,
+      "realizedPl": -1.62,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-09T14:36:47.413262Z",
+      "orderId": "dc9fa6a5-ddd0-45d9-a784-4e9d7fcb4a29",
+      "matchedBuyId": "buy-1788887567573-RGTI-495959"
+    },
+    {
+      "id": "sell-1788973594170-NUAI-381217",
+      "kind": "sell",
+      "symbol": "NUAI",
+      "qty": 5,
+      "price": 6.694,
+      "realizedPl": 0.47,
+      "reason": "Position closed",
+      "timestamp": "2026-09-09T13:32:44.446473Z",
+      "orderId": "ad4d4eef-07f1-43b4-b73c-288bd2150022",
+      "matchedBuyId": "buy-1788897390161-NUAI-306459"
+    },
+    {
+      "id": "sell-1788973594182-POET-902009",
+      "kind": "sell",
+      "symbol": "POET",
+      "qty": 4,
+      "price": 8.2225,
+      "realizedPl": -0.33,
+      "reason": "Position closed",
+      "timestamp": "2026-09-09T13:31:44.900289Z",
+      "orderId": "baa89faa-af0a-428b-9cb4-84119f4e7fd5",
+      "matchedBuyId": "buy-1788897390190-POET-298991"
     }
   ]
 }
