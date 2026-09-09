@@ -385,6 +385,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-09T19:48:06.435Z",
       "orderId": "c0041a1a-334e-48d7-848d-095096e95dd9"
+    },
+    {
+      "id": "sell-1788992754216-GME-453555",
+      "kind": "sell",
+      "symbol": "GME",
+      "qty": 1,
+      "price": 19.97,
+      "realizedPl": -0.19,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-09T22:25:54.216Z",
+      "matchedBuyId": "buy-1788983286347-GME-380125"
+    },
+    {
+      "id": "sell-1788992754240-HPQ-308237",
+      "kind": "sell",
+      "symbol": "HPQ",
+      "qty": 1,
+      "price": 32.3,
+      "realizedPl": -0.46,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-09T22:25:54.240Z",
+      "matchedBuyId": "buy-1788983286435-HPQ-162483"
     }
   ]
 }
