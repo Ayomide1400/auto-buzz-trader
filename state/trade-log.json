@@ -319,6 +319,17 @@
       "timestamp": "2026-09-09T13:31:44.900289Z",
       "orderId": "baa89faa-af0a-428b-9cb4-84119f4e7fd5",
       "matchedBuyId": "buy-1788897390190-POET-298991"
+    },
+    {
+      "id": "sell-1788973595158-CLSK-906546",
+      "kind": "sell",
+      "symbol": "CLSK",
+      "qty": 2,
+      "price": 13.235,
+      "realizedPl": -1.07,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-09T17:06:35.158Z",
+      "matchedBuyId": "buy-1788906789466-CLSK-843569"
     }
   ]
 }
