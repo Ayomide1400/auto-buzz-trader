@@ -330,6 +330,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-09T17:06:35.158Z",
       "matchedBuyId": "buy-1788906789466-CLSK-843569"
+    },
+    {
+      "id": "sell-1788983285321-QBTS-831552",
+      "kind": "sell",
+      "symbol": "QBTS",
+      "qty": 1,
+      "price": 17.1764,
+      "realizedPl": -0.3936,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-09T19:48:05.321Z",
+      "matchedBuyId": "buy-1788906789455-QBTS-256779"
     }
   ]
 }
