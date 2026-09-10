@@ -407,6 +407,30 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-09T22:25:54.240Z",
       "matchedBuyId": "buy-1788983286435-HPQ-162483"
+    },
+    {
+      "id": "sell-1789059442884-IRD-755350",
+      "kind": "sell",
+      "symbol": "IRD",
+      "qty": 5,
+      "price": 5.58,
+      "realizedPl": -1.32,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-10T13:32:50.783217Z",
+      "orderId": "ada67fb5-beb1-413e-9308-561142f30284",
+      "matchedBuyId": "buy-1788983286317-IRD-518971"
+    },
+    {
+      "id": "sell-1789059442894-ODD-178574",
+      "kind": "sell",
+      "symbol": "ODD",
+      "qty": 2,
+      "price": 16.05,
+      "realizedPl": -2.1,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-10T13:54:01.5622Z",
+      "orderId": "b2c29616-498b-455b-a4cd-769f2630ef64",
+      "matchedBuyId": "buy-1788983286333-ODD-36740"
     }
   ]
 }
