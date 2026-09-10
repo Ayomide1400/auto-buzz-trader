@@ -442,6 +442,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-10T16:57:23.990Z",
       "orderId": "44167aea-d967-43a0-ada4-fcce7d69d83c"
+    },
+    {
+      "id": "sell-1789077398935-VG-79895",
+      "kind": "sell",
+      "symbol": "VG",
+      "qty": 2,
+      "price": 15.6383,
+      "realizedPl": -0.2634,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-10T21:56:38.935Z",
+      "matchedBuyId": "buy-1789059443990-VG-179658"
     }
   ]
 }
