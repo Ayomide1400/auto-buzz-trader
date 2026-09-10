@@ -431,6 +431,17 @@
       "timestamp": "2026-09-10T13:54:01.5622Z",
       "orderId": "b2c29616-498b-455b-a4cd-769f2630ef64",
       "matchedBuyId": "buy-1788983286333-ODD-36740"
+    },
+    {
+      "id": "buy-1789059443990-VG-179658",
+      "kind": "buy",
+      "symbol": "VG",
+      "qty": 2,
+      "price": 15.765,
+      "notional": 31.53,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-10T16:57:23.990Z",
+      "orderId": "44167aea-d967-43a0-ada4-fcce7d69d83c"
     }
   ]
 }
