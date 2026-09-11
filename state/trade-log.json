@@ -453,6 +453,39 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-10T21:56:38.935Z",
       "matchedBuyId": "buy-1789059443990-VG-179658"
+    },
+    {
+      "id": "buy-1789163934731-M-621717",
+      "kind": "buy",
+      "symbol": "M",
+      "qty": 1,
+      "price": 22.075,
+      "notional": 22.07,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-11T21:58:54.731Z",
+      "orderId": "1bebf3e3-af13-4841-a562-6812a9fb6082"
+    },
+    {
+      "id": "buy-1789163934745-NOK-106902",
+      "kind": "buy",
+      "symbol": "NOK",
+      "qty": 3,
+      "price": 11.135,
+      "notional": 33.41,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-11T21:58:54.745Z",
+      "orderId": "ecd9c436-f0ab-4d0c-b371-3839d362d84b"
+    },
+    {
+      "id": "buy-1789163934771-DKNG-190570",
+      "kind": "buy",
+      "symbol": "DKNG",
+      "qty": 1,
+      "price": 24.73,
+      "notional": 24.73,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-11T21:58:54.771Z",
+      "orderId": "d8933db3-bc7a-44e0-8106-d9740b94d510"
     }
   ]
 }
