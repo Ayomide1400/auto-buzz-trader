@@ -564,6 +564,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-14T22:06:16.410Z",
       "matchedBuyId": "buy-1789410628724-SNAP-800103"
+    },
+    {
+      "id": "buy-1789423577427-RUM-905777",
+      "kind": "buy",
+      "symbol": "RUM",
+      "qty": 4,
+      "price": 7.99,
+      "notional": 31.96,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-14T22:06:17.427Z",
+      "orderId": "aabdbc84-37d6-4de0-8cb4-3d56069b5ae2"
     }
   ]
 }
