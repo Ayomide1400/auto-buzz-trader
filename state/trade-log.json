@@ -498,6 +498,17 @@
       "timestamp": "2026-09-14T13:34:29.926434Z",
       "orderId": "8f129cec-4398-44df-a6f5-01ca0e956d36",
       "matchedBuyId": "buy-1789163934745-NOK-106902"
+    },
+    {
+      "id": "sell-1789410627591-M-44490",
+      "kind": "sell",
+      "symbol": "M",
+      "qty": 1,
+      "price": 23.055,
+      "realizedPl": 1.085,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-14T18:30:27.591Z",
+      "matchedBuyId": "buy-1789163934731-M-621717"
     }
   ]
 }
