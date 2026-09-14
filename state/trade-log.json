@@ -509,6 +509,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-14T18:30:27.591Z",
       "matchedBuyId": "buy-1789163934731-M-621717"
+    },
+    {
+      "id": "buy-1789410628558-S-516884",
+      "kind": "buy",
+      "symbol": "S",
+      "qty": 1,
+      "price": 22.89,
+      "notional": 22.89,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-14T18:30:28.558Z",
+      "orderId": "679c92fa-afd1-4fff-b69f-9dc028512247"
+    },
+    {
+      "id": "buy-1789410628724-SNAP-800103",
+      "kind": "buy",
+      "symbol": "SNAP",
+      "qty": 5,
+      "price": 5.85,
+      "notional": 29.25,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-14T18:30:28.724Z",
+      "orderId": "5e0ccdac-f86b-4bbe-952d-e9871a14912d"
     }
   ]
 }
