@@ -486,6 +486,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-11T21:58:54.771Z",
       "orderId": "d8933db3-bc7a-44e0-8106-d9740b94d510"
+    },
+    {
+      "id": "sell-1789410626665-NOK-923839",
+      "kind": "sell",
+      "symbol": "NOK",
+      "qty": 3,
+      "price": 10.013333,
+      "realizedPl": -3.37,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-14T13:34:29.926434Z",
+      "orderId": "8f129cec-4398-44df-a6f5-01ca0e956d36",
+      "matchedBuyId": "buy-1789163934745-NOK-106902"
     }
   ]
 }
