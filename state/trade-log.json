@@ -531,6 +531,39 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-14T18:30:28.724Z",
       "orderId": "5e0ccdac-f86b-4bbe-952d-e9871a14912d"
+    },
+    {
+      "id": "sell-1789423576353-DKNG-708772",
+      "kind": "sell",
+      "symbol": "DKNG",
+      "qty": 1,
+      "price": 24.79,
+      "realizedPl": -0.14,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-14T22:06:16.353Z",
+      "matchedBuyId": "buy-1789163934771-DKNG-190570"
+    },
+    {
+      "id": "sell-1789423576380-S-168663",
+      "kind": "sell",
+      "symbol": "S",
+      "qty": 1,
+      "price": 22.5184,
+      "realizedPl": -0.3816,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-14T22:06:16.380Z",
+      "matchedBuyId": "buy-1789410628558-S-516884"
+    },
+    {
+      "id": "sell-1789423576410-SNAP-786299",
+      "kind": "sell",
+      "symbol": "SNAP",
+      "qty": 5,
+      "price": 5.812,
+      "realizedPl": -0.24,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-14T22:06:16.410Z",
+      "matchedBuyId": "buy-1789410628724-SNAP-800103"
     }
   ]
 }
