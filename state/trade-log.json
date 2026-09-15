@@ -587,6 +587,17 @@
       "timestamp": "2026-09-15T14:08:49.209495Z",
       "orderId": "40a5360a-0b31-4492-9be6-a981f8f1f2ff",
       "matchedBuyId": "buy-1789423577427-RUM-905777"
+    },
+    {
+      "id": "buy-1789493866911-FPS-158513",
+      "kind": "buy",
+      "symbol": "FPS",
+      "qty": 1,
+      "price": 32.15,
+      "notional": 32.15,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-15T17:37:46.911Z",
+      "orderId": "113907e0-d8d1-4b2a-b6bf-a28478f78e0f"
     }
   ]
 }
