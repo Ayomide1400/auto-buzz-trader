@@ -575,6 +575,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-14T22:06:17.427Z",
       "orderId": "aabdbc84-37d6-4de0-8cb4-3d56069b5ae2"
+    },
+    {
+      "id": "sell-1789493865882-RUM-738765",
+      "kind": "sell",
+      "symbol": "RUM",
+      "qty": 4,
+      "price": 7.5875,
+      "realizedPl": -1.61,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-15T14:08:49.209495Z",
+      "orderId": "40a5360a-0b31-4492-9be6-a981f8f1f2ff",
+      "matchedBuyId": "buy-1789423577427-RUM-905777"
     }
   ]
 }
