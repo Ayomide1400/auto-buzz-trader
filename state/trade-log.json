@@ -621,6 +621,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-16T20:26:38.530Z",
       "orderId": "dc4da56e-64e0-4525-88ac-c250fbf9614c"
+    },
+    {
+      "id": "buy-1789600345766-IOVA-277973",
+      "kind": "buy",
+      "symbol": "IOVA",
+      "qty": 3,
+      "price": 9.895,
+      "notional": 29.68,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-16T23:12:25.766Z",
+      "orderId": "1278c8d5-3830-4130-9f1a-c33120b6d0b2"
     }
   ]
 }
