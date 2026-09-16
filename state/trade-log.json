@@ -610,6 +610,17 @@
       "timestamp": "2026-09-16T15:47:32.212451Z",
       "orderId": "b7f2afd5-b401-4c8a-a8ff-e0967f1f4d37",
       "matchedBuyId": "buy-1789493866911-FPS-158513"
+    },
+    {
+      "id": "buy-1789590398530-FPS-548859",
+      "kind": "buy",
+      "symbol": "FPS",
+      "qty": 1,
+      "price": 34.84,
+      "notional": 34.84,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-16T20:26:38.530Z",
+      "orderId": "dc4da56e-64e0-4525-88ac-c250fbf9614c"
     }
   ]
 }
