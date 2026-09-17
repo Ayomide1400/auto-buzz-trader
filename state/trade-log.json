@@ -721,6 +721,16 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-17T20:35:02.285Z",
       "orderId": "ba4b8d2e-2c59-4577-8dd3-5bf0f1664483"
+    },
+    {
+      "id": "sell-1789686457914-APLD-749327",
+      "kind": "sell",
+      "symbol": "APLD",
+      "qty": 1,
+      "price": 26.41,
+      "realizedPl": -0.29,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-17T23:07:37.914Z"
     }
   ]
 }
