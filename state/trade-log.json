@@ -677,6 +677,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-17T17:34:55.567Z",
       "orderId": "fe7b36fa-5c35-49be-8b25-3d9262eb2f67"
+    },
+    {
+      "id": "sell-1789677301162-APLD-782050",
+      "kind": "sell",
+      "symbol": "APLD",
+      "qty": 1,
+      "price": 26.5,
+      "realizedPl": -0.2,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-17T20:35:01.162Z",
+      "matchedBuyId": "buy-1789666495512-APLD-407739"
+    },
+    {
+      "id": "sell-1789677301228-IOVA-866416",
+      "kind": "sell",
+      "symbol": "IOVA",
+      "qty": 3,
+      "price": 10.0584,
+      "realizedPl": -0.3348,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-17T20:35:01.228Z",
+      "matchedBuyId": "buy-1789666495567-IOVA-655752"
     }
   ]
 }
