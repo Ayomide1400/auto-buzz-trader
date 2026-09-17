@@ -699,6 +699,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-17T20:35:01.228Z",
       "matchedBuyId": "buy-1789666495567-IOVA-655752"
+    },
+    {
+      "id": "buy-1789677302272-RARE-726554",
+      "kind": "buy",
+      "symbol": "RARE",
+      "qty": 2,
+      "price": 14.505,
+      "notional": 29.01,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-17T20:35:02.272Z",
+      "orderId": "c166307f-2869-4c61-a629-2c10d6ee9f02"
+    },
+    {
+      "id": "buy-1789677302285-IBRX-622968",
+      "kind": "buy",
+      "symbol": "IBRX",
+      "qty": 4,
+      "price": 8.455,
+      "notional": 33.82,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-17T20:35:02.285Z",
+      "orderId": "ba4b8d2e-2c59-4577-8dd3-5bf0f1664483"
     }
   ]
 }
