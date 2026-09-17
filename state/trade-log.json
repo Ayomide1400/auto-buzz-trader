@@ -655,6 +655,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-17T17:34:54.507Z",
       "matchedBuyId": "buy-1789590398530-FPS-548859"
+    },
+    {
+      "id": "buy-1789666495512-APLD-407739",
+      "kind": "buy",
+      "symbol": "APLD",
+      "qty": 1,
+      "price": 26.695,
+      "notional": 26.7,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-17T17:34:55.512Z",
+      "orderId": "3c90acfd-246f-465d-adb5-efd8e16d9dc4"
+    },
+    {
+      "id": "buy-1789666495567-IOVA-655752",
+      "kind": "buy",
+      "symbol": "IOVA",
+      "qty": 3,
+      "price": 10.165,
+      "notional": 30.49,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-17T17:34:55.567Z",
+      "orderId": "fe7b36fa-5c35-49be-8b25-3d9262eb2f67"
     }
   ]
 }
