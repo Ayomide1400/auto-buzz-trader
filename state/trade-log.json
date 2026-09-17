@@ -644,6 +644,17 @@
       "timestamp": "2026-09-17T14:34:16.676832Z",
       "orderId": "f48be11b-7183-4372-b73b-36a8bf0d796b",
       "matchedBuyId": "buy-1789600345766-IOVA-277973"
+    },
+    {
+      "id": "sell-1789666494507-FPS-580862",
+      "kind": "sell",
+      "symbol": "FPS",
+      "qty": 1,
+      "price": 37.09,
+      "realizedPl": -0.21,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-17T17:34:54.507Z",
+      "matchedBuyId": "buy-1789590398530-FPS-548859"
     }
   ]
 }
