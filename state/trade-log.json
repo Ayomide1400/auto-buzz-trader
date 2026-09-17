@@ -731,6 +731,39 @@
       "realizedPl": -0.29,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-17T23:07:37.914Z"
+    },
+    {
+      "id": "buy-1789686458789-RARE-13791",
+      "kind": "buy",
+      "symbol": "RARE",
+      "qty": 2,
+      "price": 14.505,
+      "notional": 29.01,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-17T23:07:38.789Z",
+      "orderId": "16c0fcae-f92a-4e36-9cb3-5d77ed971240"
+    },
+    {
+      "id": "buy-1789686458819-SMR-996567",
+      "kind": "buy",
+      "symbol": "SMR",
+      "qty": 3,
+      "price": 9.06,
+      "notional": 27.18,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-17T23:07:38.819Z",
+      "orderId": "c5399d1b-9f9c-43ff-8ac8-6fcddb47adc1"
+    },
+    {
+      "id": "buy-1789686458831-QS-762603",
+      "kind": "buy",
+      "symbol": "QS",
+      "qty": 6,
+      "price": 5.155,
+      "notional": 30.93,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-17T23:07:38.831Z",
+      "orderId": "8175e5b9-def9-4d9b-bc84-c5be606bf85c"
     }
   ]
 }
