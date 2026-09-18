@@ -776,6 +776,17 @@
       "timestamp": "2026-09-18T14:02:02.580476Z",
       "orderId": "f3af9dac-8fdd-4c01-a7d3-186760528bc5",
       "matchedBuyId": "buy-1789686458819-SMR-996567"
+    },
+    {
+      "id": "sell-1789750896292-QS-175845",
+      "kind": "sell",
+      "symbol": "QS",
+      "qty": 6,
+      "price": 4.995,
+      "realizedPl": -1.53,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-18T17:01:36.292Z",
+      "matchedBuyId": "buy-1789686458831-QS-762603"
     }
   ]
 }
