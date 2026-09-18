@@ -853,6 +853,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-18T21:54:01.170Z",
       "matchedBuyId": "buy-1789686458789-RARE-13791"
+    },
+    {
+      "id": "buy-1789768441955-GEMI-630901",
+      "kind": "buy",
+      "symbol": "GEMI",
+      "qty": 6,
+      "price": 5.8,
+      "notional": 34.8,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-18T21:54:01.955Z",
+      "orderId": "1abf46ff-fd9f-4879-a4ed-6d8b0876447a"
+    },
+    {
+      "id": "buy-1789768441969-CLSK-9333",
+      "kind": "buy",
+      "symbol": "CLSK",
+      "qty": 2,
+      "price": 14.46,
+      "notional": 28.92,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-18T21:54:01.969Z",
+      "orderId": "163a9746-ae0a-4042-813f-0f941f90e945"
     }
   ]
 }
