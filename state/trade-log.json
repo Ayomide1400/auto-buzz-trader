@@ -787,6 +787,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-18T17:01:36.292Z",
       "matchedBuyId": "buy-1789686458831-QS-762603"
+    },
+    {
+      "id": "sell-1789760384107-IBRX-572910",
+      "kind": "sell",
+      "symbol": "IBRX",
+      "qty": 4,
+      "price": 8.455,
+      "realizedPl": -0.14,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-18T19:39:44.107Z",
+      "matchedBuyId": "buy-1789677302285-IBRX-622968"
     }
   ]
 }
