@@ -764,6 +764,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-17T23:07:38.831Z",
       "orderId": "8175e5b9-def9-4d9b-bc84-c5be606bf85c"
+    },
+    {
+      "id": "sell-1789750895261-SMR-241702",
+      "kind": "sell",
+      "symbol": "SMR",
+      "qty": 3,
+      "price": 8.61,
+      "realizedPl": -1.35,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-18T14:02:02.580476Z",
+      "orderId": "f3af9dac-8fdd-4c01-a7d3-186760528bc5",
+      "matchedBuyId": "buy-1789686458819-SMR-996567"
     }
   ]
 }
