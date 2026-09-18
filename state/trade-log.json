@@ -798,6 +798,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-18T19:39:44.107Z",
       "matchedBuyId": "buy-1789677302285-IBRX-622968"
+    },
+    {
+      "id": "buy-1789760385186-MARA-501214",
+      "kind": "buy",
+      "symbol": "MARA",
+      "qty": 2,
+      "price": 13.21,
+      "notional": 26.42,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-18T19:39:45.186Z",
+      "orderId": "c24cebe0-361c-432d-abc5-cb29ab1a7e02"
+    },
+    {
+      "id": "buy-1789760385198-BMNR-847265",
+      "kind": "buy",
+      "symbol": "BMNR",
+      "qty": 1,
+      "price": 26.085,
+      "notional": 26.09,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-18T19:39:45.198Z",
+      "orderId": "784ac282-0485-4f36-8342-a09aaa1b509f"
     }
   ]
 }
