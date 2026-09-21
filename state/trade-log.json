@@ -942,6 +942,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-21T18:35:36.264Z",
       "orderId": "deaa73c0-6eea-4247-9806-8b7294759e06"
+    },
+    {
+      "id": "sell-1790029023347-CRML-150472",
+      "kind": "sell",
+      "symbol": "CRML",
+      "qty": 3,
+      "price": 9.21,
+      "realizedPl": 0.84,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-21T22:17:03.347Z",
+      "matchedBuyId": "buy-1790015736239-CRML-715911"
+    },
+    {
+      "id": "sell-1790029023371-WBD-79987",
+      "kind": "sell",
+      "symbol": "WBD",
+      "qty": 1,
+      "price": 30.79,
+      "realizedPl": -0.03,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-21T22:17:03.371Z",
+      "matchedBuyId": "buy-1790015736251-WBD-805101"
     }
   ]
 }
