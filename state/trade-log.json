@@ -964,6 +964,39 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-21T22:17:03.371Z",
       "matchedBuyId": "buy-1790015736251-WBD-805101"
+    },
+    {
+      "id": "buy-1790029025268-NUAI-297173",
+      "kind": "buy",
+      "symbol": "NUAI",
+      "qty": 4,
+      "price": 7.645,
+      "notional": 30.58,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-21T22:17:05.268Z",
+      "orderId": "47ed8787-e8ba-4883-80b2-d1ccf8f0cc61"
+    },
+    {
+      "id": "buy-1790029025281-BMNR-288436",
+      "kind": "buy",
+      "symbol": "BMNR",
+      "qty": 1,
+      "price": 28.235,
+      "notional": 28.23,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-21T22:17:05.281Z",
+      "orderId": "db556685-bedd-4f32-b9db-e18382ff1cbc"
+    },
+    {
+      "id": "buy-1790029025294-QXO-260162",
+      "kind": "buy",
+      "symbol": "QXO",
+      "qty": 2,
+      "price": 12.21,
+      "notional": 24.42,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-21T22:17:05.294Z",
+      "orderId": "1b59897c-dc58-4618-a7a4-16bf62edfa9e"
     }
   ]
 }
