@@ -875,6 +875,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-18T21:54:01.969Z",
       "orderId": "163a9746-ae0a-4042-813f-0f941f90e945"
+    },
+    {
+      "id": "sell-1790015733761-RARE-144545",
+      "kind": "sell",
+      "symbol": "RARE",
+      "qty": 2,
+      "price": 14.36,
+      "realizedPl": -0.29,
+      "reason": "Position closed",
+      "timestamp": "2026-09-21T13:31:15.902511Z",
+      "orderId": "2af6fd1b-01b9-4bbe-a637-68e041d1e9b7",
+      "matchedBuyId": "buy-1789677302272-RARE-726554"
     }
   ]
 }
