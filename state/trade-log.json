@@ -1009,6 +1009,17 @@
       "timestamp": "2026-09-22T13:31:26.770661Z",
       "orderId": "1be1d712-6a80-4057-997e-93d9a16bd0f1",
       "matchedBuyId": "buy-1790029025268-NUAI-297173"
+    },
+    {
+      "id": "buy-1790098570597-ONON-269321",
+      "kind": "buy",
+      "symbol": "ONON",
+      "qty": 1,
+      "price": 29.69,
+      "notional": 29.69,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-22T17:36:10.597Z",
+      "orderId": "2b0aa50e-97f6-4067-8df0-eb511f2d029a"
     }
   ]
 }
