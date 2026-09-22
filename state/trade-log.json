@@ -997,6 +997,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-21T22:17:05.294Z",
       "orderId": "1b59897c-dc58-4618-a7a4-16bf62edfa9e"
+    },
+    {
+      "id": "sell-1790098569473-NUAI-15526",
+      "kind": "sell",
+      "symbol": "NUAI",
+      "qty": 4,
+      "price": 7,
+      "realizedPl": -2.58,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-22T13:31:26.770661Z",
+      "orderId": "1be1d712-6a80-4057-997e-93d9a16bd0f1",
+      "matchedBuyId": "buy-1790029025268-NUAI-297173"
     }
   ]
 }
