@@ -1086,6 +1086,36 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-22T20:29:38.047Z",
       "orderId": "9dc110e8-1fc3-4945-b446-a6390fb0c8d7"
+    },
+    {
+      "id": "sell-1790118871263-BMNR-306886",
+      "kind": "sell",
+      "symbol": "BMNR",
+      "qty": 1,
+      "price": 28.75,
+      "realizedPl": 0.71,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-22T23:14:31.263Z"
+    },
+    {
+      "id": "sell-1790118871289-ONON-542333",
+      "kind": "sell",
+      "symbol": "ONON",
+      "qty": 1,
+      "price": 29.54,
+      "realizedPl": -0.17,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-22T23:14:31.289Z"
+    },
+    {
+      "id": "sell-1790118871311-QXO-677004",
+      "kind": "sell",
+      "symbol": "QXO",
+      "qty": 2,
+      "price": 12.78,
+      "realizedPl": 0.72,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-22T23:14:31.311Z"
     }
   ]
 }
