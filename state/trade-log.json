@@ -1116,6 +1116,28 @@
       "realizedPl": 0.72,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-22T23:14:31.311Z"
+    },
+    {
+      "id": "buy-1790118872338-BFLY-572688",
+      "kind": "buy",
+      "symbol": "BFLY",
+      "qty": 3,
+      "price": 9.935,
+      "notional": 29.8,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-22T23:14:32.338Z",
+      "orderId": "3e59b30d-a37a-4a3a-babd-1e239e9bf8a1"
+    },
+    {
+      "id": "buy-1790118872352-IBRX-778114",
+      "kind": "buy",
+      "symbol": "IBRX",
+      "qty": 3,
+      "price": 9.29,
+      "notional": 27.87,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-22T23:14:32.352Z",
+      "orderId": "e898ef01-dc4c-4873-bca3-f4a33e4619d1"
     }
   ]
 }
