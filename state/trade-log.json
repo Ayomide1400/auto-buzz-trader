@@ -1053,6 +1053,39 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-22T20:29:37.027Z",
       "matchedBuyId": "buy-1790029025294-QXO-260162"
+    },
+    {
+      "id": "buy-1790108978013-IBRX-985398",
+      "kind": "buy",
+      "symbol": "IBRX",
+      "qty": 3,
+      "price": 9.29,
+      "notional": 27.87,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-22T20:29:38.013Z",
+      "orderId": "e1dbebac-3c03-4845-af5b-bdf2227cd7e6"
+    },
+    {
+      "id": "buy-1790108978032-GME-305821",
+      "kind": "buy",
+      "symbol": "GME",
+      "qty": 1,
+      "price": 24.035,
+      "notional": 24.04,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-22T20:29:38.032Z",
+      "orderId": "1aae4593-ac32-4efd-92cb-dabe4c8317c5"
+    },
+    {
+      "id": "buy-1790108978047-IOVA-93717",
+      "kind": "buy",
+      "symbol": "IOVA",
+      "qty": 3,
+      "price": 10.65,
+      "notional": 31.95,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-22T20:29:38.047Z",
+      "orderId": "9dc110e8-1fc3-4945-b446-a6390fb0c8d7"
     }
   ]
 }
