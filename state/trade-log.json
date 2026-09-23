@@ -1218,6 +1218,17 @@
       "realizedPl": 0.16,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-23T23:54:29.063Z"
+    },
+    {
+      "id": "buy-1790207670233-FSLY-92704",
+      "kind": "buy",
+      "symbol": "FSLY",
+      "qty": 1,
+      "price": 29.65,
+      "notional": 29.65,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-23T23:54:30.233Z",
+      "orderId": "614d193c-5ca0-47db-9e9d-3aa07bcfce61"
     }
   ]
 }
