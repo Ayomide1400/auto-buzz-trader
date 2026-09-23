@@ -1197,6 +1197,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-23T21:24:28.820Z",
       "matchedBuyId": "buy-1790108978032-GME-305821"
+    },
+    {
+      "id": "buy-1790198669884-FSLY-686782",
+      "kind": "buy",
+      "symbol": "FSLY",
+      "qty": 1,
+      "price": 29.65,
+      "notional": 29.65,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-23T21:24:29.884Z",
+      "orderId": "ce5fe7fd-fc40-4e2d-83e7-27fca039624e"
     }
   ]
 }
