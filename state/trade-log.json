@@ -1174,6 +1174,18 @@
       "timestamp": "2026-09-23T13:37:39.430202Z",
       "orderId": "c2257f26-7c32-463a-a989-0af9b8c498d5",
       "matchedBuyId": "buy-1790118872338-BFLY-572688"
+    },
+    {
+      "id": "sell-1790198667813-IBRX-857626",
+      "kind": "sell",
+      "symbol": "IBRX",
+      "qty": 3,
+      "price": 8.84,
+      "realizedPl": -1.35,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-23T13:44:55.327207Z",
+      "orderId": "696888f5-fd00-4d37-af22-797618976d61",
+      "matchedBuyId": "buy-1790108978013-IBRX-985398"
     }
   ]
 }
