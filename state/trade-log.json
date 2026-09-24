@@ -1253,6 +1253,28 @@
       "timestamp": "2026-09-24T13:32:59.30078Z",
       "orderId": "e7bfb47c-0f5d-44cc-be71-987b64284e0d",
       "matchedBuyId": "buy-1790207670233-FSLY-92704"
+    },
+    {
+      "id": "buy-1790272170202-UNG-250200",
+      "kind": "buy",
+      "symbol": "UNG",
+      "qty": 3,
+      "price": 11.65,
+      "notional": 34.95,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-24T17:49:30.202Z",
+      "orderId": "ed2fb7b9-d4d0-46b6-b081-9c77304507cb"
+    },
+    {
+      "id": "buy-1790272170219-BB-89605",
+      "kind": "buy",
+      "symbol": "BB",
+      "qty": 4,
+      "price": 8.59,
+      "notional": 34.36,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-24T17:49:30.219Z",
+      "orderId": "fa0284a2-49f7-4e21-98db-d660986a4be4"
     }
   ]
 }
