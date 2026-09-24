@@ -1308,6 +1308,17 @@
       "realizedPl": -1.23,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-24T23:58:29.586Z"
+    },
+    {
+      "id": "buy-1790294310511-INFQ-489921",
+      "kind": "buy",
+      "symbol": "INFQ",
+      "qty": 2,
+      "price": 14.29,
+      "notional": 28.58,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-24T23:58:30.511Z",
+      "orderId": "57b3ba0c-04d5-4771-812d-0b5fbcdf40f1"
     }
   ]
 }
