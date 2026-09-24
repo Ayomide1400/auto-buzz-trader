@@ -1298,6 +1298,16 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-24T21:25:19.734Z",
       "matchedBuyId": "buy-1790272170202-UNG-250200"
+    },
+    {
+      "id": "sell-1790294309586-UNG-40363",
+      "kind": "sell",
+      "symbol": "UNG",
+      "qty": 3,
+      "price": 11.24,
+      "realizedPl": -1.23,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-24T23:58:29.586Z"
     }
   ]
 }
