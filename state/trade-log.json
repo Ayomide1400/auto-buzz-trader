@@ -1287,6 +1287,17 @@
       "timestamp": "2026-09-24T13:32:59.30078Z",
       "orderId": "e7bfb47c-0f5d-44cc-be71-987b64284e0d",
       "matchedBuyId": "buy-1790198669884-FSLY-686782"
+    },
+    {
+      "id": "sell-1790285119734-UNG-409538",
+      "kind": "sell",
+      "symbol": "UNG",
+      "qty": 3,
+      "price": 11.4193,
+      "realizedPl": -0.6921,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-24T21:25:19.734Z",
+      "matchedBuyId": "buy-1790272170202-UNG-250200"
     }
   ]
 }
