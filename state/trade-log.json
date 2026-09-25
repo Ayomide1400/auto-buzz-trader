@@ -1331,6 +1331,17 @@
       "timestamp": "2026-09-25T15:51:26.051597Z",
       "orderId": "41458e7c-a5a0-4c98-b97f-8a235c0b849a",
       "matchedBuyId": "buy-1790272170219-BB-89605"
+    },
+    {
+      "id": "sell-1790358778447-INFQ-167963",
+      "kind": "sell",
+      "symbol": "INFQ",
+      "qty": 2,
+      "price": 14.665,
+      "realizedPl": 0.52,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-25T17:52:58.447Z",
+      "matchedBuyId": "buy-1790294310511-INFQ-489921"
     }
   ]
 }
