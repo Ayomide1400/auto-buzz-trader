@@ -1342,6 +1342,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-25T17:52:58.447Z",
       "matchedBuyId": "buy-1790294310511-INFQ-489921"
+    },
+    {
+      "id": "buy-1790371559940-GENI-154980",
+      "kind": "buy",
+      "symbol": "GENI",
+      "qty": 5,
+      "price": 6.43,
+      "notional": 32.15,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-25T21:25:59.940Z",
+      "orderId": "48f92c66-2643-49bb-8ece-beeb3184c565"
+    },
+    {
+      "id": "buy-1790371559954-NVTS-688235",
+      "kind": "buy",
+      "symbol": "NVTS",
+      "qty": 2,
+      "price": 12.19,
+      "notional": 24.38,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-25T21:25:59.954Z",
+      "orderId": "d50ccdc4-86a0-4d9d-863b-0ce3d7344868"
     }
   ]
 }
