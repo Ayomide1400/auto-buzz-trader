@@ -1409,6 +1409,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-28T20:04:41.555Z",
       "matchedBuyId": "buy-1790371559954-NVTS-688235"
+    },
+    {
+      "id": "buy-1790625882702-ABCL-621633",
+      "kind": "buy",
+      "symbol": "ABCL",
+      "qty": 2,
+      "price": 13.92,
+      "notional": 27.84,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-28T20:04:42.702Z",
+      "orderId": "d114c554-2f50-42a5-a0d1-8d23f7e1d637"
+    },
+    {
+      "id": "buy-1790625882714-BB-355009",
+      "kind": "buy",
+      "symbol": "BB",
+      "qty": 3,
+      "price": 8.81,
+      "notional": 26.43,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-28T20:04:42.714Z",
+      "orderId": "6a7713a0-4ad0-4854-bb7e-fab3409caad1"
     }
   ]
 }
