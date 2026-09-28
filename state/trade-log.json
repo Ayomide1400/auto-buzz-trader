@@ -1387,6 +1387,28 @@
       "timestamp": "2026-09-28T19:52:06.207823Z",
       "orderId": "b3130174-2833-4300-860d-d0a2ce5e5703",
       "matchedBuyId": "buy-1790371559940-GENI-154980"
+    },
+    {
+      "id": "sell-1790625881528-AAL-962455",
+      "kind": "sell",
+      "symbol": "AAL",
+      "qty": 2,
+      "price": 13.52,
+      "realizedPl": 0.19,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-28T20:04:41.528Z",
+      "matchedBuyId": "buy-1790381151724-AAL-655921"
+    },
+    {
+      "id": "sell-1790625881555-NVTS-682584",
+      "kind": "sell",
+      "symbol": "NVTS",
+      "qty": 2,
+      "price": 11.72,
+      "realizedPl": -0.56,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-28T20:04:41.555Z",
+      "matchedBuyId": "buy-1790371559954-NVTS-688235"
     }
   ]
 }
