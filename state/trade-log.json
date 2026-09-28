@@ -1375,6 +1375,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-26T00:05:51.724Z",
       "orderId": "c68673ba-f6a0-43fe-9a61-0f555e11b2b0"
+    },
+    {
+      "id": "sell-1790625880407-GENI-442140",
+      "kind": "sell",
+      "symbol": "GENI",
+      "qty": 5,
+      "price": 6.11,
+      "realizedPl": -1.6,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-28T19:52:06.207823Z",
+      "orderId": "b3130174-2833-4300-860d-d0a2ce5e5703",
+      "matchedBuyId": "buy-1790371559940-GENI-154980"
     }
   ]
 }
