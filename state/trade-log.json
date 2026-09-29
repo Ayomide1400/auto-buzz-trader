@@ -1464,6 +1464,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-29T18:33:38.443Z",
       "matchedBuyId": "buy-1790625882702-ABCL-621633"
+    },
+    {
+      "id": "buy-1790706819761-IOVA-149448",
+      "kind": "buy",
+      "symbol": "IOVA",
+      "qty": 2,
+      "price": 14.845,
+      "notional": 29.69,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-29T18:33:39.761Z",
+      "orderId": "3485f7ee-40a9-491b-a9b2-51d3f3f3be8d"
+    },
+    {
+      "id": "buy-1790706819789-CCL-575858",
+      "kind": "buy",
+      "symbol": "CCL",
+      "qty": 1,
+      "price": 25.065,
+      "notional": 25.07,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-29T18:33:39.789Z",
+      "orderId": "d2311e70-1a79-472d-96be-a50534639aa3"
     }
   ]
 }
