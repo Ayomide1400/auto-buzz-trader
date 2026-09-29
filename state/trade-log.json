@@ -1486,6 +1486,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-29T18:33:39.789Z",
       "orderId": "d2311e70-1a79-472d-96be-a50534639aa3"
+    },
+    {
+      "id": "sell-1790721605494-CCL-933410",
+      "kind": "sell",
+      "symbol": "CCL",
+      "qty": 1,
+      "price": 25.07,
+      "realizedPl": 0,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-29T22:40:05.494Z",
+      "matchedBuyId": "buy-1790706819789-CCL-575858"
     }
   ]
 }
