@@ -1431,6 +1431,16 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-28T20:04:42.714Z",
       "orderId": "6a7713a0-4ad0-4854-bb7e-fab3409caad1"
+    },
+    {
+      "id": "sell-1790641420042-AAL-310181",
+      "kind": "sell",
+      "symbol": "AAL",
+      "qty": 2,
+      "price": 13.53,
+      "realizedPl": 0.21,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-09-29T00:23:40.042Z"
     }
   ]
 }
