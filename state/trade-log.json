@@ -1509,6 +1509,17 @@
       "timestamp": "2026-09-30T13:45:29.044757Z",
       "orderId": "41f639b2-5f74-417c-a373-32cac535fda4",
       "matchedBuyId": "buy-1790706819761-IOVA-149448"
+    },
+    {
+      "id": "buy-1790792485581-IBRX-271157",
+      "kind": "buy",
+      "symbol": "IBRX",
+      "qty": 3,
+      "price": 9.69,
+      "notional": 29.07,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-30T18:21:25.581Z",
+      "orderId": "d1b01fe1-a7c9-4ca9-8fca-0d3d70293c2e"
     }
   ]
 }
