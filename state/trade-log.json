@@ -1531,6 +1531,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-30T22:31:14.868Z",
       "matchedBuyId": "buy-1790792485581-IBRX-271157"
+    },
+    {
+      "id": "buy-1790807476031-NU-627586",
+      "kind": "buy",
+      "symbol": "NU",
+      "qty": 2,
+      "price": 13.48,
+      "notional": 26.96,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-09-30T22:31:16.031Z",
+      "orderId": "b4f66a1f-2a5e-43bb-b813-6530e83e7ff8"
     }
   ]
 }
