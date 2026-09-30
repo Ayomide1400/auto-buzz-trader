@@ -1497,6 +1497,18 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-09-29T22:40:05.494Z",
       "matchedBuyId": "buy-1790706819789-CCL-575858"
+    },
+    {
+      "id": "sell-1790792484495-IOVA-761523",
+      "kind": "sell",
+      "symbol": "IOVA",
+      "qty": 2,
+      "price": 14.15,
+      "realizedPl": -1.39,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-09-30T13:45:29.044757Z",
+      "orderId": "41f639b2-5f74-417c-a373-32cac535fda4",
+      "matchedBuyId": "buy-1790706819761-IOVA-149448"
     }
   ]
 }
