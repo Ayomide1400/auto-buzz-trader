@@ -1554,6 +1554,28 @@
       "timestamp": "2026-10-01T15:08:36.756037Z",
       "orderId": "27e6a5f0-cf1a-431b-873d-b6c5556efcd4",
       "matchedBuyId": "buy-1790807476031-NU-627586"
+    },
+    {
+      "id": "buy-1790895833511-NOK-704869",
+      "kind": "buy",
+      "symbol": "NOK",
+      "qty": 3,
+      "price": 10.38,
+      "notional": 31.14,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-01T23:03:53.511Z",
+      "orderId": "292b6ed3-e9d7-4490-8663-d2ae92ca4a8f"
+    },
+    {
+      "id": "buy-1790895833525-ONON-954190",
+      "kind": "buy",
+      "symbol": "ONON",
+      "qty": 1,
+      "price": 30.21,
+      "notional": 30.21,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-01T23:03:53.525Z",
+      "orderId": "24bc44b4-5222-4e79-88c2-41bde8529bc8"
     }
   ]
 }
