@@ -1542,6 +1542,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-09-30T22:31:16.031Z",
       "orderId": "b4f66a1f-2a5e-43bb-b813-6530e83e7ff8"
+    },
+    {
+      "id": "sell-1790880433499-NU-573301",
+      "kind": "sell",
+      "symbol": "NU",
+      "qty": 2,
+      "price": 12.81,
+      "realizedPl": -1.34,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-01T15:08:36.756037Z",
+      "orderId": "27e6a5f0-cf1a-431b-873d-b6c5556efcd4",
+      "matchedBuyId": "buy-1790807476031-NU-627586"
     }
   ]
 }
