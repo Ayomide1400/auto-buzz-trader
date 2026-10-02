@@ -1576,6 +1576,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-01T23:03:53.525Z",
       "orderId": "24bc44b4-5222-4e79-88c2-41bde8529bc8"
+    },
+    {
+      "id": "sell-1790965180452-NOK-156892",
+      "kind": "sell",
+      "symbol": "NOK",
+      "qty": 3,
+      "price": 10.58,
+      "realizedPl": 0.09,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-02T18:19:40.452Z",
+      "matchedBuyId": "buy-1790895833511-NOK-704869"
     }
   ]
 }
