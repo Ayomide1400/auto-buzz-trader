@@ -1620,6 +1620,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-02T22:28:45.272Z",
       "matchedBuyId": "buy-1790895833525-ONON-954190"
+    },
+    {
+      "id": "buy-1790980126315-IBRX-587291",
+      "kind": "buy",
+      "symbol": "IBRX",
+      "qty": 3,
+      "price": 10.29,
+      "notional": 30.87,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-02T22:28:46.315Z",
+      "orderId": "2233cf21-582d-4931-abbb-5aa89aa0a4ea"
     }
   ]
 }
