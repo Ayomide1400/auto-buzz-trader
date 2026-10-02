@@ -1598,6 +1598,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-02T18:19:41.695Z",
       "orderId": "94dccb33-9885-4763-bd3a-4d3d4bf7a3ab"
+    },
+    {
+      "id": "sell-1790980125250-APLD-295573",
+      "kind": "sell",
+      "symbol": "APLD",
+      "qty": 1,
+      "price": 25.4472,
+      "realizedPl": 0.2272,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-02T22:28:45.250Z",
+      "matchedBuyId": "buy-1790965181695-APLD-765333"
+    },
+    {
+      "id": "sell-1790980125272-ONON-752447",
+      "kind": "sell",
+      "symbol": "ONON",
+      "qty": 1,
+      "price": 30.72,
+      "realizedPl": 0.45,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-02T22:28:45.272Z",
+      "matchedBuyId": "buy-1790895833525-ONON-954190"
     }
   ]
 }
