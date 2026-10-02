@@ -1587,6 +1587,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-02T18:19:40.452Z",
       "matchedBuyId": "buy-1790895833511-NOK-704869"
+    },
+    {
+      "id": "buy-1790965181695-APLD-765333",
+      "kind": "buy",
+      "symbol": "APLD",
+      "qty": 1,
+      "price": 25.215,
+      "notional": 25.21,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-02T18:19:41.695Z",
+      "orderId": "94dccb33-9885-4763-bd3a-4d3d4bf7a3ab"
     }
   ]
 }
