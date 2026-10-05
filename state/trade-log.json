@@ -1631,6 +1631,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-02T22:28:46.315Z",
       "orderId": "2233cf21-582d-4931-abbb-5aa89aa0a4ea"
+    },
+    {
+      "id": "sell-1791234212200-IBRX-957863",
+      "kind": "sell",
+      "symbol": "IBRX",
+      "qty": 3,
+      "price": 10.3804,
+      "realizedPl": -0.258801,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-05T21:03:32.200Z",
+      "matchedBuyId": "buy-1790980126315-IBRX-587291"
     }
   ]
 }
