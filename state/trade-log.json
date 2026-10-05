@@ -1642,6 +1642,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-05T21:03:32.200Z",
       "matchedBuyId": "buy-1790980126315-IBRX-587291"
+    },
+    {
+      "id": "buy-1791234213339-NVAX-417676",
+      "kind": "buy",
+      "symbol": "NVAX",
+      "qty": 2,
+      "price": 12.56,
+      "notional": 25.12,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-05T21:03:33.339Z",
+      "orderId": "43ff0142-c636-419a-9516-74d497349f07"
+    },
+    {
+      "id": "buy-1791234213351-RIVN-992831",
+      "kind": "buy",
+      "symbol": "RIVN",
+      "qty": 2,
+      "price": 14.61,
+      "notional": 29.22,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-05T21:03:33.351Z",
+      "orderId": "1b0b0ba5-7998-4ab5-bdab-9d4a09407d9c"
     }
   ]
 }
