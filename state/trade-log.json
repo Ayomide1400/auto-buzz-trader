@@ -1696,6 +1696,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-06T01:46:18.173Z",
       "orderId": "b7c6988a-9c1d-4142-b9a0-4e2819a9eb44"
+    },
+    {
+      "id": "sell-1791312728376-NVAX-689123",
+      "kind": "sell",
+      "symbol": "NVAX",
+      "qty": 2,
+      "price": 11.91,
+      "realizedPl": -1.3,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-06T14:05:58.138884Z",
+      "orderId": "5cee0133-8c56-48f6-95f7-d7d00331571b",
+      "matchedBuyId": "buy-1791251178161-NVAX-645659"
     }
   ]
 }
