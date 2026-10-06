@@ -1674,6 +1674,28 @@
       "realizedPl": -0.020001,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-06T01:46:16.976Z"
+    },
+    {
+      "id": "buy-1791251178161-NVAX-645659",
+      "kind": "buy",
+      "symbol": "NVAX",
+      "qty": 2,
+      "price": 12.56,
+      "notional": 25.12,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-06T01:46:18.161Z",
+      "orderId": "24ccbaa0-7be3-479c-8dcd-7ab640c027b0"
+    },
+    {
+      "id": "buy-1791251178173-MAT-939518",
+      "kind": "buy",
+      "symbol": "MAT",
+      "qty": 2,
+      "price": 16.105,
+      "notional": 32.21,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-06T01:46:18.173Z",
+      "orderId": "b7c6988a-9c1d-4142-b9a0-4e2819a9eb44"
     }
   ]
 }
