@@ -1664,6 +1664,16 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-05T21:03:33.351Z",
       "orderId": "1b0b0ba5-7998-4ab5-bdab-9d4a09407d9c"
+    },
+    {
+      "id": "sell-1791251176976-IBRX-301361",
+      "kind": "sell",
+      "symbol": "IBRX",
+      "qty": 3,
+      "price": 10.46,
+      "realizedPl": -0.020001,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-06T01:46:16.976Z"
     }
   ]
 }
