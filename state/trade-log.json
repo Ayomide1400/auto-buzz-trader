@@ -1708,6 +1708,17 @@
       "timestamp": "2026-10-06T14:05:58.138884Z",
       "orderId": "5cee0133-8c56-48f6-95f7-d7d00331571b",
       "matchedBuyId": "buy-1791251178161-NVAX-645659"
+    },
+    {
+      "id": "buy-1791312729485-XNDU-433958",
+      "kind": "buy",
+      "symbol": "XNDU",
+      "qty": 6,
+      "price": 5.235,
+      "notional": 31.41,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-06T18:52:09.485Z",
+      "orderId": "e0ff8879-c811-401b-a6e2-03e3abc6b5ce"
     }
   ]
 }
