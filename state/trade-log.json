@@ -1731,6 +1731,39 @@
       "timestamp": "2026-10-06T14:05:58.138884Z",
       "orderId": "5cee0133-8c56-48f6-95f7-d7d00331571b",
       "matchedBuyId": "buy-1791234213339-NVAX-417676"
+    },
+    {
+      "id": "sell-1791327444308-MAT-189899",
+      "kind": "sell",
+      "symbol": "MAT",
+      "qty": 2,
+      "price": 15.97,
+      "realizedPl": -0.31,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-06T22:57:24.308Z",
+      "matchedBuyId": "buy-1791251178173-MAT-939518"
+    },
+    {
+      "id": "sell-1791327444333-RIVN-415791",
+      "kind": "sell",
+      "symbol": "RIVN",
+      "qty": 2,
+      "price": 14.5115,
+      "realizedPl": -0.217,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-06T22:57:24.333Z",
+      "matchedBuyId": "buy-1791234213351-RIVN-992831"
+    },
+    {
+      "id": "sell-1791327444354-XNDU-887667",
+      "kind": "sell",
+      "symbol": "XNDU",
+      "qty": 6,
+      "price": 5.14,
+      "realizedPl": -0.6,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-06T22:57:24.354Z",
+      "matchedBuyId": "buy-1791312729485-XNDU-433958"
     }
   ]
 }
