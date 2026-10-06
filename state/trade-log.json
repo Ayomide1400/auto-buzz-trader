@@ -1764,6 +1764,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-06T22:57:24.354Z",
       "matchedBuyId": "buy-1791312729485-XNDU-433958"
+    },
+    {
+      "id": "buy-1791327445522-APLD-229607",
+      "kind": "buy",
+      "symbol": "APLD",
+      "qty": 1,
+      "price": 25.365,
+      "notional": 25.36,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-06T22:57:25.522Z",
+      "orderId": "1111dbb5-d1a2-47ba-aff6-eae44ada6d9f"
     }
   ]
 }
