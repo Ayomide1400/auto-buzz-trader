@@ -1787,6 +1787,17 @@
       "timestamp": "2026-10-07T13:38:23.319894Z",
       "orderId": "1a35958e-d82d-40eb-b5f2-1b4f2cd5a6de",
       "matchedBuyId": "buy-1791327445522-APLD-229607"
+    },
+    {
+      "id": "buy-1791486819904-CMG-36103",
+      "kind": "buy",
+      "symbol": "CMG",
+      "qty": 1,
+      "price": 33.07,
+      "notional": 33.07,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-08T19:13:39.904Z",
+      "orderId": "89499668-dee6-4ba7-b158-9ef8c3636401"
     }
   ]
 }
