@@ -1798,6 +1798,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-08T19:13:39.904Z",
       "orderId": "89499668-dee6-4ba7-b158-9ef8c3636401"
+    },
+    {
+      "id": "buy-1791503215843-NTLA-375137",
+      "kind": "buy",
+      "symbol": "NTLA",
+      "qty": 2,
+      "price": 12.59,
+      "notional": 25.18,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-08T23:46:55.843Z",
+      "orderId": "f7b59420-8cff-4956-8a57-183fe30b32f6"
     }
   ]
 }
