@@ -1809,6 +1809,30 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-08T23:46:55.843Z",
       "orderId": "f7b59420-8cff-4956-8a57-183fe30b32f6"
+    },
+    {
+      "id": "sell-1791571452385-CMG-434852",
+      "kind": "sell",
+      "symbol": "CMG",
+      "qty": 1,
+      "price": 31.42,
+      "realizedPl": -1.65,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-09T15:01:20.695833Z",
+      "orderId": "ed5c94fd-19b8-4893-b11c-1be7679263d2",
+      "matchedBuyId": "buy-1791486819904-CMG-36103"
+    },
+    {
+      "id": "sell-1791571452396-NTLA-855545",
+      "kind": "sell",
+      "symbol": "NTLA",
+      "qty": 2,
+      "price": 11.93,
+      "realizedPl": -1.32,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-09T13:43:19.8308Z",
+      "orderId": "46b4b07b-5731-4222-950a-8b40895ca3f3",
+      "matchedBuyId": "buy-1791503215843-NTLA-375137"
     }
   ]
 }
