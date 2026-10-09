@@ -1877,6 +1877,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-09T22:56:10.975Z",
       "matchedBuyId": "buy-1791571453644-IOVA-678649"
+    },
+    {
+      "id": "buy-1791586572031-NVAX-703594",
+      "kind": "buy",
+      "symbol": "NVAX",
+      "qty": 2,
+      "price": 12.745,
+      "notional": 25.49,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-09T22:56:12.031Z",
+      "orderId": "a78d4116-3d59-4e50-9342-7b81b0cb484e"
+    },
+    {
+      "id": "buy-1791586572045-NU-942139",
+      "kind": "buy",
+      "symbol": "NU",
+      "qty": 2,
+      "price": 16.115,
+      "notional": 32.23,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-09T22:56:12.045Z",
+      "orderId": "e7965dba-f3d2-4c98-8e71-bf4ef4214b4c"
     }
   ]
 }
