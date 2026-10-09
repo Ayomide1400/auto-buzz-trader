@@ -1833,6 +1833,28 @@
       "timestamp": "2026-10-09T13:43:19.8308Z",
       "orderId": "46b4b07b-5731-4222-950a-8b40895ca3f3",
       "matchedBuyId": "buy-1791503215843-NTLA-375137"
+    },
+    {
+      "id": "buy-1791571453644-IOVA-678649",
+      "kind": "buy",
+      "symbol": "IOVA",
+      "qty": 2,
+      "price": 14.81,
+      "notional": 29.62,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-09T18:44:13.644Z",
+      "orderId": "4422972a-8255-4185-a72c-7078f0d59d84"
+    },
+    {
+      "id": "buy-1791571453659-GME-452242",
+      "kind": "buy",
+      "symbol": "GME",
+      "qty": 1,
+      "price": 26.41,
+      "notional": 26.41,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-09T18:44:13.659Z",
+      "orderId": "c8fbdd94-f225-49e5-8848-75e85774ea75"
     }
   ]
 }
