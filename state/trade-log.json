@@ -1855,6 +1855,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-09T18:44:13.659Z",
       "orderId": "c8fbdd94-f225-49e5-8848-75e85774ea75"
+    },
+    {
+      "id": "sell-1791586570923-GME-573978",
+      "kind": "sell",
+      "symbol": "GME",
+      "qty": 1,
+      "price": 26.65,
+      "realizedPl": 0.24,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-09T22:56:10.923Z",
+      "matchedBuyId": "buy-1791571453659-GME-452242"
+    },
+    {
+      "id": "sell-1791586570975-IOVA-117457",
+      "kind": "sell",
+      "symbol": "IOVA",
+      "qty": 2,
+      "price": 14.6295,
+      "realizedPl": -0.381,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-09T22:56:10.975Z",
+      "matchedBuyId": "buy-1791571453644-IOVA-678649"
     }
   ]
 }
