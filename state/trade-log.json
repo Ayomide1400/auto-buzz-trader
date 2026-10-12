@@ -1899,6 +1899,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-09T22:56:12.045Z",
       "orderId": "e7965dba-f3d2-4c98-8e71-bf4ef4214b4c"
+    },
+    {
+      "id": "sell-1791841257564-NU-792563",
+      "kind": "sell",
+      "symbol": "NU",
+      "qty": 2,
+      "price": 15.9831,
+      "realizedPl": -0.3338,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-12T21:40:57.564Z",
+      "matchedBuyId": "buy-1791586572045-NU-942139"
+    },
+    {
+      "id": "sell-1791841257592-NVAX-872010",
+      "kind": "sell",
+      "symbol": "NVAX",
+      "qty": 2,
+      "price": 12.6307,
+      "realizedPl": 0.3914,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-12T21:40:57.592Z",
+      "matchedBuyId": "buy-1791586572031-NVAX-703594"
     }
   ]
 }
