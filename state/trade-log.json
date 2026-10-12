@@ -1921,6 +1921,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-12T21:40:57.592Z",
       "matchedBuyId": "buy-1791586572031-NVAX-703594"
+    },
+    {
+      "id": "buy-1791841259047-SNAP-732265",
+      "kind": "buy",
+      "symbol": "SNAP",
+      "qty": 5,
+      "price": 6.54,
+      "notional": 32.7,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-12T21:40:59.047Z",
+      "orderId": "80aa795f-cd13-4b9b-9eb9-f158f0f6dea3"
     }
   ]
 }
