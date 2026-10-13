@@ -1952,6 +1952,28 @@
       "realizedPl": 0.21,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-13T02:43:41.326Z"
+    },
+    {
+      "id": "buy-1791920957421-NVTS-989065",
+      "kind": "buy",
+      "symbol": "NVTS",
+      "qty": 3,
+      "price": 10.535,
+      "notional": 31.61,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-13T19:49:17.421Z",
+      "orderId": "f34095f0-e46e-4b37-b0c2-cb6f0aa4f524"
+    },
+    {
+      "id": "buy-1791920957439-UNG-528500",
+      "kind": "buy",
+      "symbol": "UNG",
+      "qty": 3,
+      "price": 11.41,
+      "notional": 34.23,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-13T19:49:17.439Z",
+      "orderId": "93320c02-0320-4b14-9b38-d57980d0c3c2"
     }
   ]
 }
