@@ -1996,6 +1996,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-13T23:41:18.767Z",
       "matchedBuyId": "buy-1791841259047-SNAP-732265"
+    },
+    {
+      "id": "buy-1791934879945-LABD-611862",
+      "kind": "buy",
+      "symbol": "LABD",
+      "qty": 4,
+      "price": 8.59,
+      "notional": 34.36,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-13T23:41:19.945Z",
+      "orderId": "a910a54c-642c-4ef8-9758-dd1f33e06a42"
+    },
+    {
+      "id": "buy-1791934879959-VG-705179",
+      "kind": "buy",
+      "symbol": "VG",
+      "qty": 2,
+      "price": 13.84,
+      "notional": 27.68,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-13T23:41:19.959Z",
+      "orderId": "57786e61-2206-4286-81bc-07cbd96ef060"
     }
   ]
 }
