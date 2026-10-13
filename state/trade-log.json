@@ -1974,6 +1974,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-13T19:49:17.439Z",
       "orderId": "93320c02-0320-4b14-9b38-d57980d0c3c2"
+    },
+    {
+      "id": "sell-1791934878742-NVTS-39247",
+      "kind": "sell",
+      "symbol": "NVTS",
+      "qty": 3,
+      "price": 10.4434,
+      "realizedPl": -0.2898,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-13T23:41:18.742Z",
+      "matchedBuyId": "buy-1791920957421-NVTS-989065"
+    },
+    {
+      "id": "sell-1791934878767-SNAP-162663",
+      "kind": "sell",
+      "symbol": "SNAP",
+      "qty": 5,
+      "price": 6.4305,
+      "realizedPl": -0.4975,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-13T23:41:18.767Z",
+      "matchedBuyId": "buy-1791841259047-SNAP-732265"
     }
   ]
 }
