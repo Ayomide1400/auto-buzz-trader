@@ -2029,6 +2029,39 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-14T17:54:57.753Z",
       "matchedBuyId": "buy-1791934879959-VG-705179"
+    },
+    {
+      "id": "buy-1792000498994-VSTM-670613",
+      "kind": "buy",
+      "symbol": "VSTM",
+      "qty": 4,
+      "price": 7.955,
+      "notional": 31.82,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-14T17:54:58.994Z",
+      "orderId": "e8292a94-e802-45cd-910b-af50791c196c"
+    },
+    {
+      "id": "buy-1792000499007-IBRX-409435",
+      "kind": "buy",
+      "symbol": "IBRX",
+      "qty": 3,
+      "price": 10.295,
+      "notional": 30.88,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-14T17:54:59.007Z",
+      "orderId": "94c2c347-8454-4cce-ba4b-70f60c7cfdac"
+    },
+    {
+      "id": "buy-1792000499019-PFE-38607",
+      "kind": "buy",
+      "symbol": "PFE",
+      "qty": 1,
+      "price": 29.38,
+      "notional": 29.38,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-14T17:54:59.019Z",
+      "orderId": "c286224f-e38b-4644-9151-517fa41556dc"
     }
   ]
 }
