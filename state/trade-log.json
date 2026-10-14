@@ -2074,6 +2074,50 @@
       "timestamp": "2026-10-14T19:00:10.622447Z",
       "orderId": "167a224a-b780-491b-9ed4-1778882dc0ca",
       "matchedBuyId": "buy-1792000499007-IBRX-409435"
+    },
+    {
+      "id": "sell-1792013511772-LABD-81545",
+      "kind": "sell",
+      "symbol": "LABD",
+      "qty": 4,
+      "price": 8.63,
+      "realizedPl": -0.88,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-14T21:31:51.773Z",
+      "matchedBuyId": "buy-1791934879945-LABD-611862"
+    },
+    {
+      "id": "sell-1792013511802-PFE-68545",
+      "kind": "sell",
+      "symbol": "PFE",
+      "qty": 1,
+      "price": 29.17,
+      "realizedPl": -0.21,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-14T21:31:51.802Z",
+      "matchedBuyId": "buy-1792000499019-PFE-38607"
+    },
+    {
+      "id": "sell-1792013511832-UNG-98651",
+      "kind": "sell",
+      "symbol": "UNG",
+      "qty": 3,
+      "price": 11.26,
+      "realizedPl": -0.48,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-14T21:31:51.833Z",
+      "matchedBuyId": "buy-1791920957439-UNG-528500"
+    },
+    {
+      "id": "sell-1792013511859-VSTM-467776",
+      "kind": "sell",
+      "symbol": "VSTM",
+      "qty": 4,
+      "price": 7.92,
+      "realizedPl": -0.16,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-14T21:31:51.859Z",
+      "matchedBuyId": "buy-1792000498994-VSTM-670613"
     }
   ]
 }
