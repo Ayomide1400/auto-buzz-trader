@@ -2180,6 +2180,61 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-15T20:33:47.204Z",
       "matchedBuyId": "buy-1792086166289-KHC-319630"
+    },
+    {
+      "id": "buy-1792096428559-WULF-226632",
+      "kind": "buy",
+      "symbol": "WULF",
+      "qty": 2,
+      "price": 12.6,
+      "notional": 25.2,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-15T20:33:48.559Z",
+      "orderId": "f79c70cb-31a7-430d-893a-8fb38930d993"
+    },
+    {
+      "id": "buy-1792096428571-QXO-815550",
+      "kind": "buy",
+      "symbol": "QXO",
+      "qty": 3,
+      "price": 11.195,
+      "notional": 33.59,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-15T20:33:48.571Z",
+      "orderId": "49e14dae-8a85-41c3-87fb-4e1f67d4aeb8"
+    },
+    {
+      "id": "buy-1792096428582-SOFI-345853",
+      "kind": "buy",
+      "symbol": "SOFI",
+      "qty": 2,
+      "price": 15.07,
+      "notional": 30.14,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-15T20:33:48.582Z",
+      "orderId": "f9dd042d-8297-41ec-a8af-734bb0116b0b"
+    },
+    {
+      "id": "buy-1792096428603-RDW-181550",
+      "kind": "buy",
+      "symbol": "RDW",
+      "qty": 3,
+      "price": 8.9,
+      "notional": 26.7,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-15T20:33:48.603Z",
+      "orderId": "4cf57851-db50-473f-9cbf-f1b5d191e9a3"
+    },
+    {
+      "id": "buy-1792096428615-POET-909268",
+      "kind": "buy",
+      "symbol": "POET",
+      "qty": 5,
+      "price": 6,
+      "notional": 30,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-15T20:33:48.615Z",
+      "orderId": "c7703b10-94b2-4745-9b92-087f71b397fb"
     }
   ]
 }
