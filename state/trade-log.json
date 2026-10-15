@@ -2158,6 +2158,17 @@
       "realizedPl": -1.04,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-15T00:07:56.422Z"
+    },
+    {
+      "id": "buy-1792086166289-KHC-319630",
+      "kind": "buy",
+      "symbol": "KHC",
+      "qty": 1,
+      "price": 23.27,
+      "notional": 23.27,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-15T17:42:46.289Z",
+      "orderId": "6c9dc05b-a35f-4ac5-b2e6-ed1360e01e4f"
     }
   ]
 }
