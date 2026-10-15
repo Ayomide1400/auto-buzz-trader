@@ -2169,6 +2169,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-15T17:42:46.289Z",
       "orderId": "6c9dc05b-a35f-4ac5-b2e6-ed1360e01e4f"
+    },
+    {
+      "id": "sell-1792096427204-KHC-250172",
+      "kind": "sell",
+      "symbol": "KHC",
+      "qty": 1,
+      "price": 23.2537,
+      "realizedPl": -0.0263,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-15T20:33:47.204Z",
+      "matchedBuyId": "buy-1792086166289-KHC-319630"
     }
   ]
 }
