@@ -2235,6 +2235,50 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-15T20:33:48.615Z",
       "orderId": "c7703b10-94b2-4745-9b92-087f71b397fb"
+    },
+    {
+      "id": "buy-1792106377260-VSTM-107500",
+      "kind": "buy",
+      "symbol": "VSTM",
+      "qty": 3,
+      "price": 9.22,
+      "notional": 27.66,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-15T23:19:37.260Z",
+      "orderId": "7db1aeed-fde2-48c7-a5ff-2c73cf844461"
+    },
+    {
+      "id": "buy-1792106377275-WULF-797233",
+      "kind": "buy",
+      "symbol": "WULF",
+      "qty": 2,
+      "price": 12.6,
+      "notional": 25.2,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-15T23:19:37.276Z",
+      "orderId": "2b8f9e09-6035-457b-a4d3-2cdc74b438b2"
+    },
+    {
+      "id": "buy-1792106377288-QUBT-590407",
+      "kind": "buy",
+      "symbol": "QUBT",
+      "qty": 5,
+      "price": 6.855,
+      "notional": 34.28,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-15T23:19:37.288Z",
+      "orderId": "7a65f505-3391-47cd-9f3f-a18013fd10b7"
+    },
+    {
+      "id": "buy-1792106377301-POET-258162",
+      "kind": "buy",
+      "symbol": "POET",
+      "qty": 5,
+      "price": 6,
+      "notional": 30,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-15T23:19:37.301Z",
+      "orderId": "168985fd-1810-45b1-ada9-25413cd30e92"
     }
   ]
 }
