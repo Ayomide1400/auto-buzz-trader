@@ -2361,6 +2361,42 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-16T17:18:01.252Z",
       "orderId": "caf74d3e-ca10-4ac6-b4bb-484bf450c7d2"
+    },
+    {
+      "id": "sell-1792180896452-WULF-346640",
+      "kind": "sell",
+      "symbol": "WULF",
+      "qty": 2,
+      "price": 11.97,
+      "realizedPl": -1.26,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-16T16:08:50.75838Z",
+      "orderId": "5df76e1d-515b-477d-b29e-e4376a1f2f65",
+      "matchedBuyId": "buy-1792096428559-WULF-226632"
+    },
+    {
+      "id": "sell-1792180896465-POET-651296",
+      "kind": "sell",
+      "symbol": "POET",
+      "qty": 5,
+      "price": 5.7,
+      "realizedPl": -1.5,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-16T15:26:30.528281Z",
+      "orderId": "a0b9cdd9-1c75-439b-9f96-b276934784a2",
+      "matchedBuyId": "buy-1792096428615-POET-909268"
+    },
+    {
+      "id": "sell-1792180896475-UVXY-756567",
+      "kind": "sell",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 18.35,
+      "realizedPl": -0.97,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-16T17:27:46.443619Z",
+      "orderId": "7427d135-d2ed-4c95-a965-8bb2addf5b0e",
+      "matchedBuyId": "buy-1792171081239-UVXY-277927"
     }
   ]
 }
