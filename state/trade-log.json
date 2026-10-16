@@ -2339,6 +2339,28 @@
       "timestamp": "2026-10-16T15:10:17.373453Z",
       "orderId": "1860f33c-060a-4351-a46b-c625998dcf6d",
       "matchedBuyId": "buy-1792106377288-QUBT-590407"
+    },
+    {
+      "id": "buy-1792171081239-UVXY-277927",
+      "kind": "buy",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 19.32,
+      "notional": 19.32,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-16T17:18:01.239Z",
+      "orderId": "f3d8235b-b04e-4eff-9cba-f2e4582fc3b3"
+    },
+    {
+      "id": "buy-1792171081252-LABD-802122",
+      "kind": "buy",
+      "symbol": "LABD",
+      "qty": 3,
+      "price": 8.96,
+      "notional": 26.88,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-16T17:18:01.252Z",
+      "orderId": "caf74d3e-ca10-4ac6-b4bb-484bf450c7d2"
     }
   ]
 }
