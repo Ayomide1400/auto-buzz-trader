@@ -2397,6 +2397,39 @@
       "timestamp": "2026-10-16T17:27:46.443619Z",
       "orderId": "7427d135-d2ed-4c95-a965-8bb2addf5b0e",
       "matchedBuyId": "buy-1792171081239-UVXY-277927"
+    },
+    {
+      "id": "sell-1792180897648-LABD-650184",
+      "kind": "sell",
+      "symbol": "LABD",
+      "qty": 3,
+      "price": 8.8594,
+      "realizedPl": -0.3918,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-16T20:01:37.648Z",
+      "matchedBuyId": "buy-1792171081252-LABD-802122"
+    },
+    {
+      "id": "sell-1792180897673-QXO-529478",
+      "kind": "sell",
+      "symbol": "QXO",
+      "qty": 3,
+      "price": 10.8994,
+      "realizedPl": -0.611799,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-16T20:01:37.673Z",
+      "matchedBuyId": "buy-1792096428571-QXO-815550"
+    },
+    {
+      "id": "sell-1792180897698-SOFI-264955",
+      "kind": "sell",
+      "symbol": "SOFI",
+      "qty": 2,
+      "price": 14.5795,
+      "realizedPl": -1.301,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-16T20:01:37.698Z",
+      "matchedBuyId": "buy-1792096428582-SOFI-345853"
     }
   ]
 }
