@@ -2441,6 +2441,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-16T22:52:50.084Z",
       "matchedBuyId": "buy-1792096428582-SOFI-345853"
+    },
+    {
+      "id": "buy-1792191171258-UVXY-944245",
+      "kind": "buy",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 18.4,
+      "notional": 18.4,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-16T22:52:51.258Z",
+      "orderId": "8d2abfac-8a0b-4fce-8299-b62641a0578e"
+    },
+    {
+      "id": "buy-1792191171271-PBR-13786",
+      "kind": "buy",
+      "symbol": "PBR",
+      "qty": 1,
+      "price": 26.015,
+      "notional": 26.02,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-16T22:52:51.271Z",
+      "orderId": "635fa1a9-637b-4ab7-820b-8ec25f152691"
     }
   ]
 }
