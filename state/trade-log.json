@@ -2279,6 +2279,66 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-15T23:19:37.301Z",
       "orderId": "168985fd-1810-45b1-ada9-25413cd30e92"
+    },
+    {
+      "id": "sell-1792171079972-WULF-486345",
+      "kind": "sell",
+      "symbol": "WULF",
+      "qty": 2,
+      "price": 11.97,
+      "realizedPl": -1.26,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-16T16:08:50.75838Z",
+      "orderId": "5df76e1d-515b-477d-b29e-e4376a1f2f65",
+      "matchedBuyId": "buy-1792106377275-WULF-797233"
+    },
+    {
+      "id": "sell-1792171079987-RDW-945185",
+      "kind": "sell",
+      "symbol": "RDW",
+      "qty": 3,
+      "price": 8.46,
+      "realizedPl": -1.32,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-16T15:59:07.080084Z",
+      "orderId": "987f943e-8874-4d3b-a71b-f3a20c14f65d",
+      "matchedBuyId": "buy-1792096428603-RDW-181550"
+    },
+    {
+      "id": "sell-1792171080004-POET-549968",
+      "kind": "sell",
+      "symbol": "POET",
+      "qty": 5,
+      "price": 5.7,
+      "realizedPl": -1.5,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-16T15:26:30.528281Z",
+      "orderId": "a0b9cdd9-1c75-439b-9f96-b276934784a2",
+      "matchedBuyId": "buy-1792106377301-POET-258162"
+    },
+    {
+      "id": "sell-1792171080016-VSTM-41180",
+      "kind": "sell",
+      "symbol": "VSTM",
+      "qty": 3,
+      "price": 8.76,
+      "realizedPl": -1.38,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-16T13:45:44.995919Z",
+      "orderId": "c92ae3f3-7dbc-4c1e-a4cb-64fea471454e",
+      "matchedBuyId": "buy-1792106377260-VSTM-107500"
+    },
+    {
+      "id": "sell-1792171080027-QUBT-719321",
+      "kind": "sell",
+      "symbol": "QUBT",
+      "qty": 5,
+      "price": 6.51,
+      "realizedPl": -1.73,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-16T15:10:17.373453Z",
+      "orderId": "1860f33c-060a-4351-a46b-c625998dcf6d",
+      "matchedBuyId": "buy-1792106377288-QUBT-590407"
     }
   ]
 }
