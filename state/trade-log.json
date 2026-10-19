@@ -2509,6 +2509,28 @@
       "timestamp": "2026-10-19T13:32:58.067484Z",
       "orderId": "9e7c572a-98b5-4beb-bb0e-8e6d73dffec4",
       "matchedBuyId": "buy-1792180898941-UVXY-487965"
+    },
+    {
+      "id": "sell-1792450529562-IREN-508092",
+      "kind": "sell",
+      "symbol": "IREN",
+      "qty": 1,
+      "price": 27.8107,
+      "realizedPl": -0.0193,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-19T22:55:29.562Z",
+      "matchedBuyId": "buy-1792437147783-IREN-92576"
+    },
+    {
+      "id": "sell-1792450529586-PBR-720964",
+      "kind": "sell",
+      "symbol": "PBR",
+      "qty": 1,
+      "price": 25.74,
+      "realizedPl": -0.24,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-19T22:55:29.586Z",
+      "matchedBuyId": "buy-1792191171271-PBR-13786"
     }
   ]
 }
