@@ -2475,6 +2475,28 @@
       "timestamp": "2026-10-19T13:32:58.067484Z",
       "orderId": "9e7c572a-98b5-4beb-bb0e-8e6d73dffec4",
       "matchedBuyId": "buy-1792191171258-UVXY-944245"
+    },
+    {
+      "id": "buy-1792437147766-CLF-832376",
+      "kind": "buy",
+      "symbol": "CLF",
+      "qty": 2,
+      "price": 14.27,
+      "notional": 28.54,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-19T19:12:27.766Z",
+      "orderId": "adde7f41-1bde-4ac8-ac64-da7d9bf394af"
+    },
+    {
+      "id": "buy-1792437147783-IREN-92576",
+      "kind": "buy",
+      "symbol": "IREN",
+      "qty": 1,
+      "price": 27.815,
+      "notional": 27.82,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-19T19:12:27.783Z",
+      "orderId": "58694a49-ae15-4fdf-80db-f9d55598fd97"
     }
   ]
 }
