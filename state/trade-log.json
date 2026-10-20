@@ -2543,6 +2543,39 @@
       "timestamp": "2026-10-20T13:31:22.147985Z",
       "orderId": "2434a014-923c-4b3c-b598-57f7a6de0a6f",
       "matchedBuyId": "buy-1792437147766-CLF-832376"
+    },
+    {
+      "id": "buy-1792518786980-MYGN-509540",
+      "kind": "buy",
+      "symbol": "MYGN",
+      "qty": 6,
+      "price": 5.79,
+      "notional": 34.74,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-20T17:53:06.980Z",
+      "orderId": "374db95c-3e97-44fa-8550-cfd810dcc8a7"
+    },
+    {
+      "id": "buy-1792518786995-BB-231900",
+      "kind": "buy",
+      "symbol": "BB",
+      "qty": 4,
+      "price": 8.75,
+      "notional": 35,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-20T17:53:06.995Z",
+      "orderId": "d918aff2-3367-4d77-83a3-ad98929af684"
+    },
+    {
+      "id": "buy-1792518787007-SNAP-603477",
+      "kind": "buy",
+      "symbol": "SNAP",
+      "qty": 5,
+      "price": 6.43,
+      "notional": 32.15,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-20T17:53:07.007Z",
+      "orderId": "f16825d3-2158-42ca-af2e-f8f9c542b545"
     }
   ]
 }
