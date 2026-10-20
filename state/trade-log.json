@@ -2598,6 +2598,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-20T21:29:18.536Z",
       "matchedBuyId": "buy-1792518787007-SNAP-603477"
+    },
+    {
+      "id": "buy-1792531759756-BMNR-371958",
+      "kind": "buy",
+      "symbol": "BMNR",
+      "qty": 1,
+      "price": 22.8,
+      "notional": 22.8,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-20T21:29:19.756Z",
+      "orderId": "14a1b191-fe76-41a7-969c-3a427e143b34"
     }
   ]
 }
