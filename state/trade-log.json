@@ -2531,6 +2531,18 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-19T22:55:29.586Z",
       "matchedBuyId": "buy-1792191171271-PBR-13786"
+    },
+    {
+      "id": "sell-1792518785646-CLF-316220",
+      "kind": "sell",
+      "symbol": "CLF",
+      "qty": 2,
+      "price": 13.56,
+      "realizedPl": -1.42,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-20T13:31:22.147985Z",
+      "orderId": "2434a014-923c-4b3c-b598-57f7a6de0a6f",
+      "matchedBuyId": "buy-1792437147766-CLF-832376"
     }
   ]
 }
