@@ -2576,6 +2576,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-20T17:53:07.007Z",
       "orderId": "f16825d3-2158-42ca-af2e-f8f9c542b545"
+    },
+    {
+      "id": "sell-1792531758513-BB-835685",
+      "kind": "sell",
+      "symbol": "BB",
+      "qty": 4,
+      "price": 8.9,
+      "realizedPl": 0.6,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-20T21:29:18.513Z",
+      "matchedBuyId": "buy-1792518786995-BB-231900"
+    },
+    {
+      "id": "sell-1792531758536-SNAP-952583",
+      "kind": "sell",
+      "symbol": "SNAP",
+      "qty": 5,
+      "price": 6.41,
+      "realizedPl": -0.1,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-20T21:29:18.536Z",
+      "matchedBuyId": "buy-1792518787007-SNAP-603477"
     }
   ]
 }
