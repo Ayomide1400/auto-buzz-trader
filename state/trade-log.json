@@ -2709,6 +2709,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-21T21:33:57.674Z",
       "matchedBuyId": "buy-1792605473752-WULF-358079"
+    },
+    {
+      "id": "buy-1792618438997-ASST-708990",
+      "kind": "buy",
+      "symbol": "ASST",
+      "qty": 1,
+      "price": 30.73,
+      "notional": 30.73,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-21T21:33:58.997Z",
+      "orderId": "4ce3fbb7-d0eb-4778-9545-7ad294212250"
+    },
+    {
+      "id": "buy-1792618439010-NOK-536713",
+      "kind": "buy",
+      "symbol": "NOK",
+      "qty": 3,
+      "price": 9.26,
+      "notional": 27.78,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-21T21:33:59.010Z",
+      "orderId": "877cdcfa-e906-4a8e-90cf-1b2cb4cf811b"
     }
   ]
 }
