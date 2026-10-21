@@ -2621,6 +2621,50 @@
       "timestamp": "2026-10-21T13:34:08.436604Z",
       "orderId": "fee5f821-417d-4784-a93d-e31309d9abfe",
       "matchedBuyId": "buy-1792518786980-MYGN-509540"
+    },
+    {
+      "id": "buy-1792605473740-APLD-195197",
+      "kind": "buy",
+      "symbol": "APLD",
+      "qty": 1,
+      "price": 21.21,
+      "notional": 21.21,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-21T17:57:53.740Z",
+      "orderId": "f5f4a013-916c-425b-b376-87222bb4ad48"
+    },
+    {
+      "id": "buy-1792605473752-WULF-358079",
+      "kind": "buy",
+      "symbol": "WULF",
+      "qty": 2,
+      "price": 13.01,
+      "notional": 26.02,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-21T17:57:53.753Z",
+      "orderId": "b658e665-5cb1-418c-8a3f-258470bbe50a"
+    },
+    {
+      "id": "buy-1792605473768-SKYD-830611",
+      "kind": "buy",
+      "symbol": "SKYD",
+      "qty": 4,
+      "price": 7.655,
+      "notional": 30.62,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-21T17:57:53.768Z",
+      "orderId": "8fd28abf-1f89-4887-928e-820828533bfc"
+    },
+    {
+      "id": "buy-1792605473785-TSLL-573694",
+      "kind": "buy",
+      "symbol": "TSLL",
+      "qty": 3,
+      "price": 10.57,
+      "notional": 31.71,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-21T17:57:53.785Z",
+      "orderId": "a4ea6e20-61f4-469d-aa1a-3e153301332d"
     }
   ]
 }
