@@ -2665,6 +2665,50 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-21T17:57:53.785Z",
       "orderId": "a4ea6e20-61f4-469d-aa1a-3e153301332d"
+    },
+    {
+      "id": "sell-1792618437604-APLD-288761",
+      "kind": "sell",
+      "symbol": "APLD",
+      "qty": 1,
+      "price": 21.139,
+      "realizedPl": -0.091,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-21T21:33:57.604Z",
+      "matchedBuyId": "buy-1792605473740-APLD-195197"
+    },
+    {
+      "id": "sell-1792618437629-BMNR-822681",
+      "kind": "sell",
+      "symbol": "BMNR",
+      "qty": 1,
+      "price": 24.0398,
+      "realizedPl": 0.7998,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-21T21:33:57.629Z",
+      "matchedBuyId": "buy-1792531759756-BMNR-371958"
+    },
+    {
+      "id": "sell-1792618437652-SKYD-298676",
+      "kind": "sell",
+      "symbol": "SKYD",
+      "qty": 4,
+      "price": 7.87,
+      "realizedPl": 0.84,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-21T21:33:57.652Z",
+      "matchedBuyId": "buy-1792605473768-SKYD-830611"
+    },
+    {
+      "id": "sell-1792618437674-WULF-730451",
+      "kind": "sell",
+      "symbol": "WULF",
+      "qty": 2,
+      "price": 12.8392,
+      "realizedPl": -0.3616,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-21T21:33:57.674Z",
+      "matchedBuyId": "buy-1792605473752-WULF-358079"
     }
   ]
 }
