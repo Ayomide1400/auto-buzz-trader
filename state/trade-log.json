@@ -2609,6 +2609,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-20T21:29:19.756Z",
       "orderId": "14a1b191-fe76-41a7-969c-3a427e143b34"
+    },
+    {
+      "id": "sell-1792605472450-MYGN-905532",
+      "kind": "sell",
+      "symbol": "MYGN",
+      "qty": 6,
+      "price": 5.513333,
+      "realizedPl": -1.66,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-21T13:34:08.436604Z",
+      "orderId": "fee5f821-417d-4784-a93d-e31309d9abfe",
+      "matchedBuyId": "buy-1792518786980-MYGN-509540"
     }
   ]
 }
