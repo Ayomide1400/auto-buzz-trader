@@ -2840,6 +2840,17 @@
       "timestamp": "2026-10-22T13:34:23.726792Z",
       "orderId": "a1e837e4-0706-442d-a8e4-8b91681532e2",
       "matchedBuyId": "buy-1792628130956-KORU-123107"
+    },
+    {
+      "id": "buy-1792691709625-SNAP-887815",
+      "kind": "buy",
+      "symbol": "SNAP",
+      "qty": 5,
+      "price": 6.5,
+      "notional": 32.5,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-22T17:55:09.625Z",
+      "orderId": "ff2f1dfd-faaf-45cd-a34c-6b209941a4c1"
     }
   ]
 }
