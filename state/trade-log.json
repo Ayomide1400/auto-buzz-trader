@@ -2731,6 +2731,57 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-21T21:33:59.010Z",
       "orderId": "877cdcfa-e906-4a8e-90cf-1b2cb4cf811b"
+    },
+    {
+      "id": "sell-1792628129697-APLD-519371",
+      "kind": "sell",
+      "symbol": "APLD",
+      "qty": 1,
+      "price": 20.79,
+      "realizedPl": -0.44,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-22T00:15:29.697Z"
+    },
+    {
+      "id": "sell-1792628129721-BMNR-752925",
+      "kind": "sell",
+      "symbol": "BMNR",
+      "qty": 1,
+      "price": 23.69,
+      "realizedPl": 0.45,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-22T00:15:29.721Z"
+    },
+    {
+      "id": "sell-1792628129744-SKYD-946638",
+      "kind": "sell",
+      "symbol": "SKYD",
+      "qty": 4,
+      "price": 7.82,
+      "realizedPl": 0.64,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-22T00:15:29.744Z"
+    },
+    {
+      "id": "sell-1792628129767-TSLL-532011",
+      "kind": "sell",
+      "symbol": "TSLL",
+      "qty": 3,
+      "price": 9.92,
+      "realizedPl": -1.98,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-22T00:15:29.767Z",
+      "matchedBuyId": "buy-1792605473785-TSLL-573694"
+    },
+    {
+      "id": "sell-1792628129790-WULF-4613",
+      "kind": "sell",
+      "symbol": "WULF",
+      "qty": 2,
+      "price": 12.55,
+      "realizedPl": -0.94,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-22T00:15:29.790Z"
     }
   ]
 }
