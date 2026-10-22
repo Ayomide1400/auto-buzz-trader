@@ -2782,6 +2782,28 @@
       "realizedPl": -0.94,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-22T00:15:29.790Z"
+    },
+    {
+      "id": "buy-1792628130944-ASST-614810",
+      "kind": "buy",
+      "symbol": "ASST",
+      "qty": 1,
+      "price": 30.73,
+      "notional": 30.73,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-22T00:15:30.944Z",
+      "orderId": "6c75c68a-684a-43f6-b6c3-a4bab4085472"
+    },
+    {
+      "id": "buy-1792628130956-KORU-123107",
+      "kind": "buy",
+      "symbol": "KORU",
+      "qty": 2,
+      "price": 11.92,
+      "notional": 23.84,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-22T00:15:30.956Z",
+      "orderId": "a9b08621-689d-4dd3-a505-3cceef14af92"
     }
   ]
 }
