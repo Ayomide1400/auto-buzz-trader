@@ -2863,6 +2863,17 @@
       "timestamp": "2026-10-22T13:33:29.229521Z",
       "orderId": "944a39de-d219-4ba7-9b60-83f773bf1118",
       "matchedBuyId": "buy-1792618438997-ASST-708990"
+    },
+    {
+      "id": "sell-1792704383331-SNAP-294665",
+      "kind": "sell",
+      "symbol": "SNAP",
+      "qty": 5,
+      "price": 6.35,
+      "realizedPl": -0.75,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-22T21:26:23.331Z",
+      "matchedBuyId": "buy-1792691709625-SNAP-887815"
     }
   ]
 }
