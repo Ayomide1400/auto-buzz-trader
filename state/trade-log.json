@@ -2929,6 +2929,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-23T17:49:35.837Z",
       "matchedBuyId": "buy-1792713989537-KSS-208004"
+    },
+    {
+      "id": "buy-1792777777061-PR-121902",
+      "kind": "buy",
+      "symbol": "PR",
+      "qty": 1,
+      "price": 25.51,
+      "notional": 25.51,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-23T17:49:37.061Z",
+      "orderId": "b9743edb-1803-46a1-a07b-20533553d048"
     }
   ]
 }
