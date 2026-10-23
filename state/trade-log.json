@@ -2918,6 +2918,17 @@
       "timestamp": "2026-10-23T13:36:25.435005Z",
       "orderId": "92d8c328-0d8b-4830-b62d-89861cdd8e5a",
       "matchedBuyId": "buy-1792713989548-T-117627"
+    },
+    {
+      "id": "sell-1792777775837-KSS-358884",
+      "kind": "sell",
+      "symbol": "KSS",
+      "qty": 1,
+      "price": 24.595,
+      "realizedPl": 0.105,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-23T17:49:35.837Z",
+      "matchedBuyId": "buy-1792713989537-KSS-208004"
     }
   ]
 }
