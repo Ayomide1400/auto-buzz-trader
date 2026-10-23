@@ -2962,6 +2962,16 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-23T21:17:30.554Z",
       "orderId": "e2281a28-193b-47eb-a16d-a8a4a12ef47b"
+    },
+    {
+      "id": "sell-1792799829852-PR-873812",
+      "kind": "sell",
+      "symbol": "PR",
+      "qty": 1,
+      "price": 25.49,
+      "realizedPl": -0.03,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-23T23:57:09.852Z"
     }
   ]
 }
