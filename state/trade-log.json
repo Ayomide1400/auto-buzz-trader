@@ -2906,6 +2906,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-23T00:06:29.548Z",
       "orderId": "79562ce5-f431-498b-8b04-0b4a022cc866"
+    },
+    {
+      "id": "sell-1792777774531-T-910308",
+      "kind": "sell",
+      "symbol": "T",
+      "qty": 1,
+      "price": 21.7,
+      "realizedPl": -1.07,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-23T13:36:25.435005Z",
+      "orderId": "92d8c328-0d8b-4830-b62d-89861cdd8e5a",
+      "matchedBuyId": "buy-1792713989548-T-117627"
     }
   ]
 }
