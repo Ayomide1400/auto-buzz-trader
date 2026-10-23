@@ -2874,6 +2874,16 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-22T21:26:23.331Z",
       "matchedBuyId": "buy-1792691709625-SNAP-887815"
+    },
+    {
+      "id": "sell-1792713988378-SNAP-794950",
+      "kind": "sell",
+      "symbol": "SNAP",
+      "qty": 5,
+      "price": 6.34,
+      "realizedPl": -0.8,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-23T00:06:28.378Z"
     }
   ]
 }
