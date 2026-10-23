@@ -2972,6 +2972,28 @@
       "realizedPl": -0.03,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-23T23:57:09.852Z"
+    },
+    {
+      "id": "buy-1792799831103-VG-901643",
+      "kind": "buy",
+      "symbol": "VG",
+      "qty": 2,
+      "price": 14.005,
+      "notional": 28.01,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-23T23:57:11.103Z",
+      "orderId": "ba7b31e5-3a8a-40f1-9d46-1f13e861a08e"
+    },
+    {
+      "id": "buy-1792799831129-LABD-490492",
+      "kind": "buy",
+      "symbol": "LABD",
+      "qty": 4,
+      "price": 7.9,
+      "notional": 31.6,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-23T23:57:11.129Z",
+      "orderId": "f82e1a12-b305-4756-8b4f-decf0a86573c"
     }
   ]
 }
