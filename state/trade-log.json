@@ -2884,6 +2884,28 @@
       "realizedPl": -0.8,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-23T00:06:28.378Z"
+    },
+    {
+      "id": "buy-1792713989537-KSS-208004",
+      "kind": "buy",
+      "symbol": "KSS",
+      "qty": 1,
+      "price": 24.77,
+      "notional": 24.77,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-23T00:06:29.537Z",
+      "orderId": "5928a370-8f30-4338-8e91-f03d9e8a0a68"
+    },
+    {
+      "id": "buy-1792713989548-T-117627",
+      "kind": "buy",
+      "symbol": "T",
+      "qty": 1,
+      "price": 22.77,
+      "notional": 22.77,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-23T00:06:29.548Z",
+      "orderId": "79562ce5-f431-498b-8b04-0b4a022cc866"
     }
   ]
 }
