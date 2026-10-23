@@ -2951,6 +2951,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-23T21:17:29.393Z",
       "matchedBuyId": "buy-1792777777061-PR-121902"
+    },
+    {
+      "id": "buy-1792790250554-S-918870",
+      "kind": "buy",
+      "symbol": "S",
+      "qty": 1,
+      "price": 24.005,
+      "notional": 24,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-23T21:17:30.554Z",
+      "orderId": "e2281a28-193b-47eb-a16d-a8a4a12ef47b"
     }
   ]
 }
