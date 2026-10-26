@@ -3016,6 +3016,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-26T19:08:10.087Z",
       "matchedBuyId": "buy-1792799831103-VG-901643"
+    },
+    {
+      "id": "sell-1793056165300-LABD-312959",
+      "kind": "sell",
+      "symbol": "LABD",
+      "qty": 4,
+      "price": 7.81,
+      "realizedPl": -0.16,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-26T23:09:25.300Z",
+      "matchedBuyId": "buy-1792799831129-LABD-490492"
     }
   ]
 }
