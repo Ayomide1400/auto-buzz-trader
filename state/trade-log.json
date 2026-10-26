@@ -3027,6 +3027,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-26T23:09:25.300Z",
       "matchedBuyId": "buy-1792799831129-LABD-490492"
+    },
+    {
+      "id": "buy-1793056166340-BB-13562",
+      "kind": "buy",
+      "symbol": "BB",
+      "qty": 3,
+      "price": 9.185,
+      "notional": 27.55,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-26T23:09:26.340Z",
+      "orderId": "e113e522-366a-4350-9dc4-160ea473317c"
     }
   ]
 }
