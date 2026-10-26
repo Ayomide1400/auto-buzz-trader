@@ -2994,6 +2994,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-23T23:57:11.129Z",
       "orderId": "f82e1a12-b305-4756-8b4f-decf0a86573c"
+    },
+    {
+      "id": "sell-1793041690056-S-571288",
+      "kind": "sell",
+      "symbol": "S",
+      "qty": 1,
+      "price": 25.47,
+      "realizedPl": 1.26,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-26T19:08:10.056Z",
+      "matchedBuyId": "buy-1792790250554-S-918870"
+    },
+    {
+      "id": "sell-1793041690087-VG-565598",
+      "kind": "sell",
+      "symbol": "VG",
+      "qty": 2,
+      "price": 13.925,
+      "realizedPl": 0.27,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-26T19:08:10.087Z",
+      "matchedBuyId": "buy-1792799831103-VG-901643"
     }
   ]
 }
