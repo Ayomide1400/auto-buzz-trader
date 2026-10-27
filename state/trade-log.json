@@ -3071,6 +3071,39 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-27T22:39:15.486Z",
       "matchedBuyId": "buy-1793056166340-BB-13562"
+    },
+    {
+      "id": "buy-1793140756777-CRML-331999",
+      "kind": "buy",
+      "symbol": "CRML",
+      "qty": 4,
+      "price": 8.115,
+      "notional": 32.46,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-27T22:39:16.777Z",
+      "orderId": "8680bfd3-63c1-47fe-a931-81cc3ade3394"
+    },
+    {
+      "id": "buy-1793140756788-GLXY-580154",
+      "kind": "buy",
+      "symbol": "GLXY",
+      "qty": 2,
+      "price": 17.21,
+      "notional": 34.42,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-27T22:39:16.788Z",
+      "orderId": "31ae992f-cf84-4aa4-871f-ae4e16af8690"
+    },
+    {
+      "id": "buy-1793140756802-RDW-158502",
+      "kind": "buy",
+      "symbol": "RDW",
+      "qty": 3,
+      "price": 8.89,
+      "notional": 26.67,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-27T22:39:16.802Z",
+      "orderId": "5e4e78c0-e803-4789-b0e4-242dc1f31bea"
     }
   ]
 }
