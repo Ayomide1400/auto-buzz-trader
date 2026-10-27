@@ -3060,6 +3060,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-27T18:38:00.789Z",
       "orderId": "1084f15a-2d6f-4a93-ae43-b03c798c3e84"
+    },
+    {
+      "id": "sell-1793140755486-BB-885794",
+      "kind": "sell",
+      "symbol": "BB",
+      "qty": 3,
+      "price": 9.5015,
+      "realizedPl": 0.594501,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-27T22:39:15.486Z",
+      "matchedBuyId": "buy-1793056166340-BB-13562"
     }
   ]
 }
