@@ -3038,6 +3038,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-26T23:09:26.340Z",
       "orderId": "e113e522-366a-4350-9dc4-160ea473317c"
+    },
+    {
+      "id": "buy-1793126280773-SOFI-517921",
+      "kind": "buy",
+      "symbol": "SOFI",
+      "qty": 2,
+      "price": 16.415,
+      "notional": 32.83,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-27T18:38:00.773Z",
+      "orderId": "895c0fc3-debd-4464-ae36-45e314c270ea"
+    },
+    {
+      "id": "buy-1793126280789-USAR-455210",
+      "kind": "buy",
+      "symbol": "USAR",
+      "qty": 3,
+      "price": 9.995,
+      "notional": 29.98,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-27T18:38:00.789Z",
+      "orderId": "1084f15a-2d6f-4a93-ae43-b03c798c3e84"
     }
   ]
 }
