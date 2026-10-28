@@ -3160,6 +3160,39 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-28T18:44:48.906Z",
       "orderId": "eebd1f9a-83b1-4f64-83f7-1984e2003c4e"
+    },
+    {
+      "id": "sell-1793228048756-GLXY-414388",
+      "kind": "sell",
+      "symbol": "GLXY",
+      "qty": 2,
+      "price": 18.7,
+      "realizedPl": 2.6,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-28T22:54:08.756Z",
+      "matchedBuyId": "buy-1793140756788-GLXY-580154"
+    },
+    {
+      "id": "sell-1793228048781-PRME-35457",
+      "kind": "sell",
+      "symbol": "PRME",
+      "qty": 6,
+      "price": 5.14,
+      "realizedPl": -0.66,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-28T22:54:08.781Z",
+      "matchedBuyId": "buy-1793213088893-PRME-88994"
+    },
+    {
+      "id": "sell-1793228048804-RDW-846869",
+      "kind": "sell",
+      "symbol": "RDW",
+      "qty": 3,
+      "price": 8.88,
+      "realizedPl": -0.200001,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-28T22:54:08.804Z",
+      "matchedBuyId": "buy-1793140756802-RDW-158502"
     }
   ]
 }
