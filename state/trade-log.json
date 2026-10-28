@@ -3138,6 +3138,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-28T18:44:47.676Z",
       "matchedBuyId": "buy-1793126280789-USAR-455210"
+    },
+    {
+      "id": "buy-1793213088893-PRME-88994",
+      "kind": "buy",
+      "symbol": "PRME",
+      "qty": 6,
+      "price": 5.245,
+      "notional": 31.47,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-28T18:44:48.893Z",
+      "orderId": "a8d8bc06-0590-456f-bb0a-46dce4e59369"
+    },
+    {
+      "id": "buy-1793213088906-WEN-160835",
+      "kind": "buy",
+      "symbol": "WEN",
+      "qty": 4,
+      "price": 7.06,
+      "notional": 28.24,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-28T18:44:48.906Z",
+      "orderId": "eebd1f9a-83b1-4f64-83f7-1984e2003c4e"
     }
   ]
 }
