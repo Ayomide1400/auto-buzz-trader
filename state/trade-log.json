@@ -3104,6 +3104,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-27T22:39:16.802Z",
       "orderId": "5e4e78c0-e803-4789-b0e4-242dc1f31bea"
+    },
+    {
+      "id": "sell-1793213086262-CRML-797870",
+      "kind": "sell",
+      "symbol": "CRML",
+      "qty": 4,
+      "price": 7.68,
+      "realizedPl": -1.74,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-28T13:43:18.37626Z",
+      "orderId": "eb1842e9-5777-49a5-a571-04c897a970f8",
+      "matchedBuyId": "buy-1793140756777-CRML-331999"
     }
   ]
 }
