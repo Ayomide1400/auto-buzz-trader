@@ -3238,6 +3238,17 @@
       "timestamp": "2026-10-29T13:34:15.659044Z",
       "orderId": "26df0bfa-6ee6-4c1e-b7bf-965bfccfef99",
       "matchedBuyId": "buy-1793228049957-TDOC-289808"
+    },
+    {
+      "id": "sell-1793300055973-CMG-656310",
+      "kind": "sell",
+      "symbol": "CMG",
+      "qty": 1,
+      "price": 31.425,
+      "realizedPl": 1.065,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-29T18:54:15.973Z",
+      "matchedBuyId": "buy-1793228049978-CMG-496287"
     }
   ]
 }
