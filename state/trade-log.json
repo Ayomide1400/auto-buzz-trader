@@ -3249,6 +3249,39 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-29T18:54:15.973Z",
       "matchedBuyId": "buy-1793228049978-CMG-496287"
+    },
+    {
+      "id": "buy-1793300057300-TDOC-413145",
+      "kind": "buy",
+      "symbol": "TDOC",
+      "qty": 3,
+      "price": 8.885,
+      "notional": 26.66,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-29T18:54:17.300Z",
+      "orderId": "dfa3cc81-a1a7-42d1-8fef-55b68ab34f9c"
+    },
+    {
+      "id": "buy-1793300057312-BHC-289380",
+      "kind": "buy",
+      "symbol": "BHC",
+      "qty": 3,
+      "price": 8.905,
+      "notional": 26.71,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-29T18:54:17.312Z",
+      "orderId": "78b214ad-63bc-450f-bac9-c43d76032178"
+    },
+    {
+      "id": "buy-1793300057334-PURR-855747",
+      "kind": "buy",
+      "symbol": "PURR",
+      "qty": 2,
+      "price": 11.95,
+      "notional": 23.9,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-29T18:54:17.334Z",
+      "orderId": "7eb5db1c-773c-41c5-a704-5e8c8bf8788b"
     }
   ]
 }
