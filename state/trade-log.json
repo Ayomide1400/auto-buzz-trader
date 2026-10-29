@@ -3337,6 +3337,39 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-29T23:12:26.705Z",
       "matchedBuyId": "buy-1793213088906-WEN-160835"
+    },
+    {
+      "id": "buy-1793315547905-RIVN-377046",
+      "kind": "buy",
+      "symbol": "RIVN",
+      "qty": 2,
+      "price": 12.07,
+      "notional": 24.14,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-29T23:12:27.905Z",
+      "orderId": "7590b45b-91fd-436f-8fa9-dc53d910eda2"
+    },
+    {
+      "id": "buy-1793315547918-SOFI-23711",
+      "kind": "buy",
+      "symbol": "SOFI",
+      "qty": 1,
+      "price": 17.61,
+      "notional": 17.61,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-29T23:12:27.918Z",
+      "orderId": "afda503c-5490-4377-9c77-b5f1480db39b"
+    },
+    {
+      "id": "buy-1793315547930-RKT-610128",
+      "kind": "buy",
+      "symbol": "RKT",
+      "qty": 2,
+      "price": 11.875,
+      "notional": 23.75,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-29T23:12:27.930Z",
+      "orderId": "2749e430-0d9d-4054-b7aa-81699bbfddc1"
     }
   ]
 }
