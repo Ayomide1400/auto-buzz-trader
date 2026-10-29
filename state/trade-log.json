@@ -3282,6 +3282,61 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-29T18:54:17.334Z",
       "orderId": "7eb5db1c-773c-41c5-a704-5e8c8bf8788b"
+    },
+    {
+      "id": "sell-1793315546607-BHC-248203",
+      "kind": "sell",
+      "symbol": "BHC",
+      "qty": 3,
+      "price": 8.84,
+      "realizedPl": -0.219999,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-29T23:12:26.607Z",
+      "matchedBuyId": "buy-1793300057312-BHC-289380"
+    },
+    {
+      "id": "sell-1793315546634-F-78049",
+      "kind": "sell",
+      "symbol": "F",
+      "qty": 2,
+      "price": 12.2785,
+      "realizedPl": 0.967,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-29T23:12:26.634Z",
+      "matchedBuyId": "buy-1793228049967-F-552529"
+    },
+    {
+      "id": "sell-1793315546658-PURR-31311",
+      "kind": "sell",
+      "symbol": "PURR",
+      "qty": 2,
+      "price": 11.11,
+      "realizedPl": -1.68,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-29T23:12:26.658Z",
+      "matchedBuyId": "buy-1793300057334-PURR-855747"
+    },
+    {
+      "id": "sell-1793315546680-TDOC-99524",
+      "kind": "sell",
+      "symbol": "TDOC",
+      "qty": 3,
+      "price": 8.66,
+      "realizedPl": -0.69,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-29T23:12:26.680Z",
+      "matchedBuyId": "buy-1793300057300-TDOC-413145"
+    },
+    {
+      "id": "sell-1793315546705-WEN-51442",
+      "kind": "sell",
+      "symbol": "WEN",
+      "qty": 4,
+      "price": 7.09,
+      "realizedPl": 0.12,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-29T23:12:26.705Z",
+      "matchedBuyId": "buy-1793213088906-WEN-160835"
     }
   ]
 }
