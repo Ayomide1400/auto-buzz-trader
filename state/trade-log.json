@@ -3226,6 +3226,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-28T22:54:09.978Z",
       "orderId": "b298e824-11e3-4d08-8059-ebadf40ddda8"
+    },
+    {
+      "id": "sell-1793300054346-TDOC-694916",
+      "kind": "sell",
+      "symbol": "TDOC",
+      "qty": 5,
+      "price": 8.614,
+      "realizedPl": 8.65,
+      "reason": "Take-profit target hit automatically",
+      "timestamp": "2026-10-29T13:34:15.659044Z",
+      "orderId": "26df0bfa-6ee6-4c1e-b7bf-965bfccfef99",
+      "matchedBuyId": "buy-1793228049957-TDOC-289808"
     }
   ]
 }
