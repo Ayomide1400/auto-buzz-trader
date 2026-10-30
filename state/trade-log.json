@@ -3370,6 +3370,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-29T23:12:27.930Z",
       "orderId": "2749e430-0d9d-4054-b7aa-81699bbfddc1"
+    },
+    {
+      "id": "sell-1793385091175-SOFI-116797",
+      "kind": "sell",
+      "symbol": "SOFI",
+      "qty": 1,
+      "price": 16.73,
+      "realizedPl": -0.88,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-10-30T15:20:59.108066Z",
+      "orderId": "5014d2f4-71e0-48bd-a678-a78235720619",
+      "matchedBuyId": "buy-1793315547918-SOFI-23711"
     }
   ]
 }
