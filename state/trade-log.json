@@ -3382,6 +3382,28 @@
       "timestamp": "2026-10-30T15:20:59.108066Z",
       "orderId": "5014d2f4-71e0-48bd-a678-a78235720619",
       "matchedBuyId": "buy-1793315547918-SOFI-23711"
+    },
+    {
+      "id": "sell-1793399988267-RIVN-590210",
+      "kind": "sell",
+      "symbol": "RIVN",
+      "qty": 2,
+      "price": 12.15,
+      "realizedPl": 0.4,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-30T22:39:48.267Z",
+      "matchedBuyId": "buy-1793315547905-RIVN-377046"
+    },
+    {
+      "id": "sell-1793399988288-RKT-833029",
+      "kind": "sell",
+      "symbol": "RKT",
+      "qty": 2,
+      "price": 12.8,
+      "realizedPl": 0.41,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-10-30T22:39:48.288Z",
+      "matchedBuyId": "buy-1793315547930-RKT-610128"
     }
   ]
 }
