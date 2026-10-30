@@ -3404,6 +3404,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-10-30T22:39:48.288Z",
       "matchedBuyId": "buy-1793315547930-RKT-610128"
+    },
+    {
+      "id": "buy-1793399989637-FMC-135335",
+      "kind": "buy",
+      "symbol": "FMC",
+      "qty": 5,
+      "price": 6.19,
+      "notional": 30.95,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-10-30T22:39:49.637Z",
+      "orderId": "d46e2c64-ebd6-47a2-9cde-df377e9db490"
     }
   ]
 }
