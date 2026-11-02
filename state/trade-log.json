@@ -3415,6 +3415,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-10-30T22:39:49.637Z",
       "orderId": "d46e2c64-ebd6-47a2-9cde-df377e9db490"
+    },
+    {
+      "id": "sell-1793657782745-FMC-874066",
+      "kind": "sell",
+      "symbol": "FMC",
+      "qty": 5,
+      "price": 5.874,
+      "realizedPl": -1.58,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-02T14:43:23.937226Z",
+      "orderId": "bf211c7b-8081-4389-a752-2a806ae0d725",
+      "matchedBuyId": "buy-1793399989637-FMC-135335"
     }
   ]
 }
