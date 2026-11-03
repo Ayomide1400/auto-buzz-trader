@@ -3427,6 +3427,17 @@
       "timestamp": "2026-11-02T14:43:23.937226Z",
       "orderId": "bf211c7b-8081-4389-a752-2a806ae0d725",
       "matchedBuyId": "buy-1793399989637-FMC-135335"
+    },
+    {
+      "id": "buy-1793736100527-SMCI-255497",
+      "kind": "buy",
+      "symbol": "SMCI",
+      "qty": 1,
+      "price": 31.75,
+      "notional": 31.75,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-03T20:01:40.527Z",
+      "orderId": "14b18a80-4637-403e-8344-0742f3ffcc35"
     }
   ]
 }
