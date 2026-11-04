@@ -3460,6 +3460,30 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-04T00:38:00.133Z",
       "orderId": "a3c09f35-6f83-44ad-8d21-db433cce47a9"
+    },
+    {
+      "id": "sell-1793823773899-SMCI-115568",
+      "kind": "sell",
+      "symbol": "SMCI",
+      "qty": 1,
+      "price": 30.17,
+      "realizedPl": -1.58,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-04T15:56:38.055349Z",
+      "orderId": "c3df78f6-a406-4153-9ad4-2b0863674dfe",
+      "matchedBuyId": "buy-1793736100527-SMCI-255497"
+    },
+    {
+      "id": "sell-1793823773913-RIOT-913225",
+      "kind": "sell",
+      "symbol": "RIOT",
+      "qty": 2,
+      "price": 15.425,
+      "realizedPl": 2.81,
+      "reason": "Take-profit target hit automatically",
+      "timestamp": "2026-11-04T14:34:54.231553Z",
+      "orderId": "f1c3f4bd-7fd4-4845-837d-191e6cb2f4d0",
+      "matchedBuyId": "buy-1793752680110-RIOT-474579"
     }
   ]
 }
