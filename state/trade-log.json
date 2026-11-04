@@ -3484,6 +3484,28 @@
       "timestamp": "2026-11-04T14:34:54.231553Z",
       "orderId": "f1c3f4bd-7fd4-4845-837d-191e6cb2f4d0",
       "matchedBuyId": "buy-1793752680110-RIOT-474579"
+    },
+    {
+      "id": "buy-1793823775352-RIOT-843376",
+      "kind": "buy",
+      "symbol": "RIOT",
+      "qty": 2,
+      "price": 15.715,
+      "notional": 31.43,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-04T20:22:55.352Z",
+      "orderId": "172ed2b5-3b58-4403-8063-a8401fe50ae9"
+    },
+    {
+      "id": "buy-1793823775371-BB-820416",
+      "kind": "buy",
+      "symbol": "BB",
+      "qty": 4,
+      "price": 8.71,
+      "notional": 34.84,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-04T20:22:55.371Z",
+      "orderId": "965017a1-d2af-4745-81c8-c103dc74d9ad"
     }
   ]
 }
