@@ -3438,6 +3438,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-03T20:01:40.527Z",
       "orderId": "14b18a80-4637-403e-8344-0742f3ffcc35"
+    },
+    {
+      "id": "buy-1793752680110-RIOT-474579",
+      "kind": "buy",
+      "symbol": "RIOT",
+      "qty": 2,
+      "price": 14.02,
+      "notional": 28.04,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-04T00:38:00.110Z",
+      "orderId": "b2633753-6a73-4f3a-98a1-f2f9e23fc944"
+    },
+    {
+      "id": "buy-1793752680133-NVTS-369066",
+      "kind": "buy",
+      "symbol": "NVTS",
+      "qty": 3,
+      "price": 8.83,
+      "notional": 26.49,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-04T00:38:00.133Z",
+      "orderId": "a3c09f35-6f83-44ad-8d21-db433cce47a9"
     }
   ]
 }
