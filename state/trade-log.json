@@ -3539,6 +3539,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-05T00:59:50.224Z",
       "matchedBuyId": "buy-1793823775352-RIOT-843376"
+    },
+    {
+      "id": "buy-1793840391378-ADMA-296677",
+      "kind": "buy",
+      "symbol": "ADMA",
+      "qty": 2,
+      "price": 14.03,
+      "notional": 28.06,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-05T00:59:51.378Z",
+      "orderId": "5e316883-9cb4-4df9-a0f6-e6c2b0f6dd52"
+    },
+    {
+      "id": "buy-1793840391390-JOBY-332506",
+      "kind": "buy",
+      "symbol": "JOBY",
+      "qty": 6,
+      "price": 5.29,
+      "notional": 31.74,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-05T00:59:51.390Z",
+      "orderId": "7685d620-87ad-41ff-8298-26c293cd8aa8"
     }
   ]
 }
