@@ -3585,6 +3585,28 @@
       "timestamp": "2026-11-05T15:13:52.487864Z",
       "orderId": "c1b00822-1d4c-431b-8ae8-dc81e28a574a",
       "matchedBuyId": "buy-1793840391390-JOBY-332506"
+    },
+    {
+      "id": "buy-1793910831654-UVXY-561924",
+      "kind": "buy",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 21.91,
+      "notional": 21.91,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-05T20:33:51.654Z",
+      "orderId": "25f23216-1aae-41ac-9536-225ce04e4804"
+    },
+    {
+      "id": "buy-1793910831689-WEN-849373",
+      "kind": "buy",
+      "symbol": "WEN",
+      "qty": 4,
+      "price": 7.96,
+      "notional": 31.84,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-05T20:33:51.689Z",
+      "orderId": "a7af01b2-bc68-486a-8c13-eb5c73bf33f7"
     }
   ]
 }
