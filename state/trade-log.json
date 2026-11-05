@@ -3561,6 +3561,30 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-05T00:59:51.390Z",
       "orderId": "7685d620-87ad-41ff-8298-26c293cd8aa8"
+    },
+    {
+      "id": "sell-1793910830051-ADMA-797778",
+      "kind": "sell",
+      "symbol": "ADMA",
+      "qty": 2,
+      "price": 12.735,
+      "realizedPl": -2.59,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-05T14:35:43.290511Z",
+      "orderId": "4a6c61e9-0efe-4910-876d-07cb5e05042f",
+      "matchedBuyId": "buy-1793840391378-ADMA-296677"
+    },
+    {
+      "id": "sell-1793910830086-JOBY-723179",
+      "kind": "sell",
+      "symbol": "JOBY",
+      "qty": 6,
+      "price": 5.05,
+      "realizedPl": -1.44,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-05T15:13:52.487864Z",
+      "orderId": "c1b00822-1d4c-431b-8ae8-dc81e28a574a",
+      "matchedBuyId": "buy-1793840391390-JOBY-332506"
     }
   ]
 }
