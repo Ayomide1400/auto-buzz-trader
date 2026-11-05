@@ -3506,6 +3506,39 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-04T20:22:55.371Z",
       "orderId": "965017a1-d2af-4745-81c8-c103dc74d9ad"
+    },
+    {
+      "id": "sell-1793840390180-BB-709037",
+      "kind": "sell",
+      "symbol": "BB",
+      "qty": 4,
+      "price": 8.75,
+      "realizedPl": 0.12,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-05T00:59:50.180Z",
+      "matchedBuyId": "buy-1793823775371-BB-820416"
+    },
+    {
+      "id": "sell-1793840390201-NVTS-892219",
+      "kind": "sell",
+      "symbol": "NVTS",
+      "qty": 3,
+      "price": 9.2,
+      "realizedPl": -0.54,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-05T00:59:50.201Z",
+      "matchedBuyId": "buy-1793752680133-NVTS-369066"
+    },
+    {
+      "id": "sell-1793840390224-RIOT-154795",
+      "kind": "sell",
+      "symbol": "RIOT",
+      "qty": 2,
+      "price": 15.644,
+      "realizedPl": -0.172,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-05T00:59:50.224Z",
+      "matchedBuyId": "buy-1793823775352-RIOT-843376"
     }
   ]
 }
