@@ -3630,6 +3630,61 @@
       "timestamp": "2026-11-06T14:54:08.910486Z",
       "orderId": "c8619b67-26ac-4ca2-a92b-d7834ce3a80b",
       "matchedBuyId": "buy-1793910831654-UVXY-561924"
+    },
+    {
+      "id": "buy-1793994895736-OKLO-726536",
+      "kind": "buy",
+      "symbol": "OKLO",
+      "qty": 1,
+      "price": 23.68,
+      "notional": 23.68,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-06T19:54:55.736Z",
+      "orderId": "c3508937-b5e6-4cd8-8a91-30c11e4f398f"
+    },
+    {
+      "id": "buy-1793994895814-IONQ-729198",
+      "kind": "buy",
+      "symbol": "IONQ",
+      "qty": 1,
+      "price": 31.72,
+      "notional": 31.72,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-06T19:54:55.814Z",
+      "orderId": "632997ac-a1a1-4697-a5c0-669dfdeb8e94"
+    },
+    {
+      "id": "buy-1793994895830-RGTI-964053",
+      "kind": "buy",
+      "symbol": "RGTI",
+      "qty": 2,
+      "price": 11.695,
+      "notional": 23.39,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-06T19:54:55.830Z",
+      "orderId": "79483131-c789-4914-a088-09c7fe92786f"
+    },
+    {
+      "id": "buy-1793994895853-QBTS-652776",
+      "kind": "buy",
+      "symbol": "QBTS",
+      "qty": 3,
+      "price": 10.635,
+      "notional": 31.91,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-06T19:54:55.853Z",
+      "orderId": "efce2d90-8e36-4acb-b8d2-8b2ad85e8ffb"
+    },
+    {
+      "id": "buy-1793994895864-RDW-369626",
+      "kind": "buy",
+      "symbol": "RDW",
+      "qty": 4,
+      "price": 7.115,
+      "notional": 28.46,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-06T19:54:55.864Z",
+      "orderId": "82245f31-4aa8-40ae-8a0b-5635e13641fe"
     }
   ]
 }
