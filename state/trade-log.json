@@ -3607,6 +3607,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-05T20:33:51.689Z",
       "orderId": "a7af01b2-bc68-486a-8c13-eb5c73bf33f7"
+    },
+    {
+      "id": "sell-1793927317338-WEN-893421",
+      "kind": "sell",
+      "symbol": "WEN",
+      "qty": 4,
+      "price": 7.86,
+      "realizedPl": -0.48,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-06T01:08:37.338Z",
+      "matchedBuyId": "buy-1793910831689-WEN-849373"
     }
   ]
 }
