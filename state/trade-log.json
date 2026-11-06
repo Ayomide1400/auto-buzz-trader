@@ -3618,6 +3618,18 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-06T01:08:37.338Z",
       "matchedBuyId": "buy-1793910831689-WEN-849373"
+    },
+    {
+      "id": "sell-1793994894402-UVXY-797315",
+      "kind": "sell",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 20.79,
+      "realizedPl": -1.12,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-06T14:54:08.910486Z",
+      "orderId": "c8619b67-26ac-4ca2-a92b-d7834ce3a80b",
+      "matchedBuyId": "buy-1793910831654-UVXY-561924"
     }
   ]
 }
