@@ -3729,6 +3729,39 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-07T00:01:57.179Z",
       "matchedBuyId": "buy-1793994895830-RGTI-964053"
+    },
+    {
+      "id": "buy-1794009718372-XE-987620",
+      "kind": "buy",
+      "symbol": "XE",
+      "qty": 3,
+      "price": 10.425,
+      "notional": 31.28,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-07T00:01:58.372Z",
+      "orderId": "13e4ecc2-dc1c-4f34-ad30-0b583abc059e"
+    },
+    {
+      "id": "buy-1794009718383-WULF-527409",
+      "kind": "buy",
+      "symbol": "WULF",
+      "qty": 3,
+      "price": 11.365,
+      "notional": 34.09,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-07T00:01:58.383Z",
+      "orderId": "69a13f9e-d3eb-4e6c-b89a-2c57aa945372"
+    },
+    {
+      "id": "buy-1794009718397-QUBT-742610",
+      "kind": "buy",
+      "symbol": "QUBT",
+      "qty": 5,
+      "price": 6.32,
+      "notional": 31.6,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-07T00:01:58.397Z",
+      "orderId": "a5026f79-5dca-480d-8c26-fecdd50a6695"
     }
   ]
 }
