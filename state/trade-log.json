@@ -3685,6 +3685,50 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-06T19:54:55.864Z",
       "orderId": "82245f31-4aa8-40ae-8a0b-5635e13641fe"
+    },
+    {
+      "id": "sell-1794009717101-IONQ-28728",
+      "kind": "sell",
+      "symbol": "IONQ",
+      "qty": 1,
+      "price": 32.11,
+      "realizedPl": 0.41,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-07T00:01:57.101Z",
+      "matchedBuyId": "buy-1793994895814-IONQ-729198"
+    },
+    {
+      "id": "sell-1794009717125-QBTS-882979",
+      "kind": "sell",
+      "symbol": "QBTS",
+      "qty": 3,
+      "price": 10.68,
+      "realizedPl": 0.12,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-07T00:01:57.125Z",
+      "matchedBuyId": "buy-1793994895853-QBTS-652776"
+    },
+    {
+      "id": "sell-1794009717149-RDW-192668",
+      "kind": "sell",
+      "symbol": "RDW",
+      "qty": 4,
+      "price": 7.2091,
+      "realizedPl": 0.3564,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-07T00:01:57.149Z",
+      "matchedBuyId": "buy-1793994895864-RDW-369626"
+    },
+    {
+      "id": "sell-1794009717178-RGTI-532360",
+      "kind": "sell",
+      "symbol": "RGTI",
+      "qty": 2,
+      "price": 11.65,
+      "realizedPl": -0.1,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-07T00:01:57.179Z",
+      "matchedBuyId": "buy-1793994895830-RGTI-964053"
     }
   ]
 }
