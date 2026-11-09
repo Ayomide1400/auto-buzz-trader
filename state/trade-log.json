@@ -3762,6 +3762,42 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-07T00:01:58.397Z",
       "orderId": "a5026f79-5dca-480d-8c26-fecdd50a6695"
+    },
+    {
+      "id": "sell-1794264996960-OKLO-976706",
+      "kind": "sell",
+      "symbol": "OKLO",
+      "qty": 1,
+      "price": 26.02,
+      "realizedPl": 2.34,
+      "reason": "Take-profit target hit automatically",
+      "timestamp": "2026-11-09T15:51:11.316443Z",
+      "orderId": "8dcf6549-3fdb-4b8a-9b4d-2ffee65aad07",
+      "matchedBuyId": "buy-1793994895736-OKLO-726536"
+    },
+    {
+      "id": "sell-1794264996970-WULF-682005",
+      "kind": "sell",
+      "symbol": "WULF",
+      "qty": 3,
+      "price": 12.52,
+      "realizedPl": 3.46,
+      "reason": "Take-profit target hit automatically",
+      "timestamp": "2026-11-09T20:08:16.087146Z",
+      "orderId": "c4bc977d-5a7d-47b4-9ac7-b52f0d391660",
+      "matchedBuyId": "buy-1794009718383-WULF-527409"
+    },
+    {
+      "id": "sell-1794264996981-QUBT-79354",
+      "kind": "sell",
+      "symbol": "QUBT",
+      "qty": 5,
+      "price": 6.95,
+      "realizedPl": 3.15,
+      "reason": "Take-profit target hit automatically",
+      "timestamp": "2026-11-09T20:22:36.326057Z",
+      "orderId": "3f5a8395-9cb8-41a8-9ede-0a1f8978a3ea",
+      "matchedBuyId": "buy-1794009718397-QUBT-742610"
     }
   ]
 }
