@@ -3798,6 +3798,17 @@
       "timestamp": "2026-11-09T20:22:36.326057Z",
       "orderId": "3f5a8395-9cb8-41a8-9ede-0a1f8978a3ea",
       "matchedBuyId": "buy-1794009718397-QUBT-742610"
+    },
+    {
+      "id": "sell-1794264998111-XE-16762",
+      "kind": "sell",
+      "symbol": "XE",
+      "qty": 3,
+      "price": 11.33,
+      "realizedPl": 2.630001,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-09T22:56:38.111Z",
+      "matchedBuyId": "buy-1794009718372-XE-987620"
     }
   ]
 }
