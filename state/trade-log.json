@@ -3809,6 +3809,61 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-09T22:56:38.111Z",
       "matchedBuyId": "buy-1794009718372-XE-987620"
+    },
+    {
+      "id": "buy-1794264999436-RGTI-841501",
+      "kind": "buy",
+      "symbol": "RGTI",
+      "qty": 2,
+      "price": 12.975,
+      "notional": 25.95,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-09T22:56:39.436Z",
+      "orderId": "d7b01ad5-61c2-4a94-a614-794dd4f40858"
+    },
+    {
+      "id": "buy-1794264999460-SKYD-232788",
+      "kind": "buy",
+      "symbol": "SKYD",
+      "qty": 4,
+      "price": 8.71,
+      "notional": 34.84,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-09T22:56:39.460Z",
+      "orderId": "55e2eab3-ce1f-412a-b900-fb1dfb194c26"
+    },
+    {
+      "id": "buy-1794264999471-QUBT-727347",
+      "kind": "buy",
+      "symbol": "QUBT",
+      "qty": 5,
+      "price": 6.87,
+      "notional": 34.35,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-09T22:56:39.471Z",
+      "orderId": "53fe0896-8767-49ff-9abe-2c883b560e50"
+    },
+    {
+      "id": "buy-1794264999480-MARA-210132",
+      "kind": "buy",
+      "symbol": "MARA",
+      "qty": 5,
+      "price": 6.83,
+      "notional": 34.15,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-09T22:56:39.480Z",
+      "orderId": "7efe0dde-c6fa-4da2-9bf9-5c33ccab8124"
+    },
+    {
+      "id": "buy-1794264999493-USAR-467312",
+      "kind": "buy",
+      "symbol": "USAR",
+      "qty": 3,
+      "price": 8.78,
+      "notional": 26.34,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-09T22:56:39.493Z",
+      "orderId": "d697a5fc-c857-4575-9587-9d03a4d0d5b3"
     }
   ]
 }
