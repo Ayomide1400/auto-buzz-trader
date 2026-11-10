@@ -3864,6 +3864,66 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-09T22:56:39.493Z",
       "orderId": "d697a5fc-c857-4575-9587-9d03a4d0d5b3"
+    },
+    {
+      "id": "sell-1794342235153-RGTI-986696",
+      "kind": "sell",
+      "symbol": "RGTI",
+      "qty": 2,
+      "price": 12.34,
+      "realizedPl": -1.27,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-10T14:48:40.78322Z",
+      "orderId": "2e24389e-8995-4cd9-8980-da70ee3e8e36",
+      "matchedBuyId": "buy-1794264999436-RGTI-841501"
+    },
+    {
+      "id": "sell-1794342235171-SKYD-509435",
+      "kind": "sell",
+      "symbol": "SKYD",
+      "qty": 4,
+      "price": 7.94,
+      "realizedPl": -3.08,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-10T14:34:21.962036Z",
+      "orderId": "2569a08b-b4ff-4c0c-a07f-5f18db43f659",
+      "matchedBuyId": "buy-1794264999460-SKYD-232788"
+    },
+    {
+      "id": "sell-1794342235186-QUBT-338165",
+      "kind": "sell",
+      "symbol": "QUBT",
+      "qty": 5,
+      "price": 6.53,
+      "realizedPl": -1.7,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-10T14:36:10.250702Z",
+      "orderId": "c0006bec-9738-468b-9539-144951703f7d",
+      "matchedBuyId": "buy-1794264999471-QUBT-727347"
+    },
+    {
+      "id": "sell-1794342235205-MARA-780766",
+      "kind": "sell",
+      "symbol": "MARA",
+      "qty": 5,
+      "price": 7.51,
+      "realizedPl": 3.4,
+      "reason": "Take-profit target hit automatically",
+      "timestamp": "2026-11-10T15:01:37.577873Z",
+      "orderId": "45dacb17-3313-4299-a014-0a85afe3b36d",
+      "matchedBuyId": "buy-1794264999480-MARA-210132"
+    },
+    {
+      "id": "sell-1794342235219-USAR-958817",
+      "kind": "sell",
+      "symbol": "USAR",
+      "qty": 3,
+      "price": 8.36,
+      "realizedPl": -1.26,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-10T14:34:53.918881Z",
+      "orderId": "f2302601-14bd-4710-954f-0ecd79fb071d",
+      "matchedBuyId": "buy-1794264999493-USAR-467312"
     }
   ]
 }
