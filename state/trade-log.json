@@ -3946,6 +3946,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-11T00:49:30.236Z",
       "matchedBuyId": "buy-1794342236658-TTD-683510"
+    },
+    {
+      "id": "buy-1794427589630-FIS-508511",
+      "kind": "buy",
+      "symbol": "FIS",
+      "qty": 1,
+      "price": 30.48,
+      "notional": 30.48,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-11T20:06:29.630Z",
+      "orderId": "a2cfacea-107c-4e96-975b-c269abf7fdf0"
+    },
+    {
+      "id": "buy-1794427589671-NVDL-831170",
+      "kind": "buy",
+      "symbol": "NVDL",
+      "qty": 1,
+      "price": 20.76,
+      "notional": 20.76,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-11T20:06:29.671Z",
+      "orderId": "c48e74bb-0cab-45e2-8580-d14d2adf9665"
     }
   ]
 }
