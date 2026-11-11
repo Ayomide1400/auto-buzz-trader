@@ -3935,6 +3935,17 @@
       "timestamp": "2026-11-10T14:34:53.918881Z",
       "orderId": "f2302601-14bd-4710-954f-0ecd79fb071d",
       "matchedBuyId": "buy-1794264999493-USAR-467312"
+    },
+    {
+      "id": "sell-1794358170236-TTD-4032",
+      "kind": "sell",
+      "symbol": "TTD",
+      "qty": 2,
+      "price": 15.4,
+      "realizedPl": 0.12,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-11T00:49:30.236Z",
+      "matchedBuyId": "buy-1794342236658-TTD-683510"
     }
   ]
 }
