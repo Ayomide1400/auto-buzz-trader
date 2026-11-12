@@ -4036,6 +4036,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-12T20:43:49.802Z",
       "matchedBuyId": "buy-1794448532803-VG-888793"
+    },
+    {
+      "id": "buy-1794516230893-LUNR-948480",
+      "kind": "buy",
+      "symbol": "LUNR",
+      "qty": 2,
+      "price": 13.265,
+      "notional": 26.53,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-12T20:43:50.893Z",
+      "orderId": "7150d3f0-8a4b-40d5-896d-2e2402312aa1"
+    },
+    {
+      "id": "buy-1794516230904-TSLL-695753",
+      "kind": "buy",
+      "symbol": "TSLL",
+      "qty": 3,
+      "price": 10.785,
+      "notional": 32.36,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-12T20:43:50.904Z",
+      "orderId": "95440781-769c-4e11-8d86-c212b13caa29"
     }
   ]
 }
