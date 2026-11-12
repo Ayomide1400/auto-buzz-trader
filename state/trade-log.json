@@ -4025,6 +4025,17 @@
       "timestamp": "2026-11-12T14:36:05.077705Z",
       "orderId": "db5d31e2-d315-4011-a225-e4b9322ca86f",
       "matchedBuyId": "buy-1794448532813-ONDS-953850"
+    },
+    {
+      "id": "sell-1794516229802-VG-390714",
+      "kind": "sell",
+      "symbol": "VG",
+      "qty": 2,
+      "price": 13.245,
+      "realizedPl": 0.97,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-12T20:43:49.802Z",
+      "matchedBuyId": "buy-1794448532803-VG-888793"
     }
   ]
 }
