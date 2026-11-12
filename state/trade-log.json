@@ -3979,6 +3979,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-12T01:55:31.768Z",
       "matchedBuyId": "buy-1794427589630-FIS-508511"
+    },
+    {
+      "id": "buy-1794448532803-VG-888793",
+      "kind": "buy",
+      "symbol": "VG",
+      "qty": 2,
+      "price": 12.67,
+      "notional": 25.34,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-12T01:55:32.803Z",
+      "orderId": "1945ad35-5146-4d51-86f1-7b2828dc5bbb"
+    },
+    {
+      "id": "buy-1794448532813-ONDS-953850",
+      "kind": "buy",
+      "symbol": "ONDS",
+      "qty": 6,
+      "price": 5.745,
+      "notional": 34.47,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-12T01:55:32.813Z",
+      "orderId": "ab49c505-763f-4a81-b37a-009571ca31e3"
     }
   ]
 }
