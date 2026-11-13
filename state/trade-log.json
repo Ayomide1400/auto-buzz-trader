@@ -4058,6 +4058,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-12T20:43:50.904Z",
       "orderId": "95440781-769c-4e11-8d86-c212b13caa29"
+    },
+    {
+      "id": "sell-1794533476445-LUNR-874562",
+      "kind": "sell",
+      "symbol": "LUNR",
+      "qty": 2,
+      "price": 13.26,
+      "realizedPl": 0,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-13T01:31:16.445Z",
+      "matchedBuyId": "buy-1794516230893-LUNR-948480"
+    },
+    {
+      "id": "sell-1794533476468-TSLL-601736",
+      "kind": "sell",
+      "symbol": "TSLL",
+      "qty": 3,
+      "price": 10.95,
+      "realizedPl": 0.48,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-13T01:31:16.468Z",
+      "matchedBuyId": "buy-1794516230904-TSLL-695753"
     }
   ]
 }
