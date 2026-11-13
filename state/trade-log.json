@@ -4080,6 +4080,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-13T01:31:16.468Z",
       "matchedBuyId": "buy-1794516230904-TSLL-695753"
+    },
+    {
+      "id": "buy-1794533477569-VG-591184",
+      "kind": "buy",
+      "symbol": "VG",
+      "qty": 2,
+      "price": 13.27,
+      "notional": 26.54,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-13T01:31:17.569Z",
+      "orderId": "839f01ab-6e87-421d-b83a-37a762c93169"
     }
   ]
 }
