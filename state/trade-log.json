@@ -4113,6 +4113,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-13T20:25:20.550Z",
       "orderId": "ad73820d-6cbf-43b7-8226-a1d230e81289"
+    },
+    {
+      "id": "sell-1794869349311-KLAR-71304",
+      "kind": "sell",
+      "symbol": "KLAR",
+      "qty": 2,
+      "price": 13.68,
+      "realizedPl": 0.08,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-16T22:49:09.311Z",
+      "matchedBuyId": "buy-1794601520550-KLAR-144629"
     }
   ]
 }
