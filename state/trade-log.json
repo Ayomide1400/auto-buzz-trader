@@ -4124,6 +4124,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-16T22:49:09.311Z",
       "matchedBuyId": "buy-1794601520550-KLAR-144629"
+    },
+    {
+      "id": "buy-1794869350466-XPEV-969790",
+      "kind": "buy",
+      "symbol": "XPEV",
+      "qty": 3,
+      "price": 9.69,
+      "notional": 29.07,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-16T22:49:10.466Z",
+      "orderId": "42d0f871-ee66-4073-a3be-31522c5980ea"
     }
   ]
 }
