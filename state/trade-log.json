@@ -4146,6 +4146,50 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-17T21:39:06.039Z",
       "matchedBuyId": "buy-1794869350466-XPEV-969790"
+    },
+    {
+      "id": "buy-1794951547162-SLS-376727",
+      "kind": "buy",
+      "symbol": "SLS",
+      "qty": 2,
+      "price": 16.66,
+      "notional": 33.32,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-17T21:39:07.162Z",
+      "orderId": "c67a4863-bda4-4385-9e64-d0284e1f9954"
+    },
+    {
+      "id": "buy-1794951547174-UVXY-761431",
+      "kind": "buy",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 21.88,
+      "notional": 21.88,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-17T21:39:07.174Z",
+      "orderId": "5b46c6a9-7ab9-4c05-a010-be49e26d8c4d"
+    },
+    {
+      "id": "buy-1794951547185-KLAR-200732",
+      "kind": "buy",
+      "symbol": "KLAR",
+      "qty": 2,
+      "price": 14.28,
+      "notional": 28.56,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-17T21:39:07.185Z",
+      "orderId": "b6549b52-b1d4-4089-a6d1-d3f0a05cd074"
+    },
+    {
+      "id": "buy-1794951547194-NVDL-702541",
+      "kind": "buy",
+      "symbol": "NVDL",
+      "qty": 2,
+      "price": 17.07,
+      "notional": 34.14,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-17T21:39:07.194Z",
+      "orderId": "785a1803-29e7-4489-97bc-2771c94c54ad"
     }
   ]
 }
