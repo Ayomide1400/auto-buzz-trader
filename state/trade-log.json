@@ -4222,6 +4222,42 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-18T03:08:53.736Z",
       "orderId": "2b526891-8b20-4e5c-9baf-57cf3b20c946"
+    },
+    {
+      "id": "sell-1795036663795-SLS-442183",
+      "kind": "sell",
+      "symbol": "SLS",
+      "qty": 2,
+      "price": 19.3,
+      "realizedPl": 3.62,
+      "reason": "Take-profit target hit automatically",
+      "timestamp": "2026-11-18T14:58:02.971467Z",
+      "orderId": "a757a946-224d-47c9-8914-cc701d0622a6",
+      "matchedBuyId": "buy-1794971333724-SLS-719961"
+    },
+    {
+      "id": "sell-1795036663807-UVXY-547996",
+      "kind": "sell",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 20.77,
+      "realizedPl": -1.11,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-18T17:24:59.640104Z",
+      "orderId": "cb1b66da-8ec9-4ae4-99ae-e673e9e5f1b0",
+      "matchedBuyId": "buy-1794951547174-UVXY-761431"
+    },
+    {
+      "id": "sell-1795036663819-NVDL-147311",
+      "kind": "sell",
+      "symbol": "NVDL",
+      "qty": 2,
+      "price": 16.23,
+      "realizedPl": -1.68,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-18T14:41:03.331126Z",
+      "orderId": "a2cb73a4-0e4f-4f44-a57c-74aa1d2f1b19",
+      "matchedBuyId": "buy-1794951547194-NVDL-702541"
     }
   ]
 }
