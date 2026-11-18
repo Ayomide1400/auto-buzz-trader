@@ -4258,6 +4258,28 @@
       "timestamp": "2026-11-18T14:41:03.331126Z",
       "orderId": "a2cb73a4-0e4f-4f44-a57c-74aa1d2f1b19",
       "matchedBuyId": "buy-1794951547194-NVDL-702541"
+    },
+    {
+      "id": "sell-1795036665153-IBRX-957421",
+      "kind": "sell",
+      "symbol": "IBRX",
+      "qty": 5,
+      "price": 6.71,
+      "realizedPl": 2.26,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-18T21:17:45.153Z",
+      "matchedBuyId": "buy-1794971333736-IBRX-45374"
+    },
+    {
+      "id": "sell-1795036665182-KLAR-420725",
+      "kind": "sell",
+      "symbol": "KLAR",
+      "qty": 2,
+      "price": 14.45,
+      "realizedPl": -0.1,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-18T21:17:45.182Z",
+      "matchedBuyId": "buy-1794951547185-KLAR-200732"
     }
   ]
 }
