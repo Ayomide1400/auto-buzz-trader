@@ -4200,6 +4200,28 @@
       "realizedPl": 0.729999,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-18T03:08:52.421Z"
+    },
+    {
+      "id": "buy-1794971333724-SLS-719961",
+      "kind": "buy",
+      "symbol": "SLS",
+      "qty": 2,
+      "price": 17.49,
+      "notional": 34.98,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-18T03:08:53.724Z",
+      "orderId": "8856ec5d-fe40-424f-a45a-a830c03f0635"
+    },
+    {
+      "id": "buy-1794971333736-IBRX-45374",
+      "kind": "buy",
+      "symbol": "IBRX",
+      "qty": 5,
+      "price": 6.26,
+      "notional": 31.3,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-18T03:08:53.736Z",
+      "orderId": "2b526891-8b20-4e5c-9baf-57cf3b20c946"
     }
   ]
 }
