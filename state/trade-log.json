@@ -4190,6 +4190,16 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-17T21:39:07.194Z",
       "orderId": "785a1803-29e7-4489-97bc-2771c94c54ad"
+    },
+    {
+      "id": "sell-1794971332421-XPEV-293875",
+      "kind": "sell",
+      "symbol": "XPEV",
+      "qty": 3,
+      "price": 10.02,
+      "realizedPl": 0.729999,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-18T03:08:52.421Z"
     }
   ]
 }
