@@ -4312,6 +4312,17 @@
       "realizedPl": -0.1,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-19T02:44:33.468Z"
+    },
+    {
+      "id": "buy-1795123180063-SVRA-751252",
+      "kind": "buy",
+      "symbol": "SVRA",
+      "qty": 6,
+      "price": 5.2,
+      "notional": 31.2,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-19T21:19:40.063Z",
+      "orderId": "2333d71a-026c-4402-968d-56580781be25"
     }
   ]
 }
