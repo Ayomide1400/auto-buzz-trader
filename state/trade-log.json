@@ -4280,6 +4280,18 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-18T21:17:45.182Z",
       "matchedBuyId": "buy-1794951547185-KLAR-200732"
+    },
+    {
+      "id": "sell-1795056272331-SLS-537389",
+      "kind": "sell",
+      "symbol": "SLS",
+      "qty": 2,
+      "price": 19.3,
+      "realizedPl": 5.28,
+      "reason": "Take-profit target hit automatically",
+      "timestamp": "2026-11-18T14:58:02.971467Z",
+      "orderId": "a757a946-224d-47c9-8914-cc701d0622a6",
+      "matchedBuyId": "buy-1794951547162-SLS-376727"
     }
   ]
 }
