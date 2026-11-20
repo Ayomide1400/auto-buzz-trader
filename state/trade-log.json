@@ -4345,6 +4345,42 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-20T02:31:24.434Z",
       "orderId": "7c8f569e-0a91-44a6-b044-246023587439"
+    },
+    {
+      "id": "sell-1795208358521-SVRA-529491",
+      "kind": "sell",
+      "symbol": "SVRA",
+      "qty": 6,
+      "price": 4.303333,
+      "realizedPl": -5.38,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-20T14:34:01.97248Z",
+      "orderId": "5e68d158-af3e-402b-972c-114c2713602a",
+      "matchedBuyId": "buy-1795123180063-SVRA-751252"
+    },
+    {
+      "id": "sell-1795208358534-UVXY-21483",
+      "kind": "sell",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 24.41,
+      "realizedPl": -1.36,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-20T15:00:01.168193Z",
+      "orderId": "d1a683d1-fd68-4534-9956-dd64d534c898",
+      "matchedBuyId": "buy-1795141884420-UVXY-949812"
+    },
+    {
+      "id": "sell-1795208358546-VXX-643722",
+      "kind": "sell",
+      "symbol": "VXX",
+      "qty": 1,
+      "price": 26.37,
+      "realizedPl": 2.4,
+      "reason": "Take-profit target hit automatically",
+      "timestamp": "2026-11-20T20:08:03.659705Z",
+      "orderId": "b2ea3c9a-96f5-456f-8892-41f752ae234d",
+      "matchedBuyId": "buy-1795141884434-VXX-755172"
     }
   ]
 }
