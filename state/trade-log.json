@@ -4323,6 +4323,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-19T21:19:40.063Z",
       "orderId": "2333d71a-026c-4402-968d-56580781be25"
+    },
+    {
+      "id": "buy-1795141884420-UVXY-949812",
+      "kind": "buy",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 25.77,
+      "notional": 25.77,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-20T02:31:24.420Z",
+      "orderId": "88c19905-a43e-4876-a0b0-7f801f633feb"
+    },
+    {
+      "id": "buy-1795141884434-VXX-755172",
+      "kind": "buy",
+      "symbol": "VXX",
+      "qty": 1,
+      "price": 23.97,
+      "notional": 23.97,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-20T02:31:24.434Z",
+      "orderId": "7c8f569e-0a91-44a6-b044-246023587439"
     }
   ]
 }
