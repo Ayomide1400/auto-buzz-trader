@@ -4381,6 +4381,17 @@
       "timestamp": "2026-11-20T20:08:03.659705Z",
       "orderId": "b2ea3c9a-96f5-456f-8892-41f752ae234d",
       "matchedBuyId": "buy-1795141884434-VXX-755172"
+    },
+    {
+      "id": "buy-1795208359633-UVXY-157940",
+      "kind": "buy",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 32.02,
+      "notional": 32.02,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-20T20:59:19.633Z",
+      "orderId": "428eb18f-1c72-44d5-ad07-06c25b51b946"
     }
   ]
 }
