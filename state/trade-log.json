@@ -4403,6 +4403,17 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-21T02:07:22.859Z",
       "matchedBuyId": "buy-1795208359633-UVXY-157940"
+    },
+    {
+      "id": "buy-1795226844080-NTLA-314100",
+      "kind": "buy",
+      "symbol": "NTLA",
+      "qty": 3,
+      "price": 10.06,
+      "notional": 30.18,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-21T02:07:24.080Z",
+      "orderId": "d42315cc-a747-438b-9e62-afedc0fa398c"
     }
   ]
 }
