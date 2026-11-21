@@ -4392,6 +4392,17 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-20T20:59:19.633Z",
       "orderId": "428eb18f-1c72-44d5-ad07-06c25b51b946"
+    },
+    {
+      "id": "sell-1795226842859-UVXY-411644",
+      "kind": "sell",
+      "symbol": "UVXY",
+      "qty": 1,
+      "price": 31.13,
+      "realizedPl": -0.72,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-21T02:07:22.859Z",
+      "matchedBuyId": "buy-1795208359633-UVXY-157940"
     }
   ]
 }
