@@ -4447,6 +4447,18 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-24T00:42:16.766Z",
       "orderId": "f66a1644-2162-43fd-a234-6294553a90cc"
+    },
+    {
+      "id": "sell-1795561089429-GLXY-68240",
+      "kind": "sell",
+      "symbol": "GLXY",
+      "qty": 2,
+      "price": 11.89,
+      "realizedPl": -1.28,
+      "reason": "Stop-loss triggered automatically",
+      "timestamp": "2026-11-24T15:07:12.544996Z",
+      "orderId": "63037445-292c-4caf-8f15-1322b566e065",
+      "matchedBuyId": "buy-1795480936755-GLXY-646228"
     }
   ]
 }
