@@ -4459,6 +4459,17 @@
       "timestamp": "2026-11-24T15:07:12.544996Z",
       "orderId": "63037445-292c-4caf-8f15-1322b566e065",
       "matchedBuyId": "buy-1795480936755-GLXY-646228"
+    },
+    {
+      "id": "sell-1795561090744-CTVA-825870",
+      "kind": "sell",
+      "symbol": "CTVA",
+      "qty": 4,
+      "price": 8.12,
+      "realizedPl": 0,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-24T22:58:10.744Z",
+      "matchedBuyId": "buy-1795480936766-CTVA-468868"
     }
   ]
 }
