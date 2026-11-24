@@ -4425,6 +4425,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-24T00:42:15.551Z",
       "matchedBuyId": "buy-1795226844080-NTLA-314100"
+    },
+    {
+      "id": "buy-1795480936755-GLXY-646228",
+      "kind": "buy",
+      "symbol": "GLXY",
+      "qty": 2,
+      "price": 12.53,
+      "notional": 25.06,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-24T00:42:16.755Z",
+      "orderId": "3fce96df-0283-4e78-b368-1fde8e47b60b"
+    },
+    {
+      "id": "buy-1795480936766-CTVA-468868",
+      "kind": "buy",
+      "symbol": "CTVA",
+      "qty": 4,
+      "price": 8.085,
+      "notional": 32.34,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-24T00:42:16.766Z",
+      "orderId": "f66a1644-2162-43fd-a234-6294553a90cc"
     }
   ]
 }
