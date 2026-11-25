@@ -4514,6 +4514,28 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-25T22:20:33.482Z",
       "matchedBuyId": "buy-1795561092038-KSS-108765"
+    },
+    {
+      "id": "buy-1795645234742-AG-317100",
+      "kind": "buy",
+      "symbol": "AG",
+      "qty": 3,
+      "price": 11.23,
+      "notional": 33.69,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-25T22:20:34.742Z",
+      "orderId": "815ac949-2dae-4195-b6a6-bed2e57794fe"
+    },
+    {
+      "id": "buy-1795645234759-KHC-449404",
+      "kind": "buy",
+      "symbol": "KHC",
+      "qty": 1,
+      "price": 26.49,
+      "notional": 26.49,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-25T22:20:34.759Z",
+      "orderId": "eb8573da-d8e8-46e2-81dd-d38cdc47d489"
     }
   ]
 }
