@@ -4556,6 +4556,17 @@
       "realizedPl": 0.89,
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-26T22:13:26.330Z"
+    },
+    {
+      "id": "buy-1795731207437-HL-838331",
+      "kind": "buy",
+      "symbol": "HL",
+      "qty": 3,
+      "price": 11.27,
+      "notional": 33.81,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-26T22:13:27.437Z",
+      "orderId": "b25479cc-9eb5-43d5-bbd9-e2fad0f64269"
     }
   ]
 }
