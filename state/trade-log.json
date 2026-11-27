@@ -4589,6 +4589,39 @@
       "reason": "Dropped off the trending list",
       "timestamp": "2026-11-27T21:53:07.461Z",
       "matchedBuyId": "buy-1795731207437-HL-838331"
+    },
+    {
+      "id": "buy-1795816388507-KORU-250458",
+      "kind": "buy",
+      "symbol": "KORU",
+      "qty": 5,
+      "price": 6.04,
+      "notional": 30.2,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-27T21:53:08.507Z",
+      "orderId": "542dd7e5-8bd3-44b6-ae7c-b06fc5f6a154"
+    },
+    {
+      "id": "buy-1795816388516-EWZ-718405",
+      "kind": "buy",
+      "symbol": "EWZ",
+      "qty": 1,
+      "price": 33.1,
+      "notional": 33.1,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-27T21:53:08.516Z",
+      "orderId": "391387b4-9df9-4594-8ba0-ff42869272b4"
+    },
+    {
+      "id": "buy-1795816388528-NOK-32768",
+      "kind": "buy",
+      "symbol": "NOK",
+      "qty": 4,
+      "price": 7.585,
+      "notional": 30.34,
+      "reason": "Newly appeared on the trending list",
+      "timestamp": "2026-11-27T21:53:08.528Z",
+      "orderId": "3d793042-f7c2-4c17-8680-0627451a9b73"
     }
   ]
 }
