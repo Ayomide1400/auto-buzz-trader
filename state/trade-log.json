@@ -4567,6 +4567,28 @@
       "reason": "Newly appeared on the trending list",
       "timestamp": "2026-11-26T22:13:27.437Z",
       "orderId": "b25479cc-9eb5-43d5-bbd9-e2fad0f64269"
+    },
+    {
+      "id": "sell-1795816387440-AG-147241",
+      "kind": "sell",
+      "symbol": "AG",
+      "qty": 3,
+      "price": 12.33,
+      "realizedPl": 1.14,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-27T21:53:07.440Z",
+      "matchedBuyId": "buy-1795645234742-AG-317100"
+    },
+    {
+      "id": "sell-1795816387461-HL-916121",
+      "kind": "sell",
+      "symbol": "HL",
+      "qty": 3,
+      "price": 12.15,
+      "realizedPl": 0.489999,
+      "reason": "Dropped off the trending list",
+      "timestamp": "2026-11-27T21:53:07.461Z",
+      "matchedBuyId": "buy-1795731207437-HL-838331"
     }
   ]
 }
